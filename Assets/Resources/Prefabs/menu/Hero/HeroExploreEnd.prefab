@@ -5,10 +5,10 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 400000}
-  - 114: {fileID: 11400006}
+  - component: {fileID: 400000}
+  - component: {fileID: 11400006}
   m_Layer: 0
   m_Name: HeroExploreEnd
   m_TagString: Untagged
@@ -21,10 +21,10 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 400004}
-  - 114: {fileID: 11400002}
+  - component: {fileID: 400004}
+  - component: {fileID: 11400002}
   m_Layer: 0
   m_Name: LabelHead
   m_TagString: Untagged
@@ -37,10 +37,10 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 400002}
-  - 114: {fileID: 11400000}
+  - component: {fileID: 400002}
+  - component: {fileID: 11400000}
   m_Layer: 0
   m_Name: buttonOK
   m_TagString: Untagged
@@ -53,10 +53,10 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 400008}
-  - 114: {fileID: 11400008}
+  - component: {fileID: 400008}
+  - component: {fileID: 11400008}
   m_Layer: 0
   m_Name: LabelMessage
   m_TagString: Untagged
@@ -69,10 +69,10 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 400010}
-  - 114: {fileID: 11400010}
+  - component: {fileID: 400010}
+  - component: {fileID: 11400010}
   m_Layer: 0
   m_Name: buttonCancel
   m_TagString: Untagged
@@ -96,6 +96,7 @@ Transform:
   - {fileID: 400008}
   m_Father: {fileID: 0}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &400002
 Transform:
   m_ObjectHideFlags: 1
@@ -108,6 +109,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 400000}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &400004
 Transform:
   m_ObjectHideFlags: 1
@@ -120,6 +122,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 400000}
   m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &400008
 Transform:
   m_ObjectHideFlags: 1
@@ -132,6 +135,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 400000}
   m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &400010
 Transform:
   m_ObjectHideFlags: 1
@@ -144,6 +148,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 400000}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -175,6 +180,7 @@ MonoBehaviour:
   uiName: 
   alpha: 1
   alphaEnable: 0
+  grey: 0
   m_rectOnScreen:
     serializedVersion: 2
     x: 0
@@ -186,27 +192,35 @@ MonoBehaviour:
     m_Name: 
     m_Normal:
       m_Background: {fileID: 2800000, guid: c270a9456a52fe448adc8442a11d35be, type: 3}
+      m_ScaledBackgrounds: []
       m_TextColor: {r: 1, g: 1, b: 1, a: 1}
     m_Hover:
       m_Background: {fileID: 0}
-      m_TextColor: {r: .873134315, g: .156382293, b: .156382293, a: 1}
+      m_ScaledBackgrounds: []
+      m_TextColor: {r: 0.8731343, g: 0.15638229, b: 0.15638229, a: 1}
     m_Active:
-      m_Background: {fileID: 2800000, guid: 41b3914a199cd4f9081b1b0dad2b1767, type: 3}
+      m_Background: {fileID: 2800000, guid: 30a34cedaf724924a8c3f7e9f32c2851, type: 3}
+      m_ScaledBackgrounds: []
       m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Focused:
       m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
       m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnNormal:
       m_Background: {fileID: 0}
-      m_TextColor: {r: .811764717, g: .662745118, b: .447058827, a: 1}
+      m_ScaledBackgrounds: []
+      m_TextColor: {r: 0.8117647, g: 0.6627451, b: 0.44705883, a: 1}
     m_OnHover:
       m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
       m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnActive:
       m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
       m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnFocused:
       m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
       m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Border:
       m_Left: 30
@@ -286,6 +300,7 @@ MonoBehaviour:
   uiName: 
   alpha: 1
   alphaEnable: 0
+  grey: 0
   m_rectOnScreen:
     serializedVersion: 2
     x: 0
@@ -297,27 +312,35 @@ MonoBehaviour:
     m_Name: 
     m_Normal:
       m_Background: {fileID: 0}
-      m_TextColor: {r: .921568632, g: .815686285, b: .65882355, a: 1}
+      m_ScaledBackgrounds: []
+      m_TextColor: {r: 0.92156863, g: 0.8156863, b: 0.65882355, a: 1}
     m_Hover:
       m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
       m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Active:
       m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
       m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Focused:
       m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
       m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnNormal:
       m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
       m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnHover:
       m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
       m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnActive:
       m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
       m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnFocused:
       m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
       m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Border:
       m_Left: 0
@@ -340,7 +363,7 @@ MonoBehaviour:
       m_Top: 0
       m_Bottom: 0
     m_Font: {fileID: 12800000, guid: e5d32c66034a94daca986ea478345734, type: 3}
-    m_FontSize: 20
+    m_FontSize: 18
     m_FontStyle: 0
     m_Alignment: 1
     m_WordWrap: 0
@@ -400,6 +423,7 @@ MonoBehaviour:
   uiName: 
   alpha: 1
   alphaEnable: 0
+  grey: 0
   m_rectOnScreen:
     serializedVersion: 2
     x: 0
@@ -433,27 +457,35 @@ MonoBehaviour:
       m_Name: 
       m_Normal:
         m_Background: {fileID: 2800000, guid: 9e9ecf62aee0142bcb598d0352ae79a6, type: 3}
+        m_ScaledBackgrounds: []
         m_TextColor: {r: 0, g: 0, b: 0, a: 1}
       m_Hover:
         m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
         m_TextColor: {r: 0, g: 0, b: 0, a: 1}
       m_Active:
         m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
         m_TextColor: {r: 0, g: 0, b: 0, a: 1}
       m_Focused:
         m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
         m_TextColor: {r: 0, g: 0, b: 0, a: 1}
       m_OnNormal:
         m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
         m_TextColor: {r: 0, g: 0, b: 0, a: 1}
       m_OnHover:
         m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
         m_TextColor: {r: 0, g: 0, b: 0, a: 1}
       m_OnActive:
         m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
         m_TextColor: {r: 0, g: 0, b: 0, a: 1}
       m_OnFocused:
         m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
         m_TextColor: {r: 0, g: 0, b: 0, a: 1}
       m_Border:
         m_Left: 27
@@ -503,7 +535,7 @@ MonoBehaviour:
       x: 0
       y: 0
       width: 640
-      height: 960
+      height: 53.20197
     visible: 1
     tips: 
     m_color: {r: 1, g: 1, b: 1, a: 1}
@@ -520,28 +552,36 @@ MonoBehaviour:
     mystyle:
       m_Name: 
       m_Normal:
-        m_Background: {fileID: 0}
+        m_Background: {fileID: 2800000, guid: 5433aa7bfa1e84b86b6d5f5942013bf6, type: 3}
+        m_ScaledBackgrounds: []
         m_TextColor: {r: 0, g: 0, b: 0, a: 1}
       m_Hover:
         m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
         m_TextColor: {r: 0, g: 0, b: 0, a: 1}
       m_Active:
         m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
         m_TextColor: {r: 0, g: 0, b: 0, a: 1}
       m_Focused:
         m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
         m_TextColor: {r: 0, g: 0, b: 0, a: 1}
       m_OnNormal:
         m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
         m_TextColor: {r: 0, g: 0, b: 0, a: 1}
       m_OnHover:
         m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
         m_TextColor: {r: 0, g: 0, b: 0, a: 1}
       m_OnActive:
         m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
         m_TextColor: {r: 0, g: 0, b: 0, a: 1}
       m_OnFocused:
         m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
         m_TextColor: {r: 0, g: 0, b: 0, a: 1}
       m_Border:
         m_Left: 0
@@ -591,7 +631,7 @@ MonoBehaviour:
       x: 0
       y: 0
       width: 640
-      height: 960
+      height: 42.561577
     visible: 1
     tips: 
     m_color: {r: 1, g: 1, b: 1, a: 1}
@@ -608,28 +648,36 @@ MonoBehaviour:
     mystyle:
       m_Name: 
       m_Normal:
-        m_Background: {fileID: 0}
+        m_Background: {fileID: 2800000, guid: f103d958141574cb4a63e1e055a5e4c8, type: 3}
+        m_ScaledBackgrounds: []
         m_TextColor: {r: 0, g: 0, b: 0, a: 1}
       m_Hover:
         m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
         m_TextColor: {r: 0, g: 0, b: 0, a: 1}
       m_Active:
         m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
         m_TextColor: {r: 0, g: 0, b: 0, a: 1}
       m_Focused:
         m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
         m_TextColor: {r: 0, g: 0, b: 0, a: 1}
       m_OnNormal:
         m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
         m_TextColor: {r: 0, g: 0, b: 0, a: 1}
       m_OnHover:
         m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
         m_TextColor: {r: 0, g: 0, b: 0, a: 1}
       m_OnActive:
         m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
         m_TextColor: {r: 0, g: 0, b: 0, a: 1}
       m_OnFocused:
         m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
         m_TextColor: {r: 0, g: 0, b: 0, a: 1}
       m_Border:
         m_Left: 0
@@ -673,21 +721,22 @@ MonoBehaviour:
     onNormalTxtColor: 0
     image: {fileID: 0}
     useTile: 0
-  offsetY: 50
+  offsetY: 57
   bgStartY: 0
   repeatTimes: 15
   setDefautlFrame: 1
   menuName: HeroExploreEnd
-  adapterIphoneX: 0
+  m_scale: 1
+  adapterIphoneX: 1
   showIphoneXFrame: 1
   rotation: 0
   frameSimpleLabel:
     rect:
       serializedVersion: 2
       x: 0
-      y: 0
+      y: -7
       width: 540
-      height: 330
+      height: 337
     visible: 1
     tips: 
     m_color: {r: 1, g: 1, b: 1, a: 1}
@@ -705,27 +754,35 @@ MonoBehaviour:
       m_Name: 
       m_Normal:
         m_Background: {fileID: 2800000, guid: 035b6acc7cf2c4088b3322bd44d253fb, type: 3}
-        m_TextColor: {r: .811764717, g: .662745118, b: .447058827, a: 1}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0.8117647, g: 0.6627451, b: 0.44705883, a: 1}
       m_Hover:
         m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
         m_TextColor: {r: 0, g: 0, b: 0, a: 1}
       m_Active:
         m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
         m_TextColor: {r: 0, g: 0, b: 0, a: 1}
       m_Focused:
         m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
         m_TextColor: {r: 0, g: 0, b: 0, a: 1}
       m_OnNormal:
         m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
         m_TextColor: {r: 0, g: 0, b: 0, a: 1}
       m_OnHover:
         m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
         m_TextColor: {r: 0, g: 0, b: 0, a: 1}
       m_OnActive:
         m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
         m_TextColor: {r: 0, g: 0, b: 0, a: 1}
       m_OnFocused:
         m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
         m_TextColor: {r: 0, g: 0, b: 0, a: 1}
       m_Border:
         m_Left: 65
@@ -748,7 +805,7 @@ MonoBehaviour:
         m_Top: 0
         m_Bottom: 0
       m_Font: {fileID: 12800000, guid: e5d32c66034a94daca986ea478345734, type: 3}
-      m_FontSize: 20
+      m_FontSize: 18
       m_FontStyle: 0
       m_Alignment: 0
       m_WordWrap: 0
@@ -769,6 +826,7 @@ MonoBehaviour:
     onNormalTxtColor: 0
     image: {fileID: 0}
     useTile: 1
+  m_lockRadio: 1
   head: {fileID: 11400002}
   message: {fileID: 11400008}
   ok: {fileID: 11400000}
@@ -804,6 +862,7 @@ MonoBehaviour:
   uiName: 
   alpha: 1
   alphaEnable: 0
+  grey: 0
   m_rectOnScreen:
     serializedVersion: 2
     x: 0
@@ -815,27 +874,35 @@ MonoBehaviour:
     m_Name: 
     m_Normal:
       m_Background: {fileID: 0}
-      m_TextColor: {r: .505882382, g: .31764707, b: .109803922, a: 1}
+      m_ScaledBackgrounds: []
+      m_TextColor: {r: 0.5058824, g: 0.31764707, b: 0.10980392, a: 1}
     m_Hover:
       m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
       m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Active:
       m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
       m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Focused:
       m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
       m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnNormal:
       m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
       m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnHover:
       m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
       m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnActive:
       m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
       m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnFocused:
       m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
       m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Border:
       m_Left: 0
@@ -858,7 +925,7 @@ MonoBehaviour:
       m_Top: 0
       m_Bottom: 0
     m_Font: {fileID: 12800000, guid: e5d32c66034a94daca986ea478345734, type: 3}
-    m_FontSize: 20
+    m_FontSize: 18
     m_FontStyle: 0
     m_Alignment: 0
     m_WordWrap: 1
@@ -919,6 +986,7 @@ MonoBehaviour:
   uiName: 
   alpha: 1
   alphaEnable: 0
+  grey: 0
   m_rectOnScreen:
     serializedVersion: 2
     x: 0
@@ -930,27 +998,35 @@ MonoBehaviour:
     m_Name: 
     m_Normal:
       m_Background: {fileID: 2800000, guid: 75ded394c73149b4784503b9ef47a6d5, type: 3}
+      m_ScaledBackgrounds: []
       m_TextColor: {r: 1, g: 1, b: 1, a: 1}
     m_Hover:
       m_Background: {fileID: 0}
-      m_TextColor: {r: .873134315, g: .156382293, b: .156382293, a: 1}
+      m_ScaledBackgrounds: []
+      m_TextColor: {r: 0.8731343, g: 0.15638229, b: 0.15638229, a: 1}
     m_Active:
       m_Background: {fileID: 2800000, guid: e6773cc8eedab5e438020e77372a330f, type: 3}
+      m_ScaledBackgrounds: []
       m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Focused:
       m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
       m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnNormal:
       m_Background: {fileID: 0}
-      m_TextColor: {r: .811764717, g: .662745118, b: .447058827, a: 1}
+      m_ScaledBackgrounds: []
+      m_TextColor: {r: 0.8117647, g: 0.6627451, b: 0.44705883, a: 1}
     m_OnHover:
       m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
       m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnActive:
       m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
       m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnFocused:
       m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
       m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Border:
       m_Left: 0
@@ -1010,4 +1086,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 100000}
   m_IsPrefabParent: 1
-  m_IsExploded: 1

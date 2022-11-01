@@ -190,7 +190,7 @@ public class AvaActivityLog : AvaModule {
 		}
 		catch(System.Exception ex)
 		{
-			if (BuildSetting.DEBUG_MODE == 1) {
+			if (BuildSetting.DebugMode == 1) {
 				_Global.LogError(ex.ToString());
 			}
 		}
@@ -229,7 +229,7 @@ public class AvaActivityLog : AvaModule {
 		}
 		catch(System.Exception ex)
 		{
-			if (BuildSetting.DEBUG_MODE == 1) {
+			if (BuildSetting.DebugMode == 1) {
 				_Global.LogError(ex.ToString());
 			}
 			hasError = true;

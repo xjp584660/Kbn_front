@@ -70,7 +70,7 @@ class PopupMgr extends KBN.PopupMgr
 	
 //	private function initLocalGameVersion():void
 //	{
-//		var version:Array = (BuildSetting.CLIENT_VERSION).Split("."[0]);
+//		var version:Array = (BuildSetting.clientVersion).Split("."[0]);
 //		var dataGameVersion:Array = new Array();
 //		dataGameVersion.push(parseInt(version[0].Trim()));
 //		dataGameVersion.push(parseInt(version[1].Trim()));
@@ -79,7 +79,7 @@ class PopupMgr extends KBN.PopupMgr
 //		
 //		if(localVersion == "")
 //		{
-//			PlayerPrefs.SetString(REQUEST_GAME_VERSION, BuildSetting.CLIENT_VERSION);
+//			PlayerPrefs.SetString(REQUEST_GAME_VERSION, BuildSetting.clientVersion);
 //		}
 //		else
 //		{
@@ -90,7 +90,7 @@ class PopupMgr extends KBN.PopupMgr
 //			
 //			if((dataGameVersion[0] > lovalGameVersion[0]) || (dataGameVersion[1] > lovalGameVersion[1]))
 //			{
-//				PlayerPrefs.SetString(REQUEST_GAME_VERSION, BuildSetting.CLIENT_VERSION);
+//				PlayerPrefs.SetString(REQUEST_GAME_VERSION, BuildSetting.clientVersion);
 //			}			
 //		}
 //		

@@ -6,7 +6,7 @@ class	UnityNet extends KBN.UnityNet {
     //for Xcode Native
     public static function InitPlayerPrefs()
     {
-        var str:String = "mobileid="+mobileId + "&platformid=" + platformId + "&gver=" + BuildSetting.CLIENT_VERSION + "&vcs=" + BuildSetting.CLIENT_VERSION;
+        var str:String = "mobileid="+mobileId + "&platformid=" + platformId + "&gver=" + BuildSetting.ClientVersion + "&vcs=" + BuildSetting.ClientVersion;
         if(Datas.instance().getKabamId() != 0)
             str = str + "&kabam_id=" + Datas.instance().getKabamId();
         //not needed.

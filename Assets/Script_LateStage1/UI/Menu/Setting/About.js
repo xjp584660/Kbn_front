@@ -15,8 +15,8 @@ class About extends SubMenu
 		super.Init(parent);
 //		var arStrings:Object = Datas.instance().arStrings();
 		title.txt = Datas.getArString("Settings.About");
-		version.txt = Datas.getArString("Settings.Version") + " " + BuildSetting.CLIENT_VERSION;
-		btnPolicy.txt = Datas.getArString("Settings.PrivacyPolicy") ;
+		version.txt = Datas.getArString("Settings.Version") + " " + BuildSetting.ClientVersion;
+		btnPolicy.txt = Datas.getArString("Settings.PrivacyPolicy");
 		btnService.txt = Datas.getArString("Settings.Service") ;
 		copyRight.txt = Datas.getArString("Settings.Copyright") + " " +Datas.getArString("Settings.CopyrightYear");
 		btnPolicy.OnClick = function(param:Object)

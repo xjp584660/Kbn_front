@@ -422,7 +422,7 @@ class	Datas extends KBN.Datas {
 		if( PlayerPrefs.HasKey(CLIENT_VERSION_KEY) )
 		{
 			var clientVer:String = PlayerPrefs.GetString(CLIENT_VERSION_KEY);
-			if( clientVer != BuildSetting.CLIENT_VERSION && (Application.platform == RuntimePlatform.IPhonePlayer || Application.platform == RuntimePlatform.Android))
+			if( clientVer != BuildSetting.ClientVersion && (Application.platform == RuntimePlatform.IPhonePlayer || Application.platform == RuntimePlatform.Android))
 			{//client update
 				setOtaHasDownloaded( false );
 				var finfos:FileInfo[] = txtDirInfo.GetFiles();
@@ -434,7 +434,7 @@ class	Datas extends KBN.Datas {
 					}
 				}
 				
-				PlayerPrefs.SetString(CLIENT_VERSION_KEY, BuildSetting.CLIENT_VERSION);
+				PlayerPrefs.SetString(CLIENT_VERSION_KEY, BuildSetting.ClientVersion);
 				PlayerPrefs.SetFloat(CITY_SCALE,GestureController.MAX_SCALE_FACTOR);
 				PlayerPrefs.SetFloat(FIELD_SCALE,GestureController.MAX_SCALE_FACTOR);
 				cityScale = PlayerPrefs.GetFloat(CITY_SCALE,GestureController.MAX_SCALE_FACTOR);
@@ -446,7 +446,7 @@ class	Datas extends KBN.Datas {
 		}
 		else
 		{
-			PlayerPrefs.SetString(CLIENT_VERSION_KEY, BuildSetting.CLIENT_VERSION);
+			PlayerPrefs.SetString(CLIENT_VERSION_KEY, BuildSetting.ClientVersion);
 		}
 	}
 	
@@ -907,15 +907,15 @@ class	Datas extends KBN.Datas {
 	
 	public		function	getRaterFlag():String{
 		var flag:String =	PlayerPrefs.GetString(RATER_FLAG, "");
-		if( !flag.StartsWith( BuildSetting.CLIENT_VERSION + "_" ) ){
+		if( !flag.StartsWith( BuildSetting.ClientVersion + "_" ) ){
 			return "";
 		}
 		
-		return flag.Substring( (BuildSetting.CLIENT_VERSION+ "_").Length );
+		return flag.Substring( (BuildSetting.ClientVersion+ "_").Length );
 	}
 	
 	public		function	setRaterFlag( flag:String ):void{
-		PlayerPrefs.SetString(RATER_FLAG, BuildSetting.CLIENT_VERSION + "_" + flag);
+		PlayerPrefs.SetString(RATER_FLAG, BuildSetting.ClientVersion + "_" + flag);
 	}
 
 	//TODO添加  

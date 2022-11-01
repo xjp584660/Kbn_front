@@ -24,7 +24,7 @@ public class ExportBundle : EditorWindow
 		}
         //bundle文件路径
         string str = EditorUtility.SaveFilePanel("Save Bundle ...", Application.dataPath, Selection.activeObject.name, "assetbundle");
-		str += "." + EditorUserBuildSettings.activeBuildTarget;
+		str += "." + EditorUserBuildSettings.activeBuildTarget.ToString().ToLower();
 
 		if (str.Length != 0)
 		{
@@ -40,7 +40,7 @@ public class ExportBundle : EditorWindow
 			int nameLength = str.IndexOf(".assetbundle") - str.LastIndexOf("/") - 1;
 			string bundleName = str.Substring(str.LastIndexOf("/") + 1, nameLength);
             buildMap[0].assetBundleName = bundleName;//所在文件夹名
-            buildMap[0].assetBundleVariant = "assetbundle" + "." + EditorUserBuildSettings.activeBuildTarget;//后缀
+            buildMap[0].assetBundleVariant = "assetbundle" + "." + EditorUserBuildSettings.activeBuildTarget.ToString().ToLower();//后缀
             buildMap[0].assetNames = resourceAssets;
             //Bundle输出路径
             string strOutput = str.Substring(0, str.LastIndexOf("/"));
@@ -69,6 +69,11 @@ public class ExportBundle : EditorWindow
                         File.Delete(str);
 
                         string directoryName = Path.Combine(Path.GetDirectoryName(fullPathWithMd5), platformList[EditorUserBuildSettings.activeBuildTarget]);
+
+						if (!Directory.Exists(directoryName)) {
+							Directory.CreateDirectory(directoryName);
+						}
+
                         string fileName = Path.GetFileName(fullPathWithMd5);
                         OutputResourceList(directoryName, selection, fileName);
                         OutputResourceListMd5(directoryName);

@@ -70,7 +70,7 @@ class AmazonPayment extends KBN.AmazonPayment {
 		recorder.cents = pe.cents.ToString();
 		recorder.currency = pe.currencyCode;
 		recorder.amazonUserId = userId.ToString();
-		recorder.token = BuildSetting.DEBUG_MODE == 1 ? receipt.token.ToString() + System.DateTime.Now.Ticks : receipt.token.ToString();
+		recorder.token = BuildSetting.DebugMode == 1 ? receipt.token.ToString() + System.DateTime.Now.Ticks : receipt.token.ToString();
 		recorder.sku = receipt.sku;
 		recorder.transactionId = UnityNet.getMD5Hash(recorder.token + recorder.amazonUserId + recorder.sku);
 		

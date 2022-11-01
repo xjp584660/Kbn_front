@@ -233,7 +233,7 @@
 //			request.playerid = m_UserId;
 //			request.nick = m_NickName;
 //			request.anllianceid = m_AllianceId;
-//			request.cver = BuildSetting.CLIENT_VERSION;
+//			request.cver = BuildSetting.clientVersion;
 //			NetworkManager.Instance.Send(request, "Signup");
 //			_Global.Log (String.Format("Signup Begin {0}:{1}." , m_IpAddress.ToString(), m_Port.ToString()));
 ////			ErrorMgr.singleton.PushError("", "Signup start", true, Datas.getArString("Common.OK_Button"), null);
@@ -244,7 +244,7 @@
 //            var logString = String.Format("SignUp {0}:{1} OK!", m_IpAddress.ToString(), m_Port.ToString());
 //            _Global.Log(logString);
 //
-//            if (BuildSetting.DEBUG_MODE != 0)
+//            if (BuildSetting.DebugMode != 0)
 //            {
 //                UnityNet.reportErrorToServer(UnityNet.CLIENT_LOG, null, UnityNet.CLIENT_LOG, logString, false);
 //            }

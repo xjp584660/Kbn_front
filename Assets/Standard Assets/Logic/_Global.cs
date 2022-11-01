@@ -33,7 +33,7 @@ namespace KBN
 #if UNITY_EDITOR
             Debug.Log(string.Format("[{0}] {1}", System.DateTime.Now.ToString("HH:mm:ss:fff"), msg));
 #endif
-            if (BuildSetting.DEBUG_MODE != 0)
+            if (BuildSetting.DebugMode != 0)
             {
                 LogTools.Instacne.SaveLog(string.Format("log-normal:{0}", msg));
             }
@@ -44,7 +44,7 @@ namespace KBN
 #if UNITY_EDITOR
             Debug.LogWarning(string.Format("[{0}] {1}", System.DateTime.Now.ToString("HH:mm:ss:fff"), msg));
 #endif
-            if (BuildSetting.DEBUG_MODE != 0)
+            if (BuildSetting.DebugMode != 0)
             {
                 LogTools.Instacne.SaveLog(string.Format("log-waring:{0}", msg));
             }
@@ -55,7 +55,7 @@ namespace KBN
 #if UNITY_EDITOR
             Debug.LogError(string.Format("[{0}] {1}", System.DateTime.Now.ToString("HH:mm:ss:fff"), msg));
 #endif
-            if (BuildSetting.DEBUG_MODE != 0)
+            if (BuildSetting.DebugMode != 0)
             {
                 LogTools.Instacne.SaveLog(string.Format("log-error:{0}", msg));
             }

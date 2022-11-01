@@ -93,6 +93,8 @@ class AvatarMgr {
 		generalAvatarIdTable.Add(General.getGeneralTextureName("47007", 0), "2_0_47007");
 		generalAvatars.Add("2_0_47008", null);
 		generalAvatarIdTable.Add(General.getGeneralTextureName("47008", 0), "2_0_47008");
+		generalAvatars.Add("2_0_47009", null);
+		generalAvatarIdTable.Add(General.getGeneralTextureName("47009", 0), "2_0_47009");
 		// initialize other avatars
 		var gd : HashObject = Datas.instance().getGameData();
 		var defaultPortrait : HashObject = gd["ardefaultportrait"];

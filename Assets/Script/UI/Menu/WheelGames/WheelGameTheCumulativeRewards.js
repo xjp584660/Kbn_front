@@ -47,6 +47,7 @@ public class WheelGameTheCumulativeRewards extends UIObject {
 
     private var timerLabelPreStr = "";
     private var endTime: long = 0;
+    public var eventId: String;
 
     public function Init() {
 
@@ -110,7 +111,7 @@ public class WheelGameTheCumulativeRewards extends UIObject {
         timerLabelPreStr = Datas.getArString("EventCenter.StartsIn");
 
 
-        reqGetEventDetailInfo("75783", ViewEventDetail);
+        reqGetEventDetailInfo(eventId, ViewEventDetail);
     }
 
 
@@ -145,7 +146,7 @@ public class WheelGameTheCumulativeRewards extends UIObject {
             spendNGetGemsSpentLabel.txt = String.Format(Datas.getArString(gemsSpentKey), gemsSpent);
             endTime = _Global.INT64(data["event"]["rewardEndTime"]);
 
-
+            var isEquivalence: boolean = spendNGetGraduations.Count == graduationArray.length;
             for (var i = 0; i < graduationArray.length; i++) {
 
                 var result: HashObject = data["event"]["spendAndGet"]["milestones"][_Global.ap + i];
@@ -167,13 +168,25 @@ public class WheelGameTheCumulativeRewards extends UIObject {
                 dataIdList.Add(id);
                 milestonesList.Add(spednNGet);
 
-                var graduation: SpendNGetGraduation = Instantiate(spendNGetGraduation) as SpendNGetGraduation;
+                var graduation: SpendNGetGraduation;
+                if (isEquivalence) {
+                    graduation = spendNGetGraduations[i] as SpendNGetGraduation;
+                } else {
+                    graduation = Instantiate(spendNGetGraduation) as SpendNGetGraduation;
+                }
+              
                 var percentage: float = (gemsCount + 0.0f) / MaxGemsCount;
                 graduation.rect.x = percentBar.x + percentage * percentBar.width - graduation.Offset.x;
                 graduation.rect.y = percentBar.y - graduation.Offset.y - 0.5f * (graduation.graduationHeight - percentBar.height);
                 graduation.Init();
                 graduation.SetData(i, gemsCount);
-                spendNGetGraduations.Add(graduation);
+
+                if (isEquivalence) {
+                    spendNGetGraduations[i] = graduation;
+                } else {
+                    spendNGetGraduations.Add(graduation);
+                }
+
             }
 
             if (IsRepeatable) {

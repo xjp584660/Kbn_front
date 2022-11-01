@@ -305,7 +305,7 @@ namespace KBN
             }
                 
             // ret.AddField("data", b64);
-            ret.AddField("vcs", BuildSetting.CLIENT_VERSION);
+            ret.AddField("vcs", BuildSetting.ClientVersion);
             return ret;
         }
       //  private static bool noEncrypt=true;
@@ -588,7 +588,7 @@ namespace KBN
 
                 }  
             }
-            else if (BuildSetting.DEBUG_MODE != 0 && msg != null && msg.Trim().Length > 0)
+            else if (BuildSetting.DebugMode != 0 && msg != null && msg.Trim().Length > 0)
             {
                 ret = "Add new string to arstrings: " + msg; 
             }
@@ -597,7 +597,7 @@ namespace KBN
                 ret = Datas.getArString("Error.err_default");
             }
             
-            if(BuildSetting.DEBUG_MODE != 0)
+            if(BuildSetting.DebugMode != 0)
             {
                 ret = string.Format("(Code: {0}) {1}", errorCode, ret);
             }
@@ -701,8 +701,8 @@ namespace KBN
             
             form.AddField("become_user_id", Datas.singleton.GetBecomeUserId() + "");
             form.AddField("become_password", Datas.singleton.GetBecomeUserPassword() + "");
-            form.AddField("debug", BuildSetting.DEBUG_MODE);
-            form.AddField("gver", BuildSetting.CLIENT_VERSION);
+            form.AddField("debug", BuildSetting.DebugMode);
+            form.AddField("gver", BuildSetting.ClientVersion);
             form.AddField("gameSlot", "" + slotId++);
             form.AddField("theme", "" + Datas.singleton.getGameTheme());
             form.AddField("newlang", "" + Datas.singleton.getGameLanguageAb());
@@ -1142,7 +1142,7 @@ namespace KBN
                     {
                         resultString = www.text;
                     }
-					if( BuildSetting.INTERNAL_VERSION != 0 ){
+					if( BuildSetting.InternalVersion != 0 ){
 						int index = resultString.LastIndexOf ("~*~");
 						if(index>=0){
 							resultString=resultString.Substring (index+3,resultString.Length-index-3);
@@ -2293,14 +2293,14 @@ namespace KBN
 			sbForEncode.AppendFormat("{0}{1}{2}^r4@(v=vs.11?0)s*02tK69A", dataStr, headerStr, mobileId.ToString());
 			string keyForEncode = getMD5Hash(sbForEncode.ToString());
 			form.AddField("gameTime", keyForEncode);
-            form.AddField("vcs", BuildSetting.CLIENT_VERSION);
+            form.AddField("vcs", BuildSetting.ClientVersion);
 
 #if UNITY_EDITOR
             UnityEngine.WWWForm formTemp = new UnityEngine.WWWForm();
             formTemp.AddField("data", dataStr);
             formTemp.AddField("header", headerStr);
             formTemp.AddField("gameTime", keyForEncode);
-            formTemp.AddField("vcs", BuildSetting.CLIENT_VERSION);
+            formTemp.AddField("vcs", BuildSetting.ClientVersion);
 
             string paraStr = formTemp.data != null ? System.Text.Encoding.Default.GetString(formTemp.data) : string.Empty;
             Debug.Log(string.Format("[{0}] <color=#097A2BFF>UnityNet RealRequestForGPB> </color>\t<color=#5EFF8EFF>url: {1}</color>\n\n{2}\n\n", System.DateTime.Now.ToString("HH:mm:ss:fff"), url, paraStr));
@@ -2483,12 +2483,12 @@ namespace KBN
 			msgHeader.access_token = Datas.singleton.getAccessToken () + "";
 			msgHeader.becomeUserId = Datas.singleton.GetBecomeUserId () + "";
 			msgHeader.becomePassword = Datas.singleton.GetBecomeUserPassword () + "";
-			msgHeader.debug = BuildSetting.DEBUG_MODE;
+			msgHeader.debug = BuildSetting.DebugMode;
 			msgHeader.gameNumber = gameNumber++;
 			msgHeader.gameSlot = slotId++;
 			msgHeader.gcUid = Datas.singleton.GetGameCenterPlayerId_Binded () + "";
 			msgHeader.gcUnick = Datas.singleton.GetGameCenterAlias_Binded () + "";
-			msgHeader.gVer = BuildSetting.CLIENT_VERSION;
+			msgHeader.gVer = BuildSetting.ClientVersion;
 			msgHeader.kabamId = Datas.singleton.getKabamId () + "";
 			msgHeader.mobileId = mobileId;
 			msgHeader.naId = Datas.singleton.getNaid () + "";
@@ -2983,7 +2983,7 @@ namespace KBN
                 plainText = Encoding.ASCII.GetString(plainBytes, 0, plainBytes.Length);
             }
            catch(Exception e){
-                Debug.LogError("cipherText: "+cipherText+"\nurl: "+url);
+                Debug.LogError("<color=#ff0000ff>GDS 数据文件解密错误!!!\n可能原因:\n\t1) 文件数据格式问题\n\t2) 文件未加密\n\t2) 文件加密出错</color>\n\ncipherText: " + cipherText+"\nurl: "+url);
             }
             finally
             {

@@ -251,7 +251,7 @@ namespace KBN
 			request.playerid = userId;
 			request.nick = playerName;
 			request.anllianceid = allianceId;
-			request.cver = BuildSetting.CLIENT_VERSION;
+			request.cver = BuildSetting.ClientVersion;
 			this.Send(request, "Signup");
 			//_Global.Log (String.Format("NewSocketNet Signup Begin {0}:{1}." , ipAddress.ToString(), port.ToString()));
 		}

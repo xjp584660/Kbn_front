@@ -89,7 +89,7 @@ public class WheelGameLeaderboard extends UIObject {
     }
 
     public function OnPop() {
-        scroll.Draw();
+        scroll.Clear();
         
     }
 

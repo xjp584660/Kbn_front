@@ -231,7 +231,7 @@ function Start() {
 
 	loadMessage.txt = "";
 
-	if( BuildSetting.INTERNAL_VERSION ){
+	if( BuildSetting.InternalVersion ){
 		servers = UnityNet.DebugServers();
 		if(PlayerPrefs.HasKey("test_Build")){
 			var myBuild=PlayerPrefs.GetString("test_Build");
@@ -373,7 +373,7 @@ function OnGUI(){
 		}
 	}
 
-	if( BuildSetting.INTERNAL_VERSION && showDebugServers){
+	if( BuildSetting.InternalVersion && showDebugServers){
 		if (!loadStarted) {
             displayServer();
         }
@@ -425,10 +425,10 @@ private function loadNextLevel(serverName:String){
 
 
 	loadStarted = true;
-	if(BuildSetting.INTERNAL_VERSION) LogWindow.Instance.Active = showErrorLog;//show log window,used to check log on mobile device
+	if(BuildSetting.InternalVersion) LogWindow.Instance.Active = showErrorLog;//show log window,used to check log on mobile device
 	/*reqLoadingTips();*/
 	#if UNITY_EDITOR
-		/* if (BuildSetting.INTERNAL_VERSION ){*/
+		/* if (BuildSetting.InternalVersion ){*/
 				if(!showErrorLog) {
 					InputField.Instance.Active = showTextField;/*choose 显示辅助文本输入框*/
 				}else{
@@ -551,6 +551,19 @@ private function loadNextLevel(serverName:String){
 		fpsTrigger=GUI.Toggle(Rect(450,200,150,30),fpsTrigger,"show fps,memory");
 		loadingProfile = GUI.Toggle(Rect(450, 180, 200, 30), loadingProfile, "Show Loading Profile");
 		showTextField = GUI.Toggle(Rect(450, 230, 200, 30), showTextField, "Show TextField");
+
+
+		/* 显示版本号 */
+		if (BuildSetting.DebugMode == 1) {
+			var infoStr = "ver:" + BuildSetting.ClientVersion;
+
+#if UNITY_ANDROID
+			infoStr += "(" + BuildSetting.AndroidCompression + ")";
+#endif
+
+			GUI.Label(Rect(20, 930, 200, 60), infoStr);
+		}
+
 	}
 
 
@@ -602,7 +615,7 @@ private function loadNextLevel(serverName:String){
 
 
 			loadStarted = true;
-			if (BuildSetting.INTERNAL_VERSION) LogWindow.Instance.Active = showErrorLog;
+			if (BuildSetting.InternalVersion) LogWindow.Instance.Active = showErrorLog;
 
 
 		#if UNITY_EDITOR

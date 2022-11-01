@@ -1,118 +1,20 @@
 ﻿public class HeroExplore extends KBNMenu
 {
-	@SerializeField
-	public class HeroExploreControl
-	{
-		public var npcTitle : Label;
-	    public var npcHead : Label;
-	    public var npcBall : Label;
-	    public var npcName : Label;
-	    public var npcMessage : Label;
-	    public var npcMessageArrow : Label;
-	    public var npcHand : Label;
-	    public var npcHandTips : Label;
-        public var gameProgress : PercentBar;
-        public var gameProgressText : Label;
-        public var blackPanel : Label;
-        public var blankPanel : Label;
-        public var itemTile : Label[];
-        public var itemEffect : Label[];
-        public var itemFrame : Label[];
-        public var itemBackground : Label[];
-        public var itemAlpha : Label[];
-        public var itemAlphaTips : Label;
-        public var itemLight : Label[];
-        public var item : Button[];
-        public var itemDescription : Label;
-        public var headButton : Button;
-        public var headBack : Label;
-	    public var head : Label;
-	    public var headFrame : Label;
-        public var number : Label;
-	    public var message : Label;
-	    public var map : Label;
-	    public var explore : Button[];
-	    public var exploreEffect : Label[];
-        public var box : Label[];
-        public var boxIcon : Label[];
-	    public var lineBottom : Label;
-	    public var bottomBackground : Label;
-	    public var description : Label;
-	    public var finish : Button;
-	    public var lightBackground : Label;
-		public var effectRotate : Rotate;
-		public var autoButton : Button;
-		public var autoHelpButton : Button;
-		public var ballButton : Button;
-	}
-    @SerializeField
-    private var control : HeroExploreControl;
+	
+    @SerializeField private var control : HeroExploreControl;
+	   
+    @SerializeField private var argument : HeroExploreArgument;
+	    
+    @SerializeField private var itemAnimation : HeroExploreAnimation[];
 
-    @SerializeField
-    public class HeroExploreArgument
-    {
-    	public var npcSpeakCount : int;
-        public var itemStart : Vector2[];
-        public var itemNext : Vector2[];
-        public var itemEnd : Vector2[];
-        public var itemAlphaTipsDelay : float;
-        public var exploreBasePos : Vector2[];
-        public var explorePosOffset : int;
-        @HideInInspector
-        public var explorePos : Vector2[];
-        public var boxPosOffset : Vector2;
-        public var itemCenter : Vector2;
-        public var arrowFromPos : Vector2;
-        public var arrowToPos : Vector2;
-        public var arrowSpeed : float;
-        public var handFromPos : Vector2;
-        public var handToPos : Vector2;
-        public var handSpeed : float;
-        public var handInterval : float;
-        public var heroSpeakCount : int;
-        public var heroSpeakInterval : float;
-    }
-    @SerializeField
-    private var argument : HeroExploreArgument;
+	@SerializeField private var exploreAnimation: HeroExploreAnimation[];
 
-    @SerializeField
-    public class HeroExploreAnimation
-    {
-        public var refLabel : Label;
-        public var animActive : boolean;
-        public var animationName : String[];
-        public var speed : float;
-        public var loop : boolean;
-        public var elapse : float;
+	@SerializeField private var ballButton: Button;
+	@SerializeField private var closeButton: Button;
 
-        public function Update() : void
-        {
-            if (animActive && animationName.length > 0)
-            {
-                elapse += Time.deltaTime;
-                refLabel.SetVisible(true);
-                var name : String = animationName[(elapse / speed) % animationName.length];
-                if (refLabel.tile == null || name != refLabel.tile.name)
-                {
-                    refLabel.tile = TextureMgr.instance().GetHeroSpt().GetTile(name);
-                }
-                if (!loop && elapse >= speed * animationName.length)
-                {
-                    animActive = false;
-                    refLabel.SetVisible(false);
-                }
-            }
-            else
-            {
-                elapse = 0.0f;
-                refLabel.SetVisible(false);
-            }
-        }
-    }
-    @SerializeField
-    private var itemAnimation : HeroExploreAnimation[];
-    @SerializeField
-    private var exploreAnimation : HeroExploreAnimation[];
+
+
+
 
     private var animationManager : GUIAnimation = null;
     private var statusList : Dictionary.<HeroExploreStatusType, HeroExploreStatus> = null;
@@ -121,6 +23,8 @@
     private var currentExploreIndex : int = -1;
     private var currentExploreItemIndex : int = -1;
     private var currentShowDescriptionIndex : int = -1;
+
+
 
 	public function Init() : void
 	{
@@ -164,7 +68,11 @@
 		control.headButton.OnClick = OnHeadClick;
 		control.autoButton.OnClick = OnAutoClick;
 		control.autoHelpButton.OnClick = OnAutoHelpClick;
-		control.ballButton.OnClick = OnBallClick;
+
+		ballButton.OnClick = OnBallClick;
+
+		closeButton.OnClick = close;
+
 		
 		var index : int = 0;
 		for (var i : Button in control.explore)
@@ -220,6 +128,12 @@
 	    control.effectRotate.playEffect();
 	}
 
+
+	public function DrawBallBtn() {
+		ballButton.Draw();
+	}
+
+
 	public function Update() : void
 	{
 	    super.Update();
@@ -230,7 +144,10 @@
 
 	public function DrawItem() : void
 	{
-	    currentStatus.Draw();
+		currentStatus.Draw();
+	#if UNITY_EDITOR
+		closeButton.Draw();
+	#endif
 	}
 	
 	public function OnPush(param : Object) : void
@@ -346,8 +263,10 @@
 		}
 	}
 
-	private function OnBallClick(param : Object) : void
+	private function OnBallClick()
 	{
+		//Debug.Log("<color=#ff7700ff> -------- OnBallClick ------  </color>");
+
 		ChangeStatus(HeroExploreStatusType.Play);
 	}
 	
@@ -442,5 +361,106 @@
 				OnFinishClick(null);
 	    		return true;
     	}
-    }
+	}
+
+
+
+
+	@SerializeField
+	public class HeroExploreArgument {
+		public var npcSpeakCount: int;
+		public var itemStart: Vector2[];
+		public var itemNext: Vector2[];
+		public var itemEnd: Vector2[];
+		public var itemAlphaTipsDelay: float;
+		public var exploreBasePos: Vector2[];
+		public var explorePosOffset: int;
+		@HideInInspector
+		public var explorePos: Vector2[];
+		public var boxPosOffset: Vector2;
+		public var itemCenter: Vector2;
+		public var arrowFromPos: Vector2;
+		public var arrowToPos: Vector2;
+		public var arrowSpeed: float;
+		public var handFromPos: Vector2;
+		public var handToPos: Vector2;
+		public var handSpeed: float;
+		public var handInterval: float;
+		public var heroSpeakCount: int;
+		public var heroSpeakInterval: float;
+	}
+
+	@SerializeField
+	public class HeroExploreControl {
+		public var npcTitle: Label;
+		public var npcHead: Label;
+		public var npcBall: Label;
+		public var npcName: Label;
+		public var npcMessage: Label;
+		public var npcMessageArrow: Label;
+		public var npcHand: Label;
+		public var npcHandTips: Label;
+		public var gameProgress: PercentBar;
+		public var gameProgressText: Label;
+		public var blackPanel: Label;
+		public var blankPanel: Label;
+		public var itemTile: Label[];
+		public var itemEffect: Label[];
+		public var itemFrame: Label[];
+		public var itemBackground: Label[];
+		public var itemAlpha: Label[];
+		public var itemAlphaTips: Label;
+		public var itemLight: Label[];
+		public var item: Button[];
+		public var itemDescription: Label;
+		public var headButton: Button;
+		public var headBack: Label;
+		public var head: Label;
+		public var headFrame: Label;
+		public var number: Label;
+		public var message: Label;
+		public var map: Label;
+		public var explore: Button[];
+		public var exploreEffect: Label[];
+		public var box: Label[];
+		public var boxIcon: Label[];
+		public var lineBottom: Label;
+		public var bottomBackground: Label;
+		public var description: Label;
+		public var finish: Button;
+		public var lightBackground: Label;
+		public var effectRotate: Rotate;
+		public var autoButton: Button;
+		public var autoHelpButton: Button;
+	}
+
+	@SerializeField
+	public class HeroExploreAnimation {
+		public var refLabel: Label;
+		public var animActive: boolean;
+		public var animationName: String[];
+		public var speed: float;
+		public var loop: boolean;
+		public var elapse: float;
+
+		public function Update(): void {
+			if (animActive && animationName.length > 0) {
+				elapse += Time.deltaTime;
+				refLabel.SetVisible(true);
+				var name: String = animationName[(elapse / speed) % animationName.length];
+				if (refLabel.tile == null || name != refLabel.tile.name) {
+					refLabel.tile = TextureMgr.instance().GetHeroSpt().GetTile(name);
+				}
+				if (!loop && elapse >= speed * animationName.length) {
+					animActive = false;
+					refLabel.SetVisible(false);
+				}
+			}
+			else {
+				elapse = 0.0f;
+				refLabel.SetVisible(false);
+			}
+		}
+	}
 }
+

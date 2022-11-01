@@ -2194,7 +2194,7 @@ public function buyAppProduct(productId:String,payoutId:int){
 
 			var prodectArr: Array = new Array();
 			var prodect = new System.Collections.Generic.Dictionary.<String, System.Object>();
-			/*  只有一个商品 */
+			/*  gems 商品 */
 			prodect.Add("resource_name", "gems");/* 商品详情 - 资源名称 */
 			prodect.Add("resource_num", pe.currency);/* 商品详情 - 资源数量 */
 			prodectArr.Add(prodect);
@@ -2273,6 +2273,13 @@ public function buyAppOfferProduct(productId: String, payoutId: int, offerData: 
 
 		var prodectItemsArr: Array = new Array();
 		var prodectItemDataDict = new System.Collections.Generic.Dictionary.<String, int>();
+		var prodectItem = new System.Collections.Generic.Dictionary.<String, System.Object>();
+
+
+		/*  gems 商品 */
+		prodectItem.Add("resource_name", "gems");/* 商品详情 - 资源名称 */
+		prodectItem.Add("resource_num", pe.currency);/* 商品详情 - 资源数量 */
+		prodectItemsArr.Add(prodectItem);
 
 		/* 月卡 或者 RewardChestId 为 0 */
 		if ((offerData.IsMonthlyCard || offerData.RewardChestId == 0 ) && offerData.subItems != null) {
@@ -2292,7 +2299,7 @@ public function buyAppOfferProduct(productId: String, payoutId: int, offerData: 
 		}
 
 		for (var kv: KeyValuePair.<String, int> in prodectItemDataDict) {
-			var prodectItem = new System.Collections.Generic.Dictionary.<String, System.Object>();
+			prodectItem = new System.Collections.Generic.Dictionary.<String, System.Object>();
 			prodectItem.Add("resource_name", kv.Key);/* 商品详情 - 资源名称 */
 			prodectItem.Add("resource_num", kv.Value);/* 商品详情 - 资源数量 */
 			prodectItemsArr.Add(prodectItem);
@@ -5247,7 +5254,7 @@ public function paymentOkForGATA(msg:String):void
 public function paymentOkForGATAHash(params:HashObject)
 {
 	#if !UNITY_EDITOR
-	if (BuildSetting.DEBUG_MODE == 0)
+	if (BuildSetting.DebugMode == 0)
 	{
 		var transactionId:String = params["transactionId"].Value;
 		var currencyAmount:String = params["currencyAmount"].Value.ToString();
@@ -5329,10 +5336,10 @@ public function CheckAndOpenRaterAlert(open:boolean,place:String)
 
     if (useNewRater) {
         NativeCaller.OpenRaterAlertNew(title, content, raterNow, raterSkip, userVoice,
-                BuildSetting.CLIENT_VERSION, GameMain.instance().getRaterUrl(), Datas.instance().GetUserCode(place));
+                BuildSetting.ClientVersion, GameMain.instance().getRaterUrl(), Datas.instance().GetUserCode(place));
     } else {
 	    NativeCaller.OpenRaterAlert(title, content, raterNow, raterLater, notRater,
-                BuildSetting.CLIENT_VERSION, GameMain.instance().getRaterUrl(),Datas.instance().GetUserCode(place));
+                BuildSetting.ClientVersion, GameMain.instance().getRaterUrl(),Datas.instance().GetUserCode(place));
     }
 
 }

@@ -2239,10 +2239,7 @@ class MainChrom extends KBNMenu{
 
 	function OpenWheelMenu(param:Object)
 	{
-		/* TODO修改 日期 2022-10-21 */
-
 		MenuMgr.getInstance().PushMenu("WheelGameTurnplate", param);
-		//MenuMgr.getInstance().PushMenu("WheelGameTheCumulativeRewards", param);
 	}
 
 	private function reqEventCenter():void

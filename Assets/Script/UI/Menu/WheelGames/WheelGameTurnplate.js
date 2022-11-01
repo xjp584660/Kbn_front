@@ -324,7 +324,9 @@ class WheelGameTurnplate   extends KBNMenu
 			
 			nineBtn.SetDisabled(true);
 			nineBtn.changeToGreyNew();
-			
+
+			infoBtn.SetDisabled(true);
+
 //			m_menuHead.wheelGameRollStart();
 			
 			priv_wheelGameReward(9);
@@ -1119,7 +1121,8 @@ class WheelGameTurnplate   extends KBNMenu
 			oneBtn.SetDisabled(true);
 			oneBtn.changeToGreyNew();
 			nineBtn.SetDisabled(true);
-			nineBtn.changeToGreyNew();	
+			nineBtn.changeToGreyNew();
+			infoBtn.SetDisabled(true);
 			
 			m_menuHead.wheelGameRollStart();	
 		}
@@ -1128,6 +1131,7 @@ class WheelGameTurnplate   extends KBNMenu
 			btnSpin.SetDisabled(false);
 			oneBtn.SetDisabled(false);
 			nineBtn.SetDisabled(false);
+			infoBtn.SetDisabled(false);
 			
 			m_menuHead.wheelGameRollEnd();
 		}
@@ -1185,6 +1189,8 @@ class WheelGameTurnplate   extends KBNMenu
 		
 		nineBtn.SetDisabled(true);
 		nineBtn.changeToGreyNew();
+
+		infoBtn.SetDisabled(true);
 		
 		m_menuHead.wheelGameRollStart();
 						
@@ -1207,7 +1213,9 @@ class WheelGameTurnplate   extends KBNMenu
 				
 				nineBtn.SetDisabled(false);
 				nineBtn.changeToGreenNew();
-				
+
+				infoBtn.SetDisabled(false);
+
 				m_menuHead.wheelGameRollEnd();
 				
 				return;			
@@ -1236,6 +1244,8 @@ class WheelGameTurnplate   extends KBNMenu
 		
 		nineBtn.SetDisabled(true);
 		nineBtn.changeToGreyNew();
+
+		infoBtn.SetDisabled(true);
 		
 		//m_menuHead.wheelGameRollStart();
 		
@@ -1256,7 +1266,9 @@ class WheelGameTurnplate   extends KBNMenu
 					
 					nineBtn.SetDisabled(false);
 					nineBtn.changeToGreenNew();
-					
+
+					infoBtn.SetDisabled(false);
+
 					m_menuHead.wheelGameRollEnd();
 					
 					return false;

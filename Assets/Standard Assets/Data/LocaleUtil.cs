@@ -305,7 +305,7 @@ public class LocaleUtil {
         };
         
 #pragma warning disable 429
-		string remoteURL_cfg = (BuildSetting.DEBUG_MODE == 1 ? "unuse" : "RemoteURL_Release");
+		string remoteURL_cfg = (BuildSetting.DebugMode == 1 ? "unuse" : "RemoteURL_Release");
 #pragma warning restore 429
 
         string remoteURL = getParamsInfo(remoteURL_cfg);

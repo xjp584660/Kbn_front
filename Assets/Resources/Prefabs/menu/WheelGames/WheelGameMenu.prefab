@@ -84,7 +84,7 @@ MonoBehaviour:
   rect:
     serializedVersion: 2
     x: 20
-    y: 73
+    y: 68.43
     width: 600
     height: 70
   rotateAngle: 0
@@ -177,10 +177,8 @@ MonoBehaviour:
     m_StretchHeight: 0
   styles: []
   toolbarStrings:
-  - Details
-  - Rank
-  - Store
-  - Exchange
+  - "\u7D2F\u8BA1\u5956\u52B1"
+  - "\u6392\u884C\u699C"
   buttonImages: []
   buttonRect:
     serializedVersion: 2
@@ -216,7 +214,7 @@ MonoBehaviour:
   inScreenAspect: 0
   lockWidthInAspect: 0
   lockHeightInAspect: 0
-  visible: 1
+  visible: 0
   tips: 
   background: {fileID: 0}
   uiName: 
@@ -225,8 +223,8 @@ MonoBehaviour:
   grey: 0
   m_rectOnScreen:
     serializedVersion: 2
-    x: 0
-    y: 0
+    x: -1
+    y: -1
     width: 0
     height: 0
   fadeinSpeed: 30
@@ -236,9 +234,9 @@ MonoBehaviour:
     rect:
       serializedVersion: 2
       x: 0
-      y: 0
+      y: 62
       width: 640
-      height: 960
+      height: 46
     visible: 1
     tips: 
     m_color: {r: 1, g: 1, b: 1, a: 1}
@@ -255,9 +253,9 @@ MonoBehaviour:
     mystyle:
       m_Name: 
       m_Normal:
-        m_Background: {fileID: 0}
+        m_Background: {fileID: 2800000, guid: 9e9ecf62aee0142bcb598d0352ae79a6, type: 3}
         m_ScaledBackgrounds: []
-        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+        m_TextColor: {r: 0.8117647, g: 0.6627451, b: 0.44705883, a: 1}
       m_Hover:
         m_Background: {fileID: 0}
         m_ScaledBackgrounds: []
@@ -287,8 +285,8 @@ MonoBehaviour:
         m_ScaledBackgrounds: []
         m_TextColor: {r: 0, g: 0, b: 0, a: 1}
       m_Border:
-        m_Left: 0
-        m_Right: 0
+        m_Left: 27
+        m_Right: 27
         m_Top: 0
         m_Bottom: 0
       m_Margin:
@@ -306,8 +304,8 @@ MonoBehaviour:
         m_Right: 0
         m_Top: 0
         m_Bottom: 0
-      m_Font: {fileID: 0}
-      m_FontSize: 0
+      m_Font: {fileID: 12800000, guid: e5d32c66034a94daca986ea478345734, type: 3}
+      m_FontSize: 18
       m_FontStyle: 0
       m_Alignment: 0
       m_WordWrap: 0
@@ -334,7 +332,7 @@ MonoBehaviour:
       x: 0
       y: 0
       width: 640
-      height: 960
+      height: 53.20197
     visible: 1
     tips: 
     m_color: {r: 1, g: 1, b: 1, a: 1}
@@ -351,9 +349,9 @@ MonoBehaviour:
     mystyle:
       m_Name: 
       m_Normal:
-        m_Background: {fileID: 0}
+        m_Background: {fileID: 2800000, guid: 5433aa7bfa1e84b86b6d5f5942013bf6, type: 3}
         m_ScaledBackgrounds: []
-        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+        m_TextColor: {r: 0.8117647, g: 0.6627451, b: 0.44705883, a: 1}
       m_Hover:
         m_Background: {fileID: 0}
         m_ScaledBackgrounds: []
@@ -402,8 +400,8 @@ MonoBehaviour:
         m_Right: 0
         m_Top: 0
         m_Bottom: 0
-      m_Font: {fileID: 0}
-      m_FontSize: 0
+      m_Font: {fileID: 12800000, guid: e5d32c66034a94daca986ea478345734, type: 3}
+      m_FontSize: 18
       m_FontStyle: 0
       m_Alignment: 0
       m_WordWrap: 0
@@ -430,7 +428,7 @@ MonoBehaviour:
       x: 0
       y: 0
       width: 640
-      height: 960
+      height: 42.561577
     visible: 1
     tips: 
     m_color: {r: 1, g: 1, b: 1, a: 1}
@@ -447,9 +445,9 @@ MonoBehaviour:
     mystyle:
       m_Name: 
       m_Normal:
-        m_Background: {fileID: 0}
+        m_Background: {fileID: 2800000, guid: f103d958141574cb4a63e1e055a5e4c8, type: 3}
         m_ScaledBackgrounds: []
-        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+        m_TextColor: {r: 0.8117647, g: 0.6627451, b: 0.44705883, a: 1}
       m_Hover:
         m_Background: {fileID: 0}
         m_ScaledBackgrounds: []
@@ -498,8 +496,8 @@ MonoBehaviour:
         m_Right: 0
         m_Top: 0
         m_Bottom: 0
-      m_Font: {fileID: 0}
-      m_FontSize: 0
+      m_Font: {fileID: 12800000, guid: e5d32c66034a94daca986ea478345734, type: 3}
+      m_FontSize: 18
       m_FontStyle: 0
       m_Alignment: 0
       m_WordWrap: 0
@@ -524,19 +522,19 @@ MonoBehaviour:
   bgStartY: 0
   repeatTimes: 0
   setDefautlFrame: 1
-  menuName: 
+  menuName: WheelGameMenu
   m_scale: 1
-  adapterIphoneX: 0
+  adapterIphoneX: 1
   showIphoneXFrame: 1
   rotation: 0
   menuHead_prefab: {fileID: 11400006, guid: b09364476f9a04cbcb46b86d1f79c429, type: 2}
   menuHead: {fileID: 0}
   toolBar: {fileID: 114323814523759930}
-  wheelGameTheCumulativeRewards: {fileID: 114295510173723852, guid: 5aba300cf67a54e52b0ac966da53824a,
+  m_wheelGameTheCumulativeRewards: {fileID: 114295510173723852, guid: 5aba300cf67a54e52b0ac966da53824a,
     type: 2}
-  wheelGameLeaderboard: {fileID: 114358389769018118, guid: 63bb25fe3bf974e3eada3de1343047dd,
+  m_wheelGameLeaderboard: {fileID: 114358389769018118, guid: 63bb25fe3bf974e3eada3de1343047dd,
     type: 2}
-  langKey_menuTitle: 
+  langKey_menuTitle: 11111
   langKey_toolBarStrArr:
   - "\u7D2F\u8BA1\u5956\u52B1"
   - "\u6392\u884C\u699C"

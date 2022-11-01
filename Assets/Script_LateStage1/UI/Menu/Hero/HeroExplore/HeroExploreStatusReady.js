@@ -57,8 +57,8 @@
         control.npcMessage.Draw();
         control.gameProgress.Draw();
         control.gameProgressText.Draw();
-        control.ballButton.Draw();
         control.autoButton.Draw();
         control.autoHelpButton.Draw();
+        this.main.DrawBallBtn();
 	}
 }
