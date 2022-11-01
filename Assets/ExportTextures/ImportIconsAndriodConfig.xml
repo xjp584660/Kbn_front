@@ -1,0 +1,330 @@
+<Atlas>
+	<GConfig>
+		<dstPath>Resources_Andiod/Textures/UI/Atlas/</dstPath>
+		<dstName>Icons.bytes</dstName>
+		<boundSize>2</boundSize>
+		<clampBoundSize>0</clampBoundSize>
+		<clearBound>true</clearBound>
+	</GConfig>
+	<Images>
+		<Image name="Icon_default">
+			<!-- icon_else must stay the first icons -->
+			<src path="ExportTextures/icon_else" />
+			<src path="ExportTextures/icon_chat" />
+			<src path="ExportTextures/icon_eventcenter" />
+		</Image>
+		<Image name="Icon_items">
+			<src path="ExportTextures/icon_item" />
+		</Image>
+		<Image name="Icon_chests">
+			<src path="ExportTextures/icon_chest" />		
+		</Image>
+		<Image name="Icon_backgrounds">
+			<src path="OriginTexture/background"/>
+			<src path="ExportTextures/icon_itemGear" />
+			<src path="ExportTextures/icon_research" />
+			<Config>
+				<boundSize>6</boundSize>
+				<clampBoundSize>0</clampBoundSize>
+			</Config>
+		</Image>
+        <Image name="Icon_noCompress">
+			<src path="ExportTextures/icon_noCompress" />
+			<Config>
+				<boundSize>2</boundSize>
+			</Config>
+		</Image>
+		
+		<Image name="Icon_units">
+			<src path="ExportTextures/icon_unit" />
+			<src path="ExportTextures/icon_building" />
+		</Image>
+		<Image name="Icon_units_H">
+			<src path="ExportTextures/icon_unit_H" />
+		</Image>
+       
+        <Image name="Icon_pveheros">
+			<src path="OriginTexture/hero" />
+			<Config>
+				<boundSize>4</boundSize>
+				<clampBoundSize>2</clampBoundSize>
+			</Config>
+		</Image>
+		
+		 <Image name="Icon_heros">
+			<src path="ExportTextures/icon_general" />
+			<src path="ExportTextures/icon_hero" />
+		</Image>
+		
+	</Images>
+	<Distribution>
+		<Release>
+			<!--dstPath>Resources/Textures/UI/Atlas/</dstPath-->
+			<meta ref="Icon_default"/>
+
+			<meta ref="Icon_items"/>
+			<meta ref="Icon_chests"/>
+			
+			<meta ref="Icon_backgrounds"/>
+			<meta ref="Icon_noCompress">
+				<textureFormat>AutomaticTruecolor</textureFormat>
+			</meta>
+			<meta ref="Icon_units_H">
+				<textureFormat>AutomaticTruecolor</textureFormat>
+			</meta>
+            <meta ref="Icon_units"/>
+            <meta ref="Icon_pveheros"/>
+            <meta ref="Icon_heros"/>
+		</Release>
+<!--		<Release>
+			<dstPath>Resources/low/Textures/UI/Atlas/</dstPath>
+			<meta ref="Icon_default">
+				<scaleSize>2</scaleSize>
+			</meta>
+			<meta ref="Icon_units">
+				<scaleSize>2</scaleSize>
+			</meta>
+			<meta ref="Icon_items">
+				<scaleSize>2</scaleSize>
+			</meta>
+			<meta ref="Icon_chests">
+				<scaleSize>2</scaleSize>
+			</meta>
+			<meta ref="Icon_heros">
+				<scaleSize>2</scaleSize>
+			</meta>
+			<meta ref="Icon_backgrounds">
+				<scaleSize>2</scaleSize>
+			</meta>
+			<meta ref="Icon_pveheros">
+				<scaleSize>2</scaleSize>
+			</meta>
+		</Release>-->
+	</Distribution>
+	<Tiles>
+		<Tile>
+			<name>Login_bubble</name>
+			<bounder>
+				<left>18</left>
+				<right>18</right>
+				<top>18</top>
+				<bottom>18</bottom>
+			</bounder>
+		</Tile>
+		<Tile>
+			<name>popup1_transparent</name>
+			<bounder>
+				<left>54</left>
+				<right>54</right>
+				<top>54</top>
+				<bottom>54</bottom>
+			</bounder>
+		</Tile>
+		<!-- ============================================= -->
+		<!-- =============Start Resource Icon============= -->
+		<!-- ============================================= -->
+		<Tile><name>icon_num1000</name><alias hide="true">ICON_NUM_ALIAS1</alias></Tile>
+		<Tile><name>icon_num5000</name><alias hide="true">ICON_NUM_ALIAS2</alias></Tile>
+		<Tile><name>icon_num10000</name><alias hide="true">ICON_NUM_ALIAS3</alias></Tile>
+		<Tile><name>icon_num20000</name><alias hide="true">ICON_NUM_ALIAS4</alias></Tile>
+		<Tile><name>icon_num40000</name><alias hide="true">ICON_NUM_ALIAS5</alias></Tile>
+		<Tile><name>icon_num250000</name><alias hide="true">ICON_NUM_ALIAS6</alias></Tile>
+		<Tile><name>icon_num500000</name><alias hide="true">ICON_NUM_ALIAS7</alias></Tile>
+		<TileIntRange>
+			<range>
+				<start>1001</start>
+				<end>1048</end>
+			</range>
+			<p>
+				<p0>{0}/10%100</p0>
+				<p1>{0}%10</p1>
+				<p2>{0}</p2>
+			</p>
+			<Tile>
+				<name>i{p2}</name>
+				<TileNode><ref>icon_rec{p0}</ref><deep>0</deep></TileNode>
+				<TileNode><ref>ICON_NUM_ALIAS{p1}</ref><deep>1</deep></TileNode>
+			</Tile>
+		</TileIntRange>
+		<!-- ============================================= -->
+		<!-- ========Start SpecialNameStone Icon========== -->
+		<!-- ============================================= -->
+		<TileIntRange>
+			<range>
+				<start>42000</start>
+				<end>42400</end>
+			</range>
+			<p>
+				<p0>{0}</p0>
+				<p1>{0}-({0}%100)</p1>
+			</p>
+			<Tile>
+				<name>i{p0}</name>
+				<TileNode><ref>g{p1}</ref><deep>0</deep></TileNode>
+			</Tile>
+		</TileIntRange>
+		<!-- ============================================= -->
+		<!-- =============Start VipItem Icon============== -->
+		<!-- ============================================= -->
+		<TileIntRange>
+			<range start="1" end="10" />
+			<p>
+				<type>{0}</type>
+			</p>
+			<Tile>
+				<name>TempVIP</name>
+				<alias hide="true">VipPointAlias{type}</alias>
+			</Tile>
+		</TileIntRange>
+		<Tile>
+			<name>VIPPoint</name>
+			<alias hide="true">VipPointAlias0</alias>
+		</Tile>
+		<TileIntRange>
+			<range start="0" end="100" />
+			<p>
+				<level>{0}</level>
+			</p>
+			<Tile>
+				<name>VIPPoint_{level}</name>
+				<alias hide="true">VIP_Alias0_{level}</alias>
+			</Tile>
+		</TileIntRange>
+		<TileIntRange>
+			<range start="1" end="10" />
+			<p>
+				<type>{0}</type>
+			</p>
+			<TileIntRange>
+				<range start="0" end="100" />
+				<p>
+					<level>{0}</level>
+				</p>
+				<Tile>
+					<name>TempVIP_{level}</name>
+					<alias hide="true">VIP_Alias{type}_{level}</alias>
+				</Tile>
+			</TileIntRange>
+		</TileIntRange>
+
+		<TileIntRange>
+			<range start="21000" end="21003" />
+			<range start="21501" end="21510" />
+			<p>
+				<id>{0}</id>
+				<type>{0}/100%10</type>
+				<level>{0}%100</level>
+			</p>
+			<Tile>
+				<name>i{id}</name>
+				<TileNode><ref>VipPointAlias{type}</ref><deep>0</deep></TileNode>
+				<TileNode><ref>VIP_Alias{type}_{level}</ref><deep>1</deep></TileNode>
+			</Tile>
+		</TileIntRange>
+		
+		<!-- ============================================= -->
+		<!-- ===============Start Hero Icon=============== -->
+		<!-- ============================================= -->
+		<Tile>
+			<name>heronumber_5</name>
+			<alias hide="true">heronumber_Alias_0</alias>
+		</Tile>
+		<Tile>
+			<name>heronumber_50</name>
+			<alias hide="true">heronumber_Alias_1</alias>
+		</Tile>
+		<Tile>
+			<name>heronumber_200</name>
+			<alias hide="true">heronumber_Alias_2</alias>
+		</Tile>
+		<TileIntRange>
+			<range>
+				<start>30000</start>
+				<end>40000</end>
+			</range>
+			<p>
+				<p0>{0}</p0>
+				<p1>{0}/10%1000</p1>
+				<p2>{0}%10</p2>
+			</p>
+			<Tile>
+				<name>i{p0}</name>
+				<TileNode><ref>heroicon_{p1}</ref><deep>0</deep></TileNode>
+				<TileNode><ref>heronumber_Alias_{p2}</ref><deep>1</deep></TileNode>
+			</Tile>
+		</TileIntRange>
+		
+			<!-- ============================================= -->
+		<!-- =============Start HeroElevate Item Icon============== -->
+		<!-- ============================================= -->
+		
+		<Tile><name>CKSkillLevelup</name><alias hide="true">SkillLevelUp_Tier1</alias></Tile>
+		<Tile><name>RTKSkillLevelup</name><alias hide="true">SkillLevelUp_Tier2</alias></Tile>
+		<Tile><name>FKSkillLevelup</name><alias hide="true">SkillLevelUp_Tier3</alias></Tile>
+		
+		<Tile><name>CKHeroElevate</name><alias hide="true">HeroElevate_Tier1</alias></Tile>
+		<Tile><name>RTKHeroElevate</name><alias hide="true">HeroElevate_Tier2</alias></Tile>
+		<Tile><name>FKHeroElevate</name><alias hide="true">HeroElevate_Tier3</alias></Tile>
+		
+		<TileIntRange>
+			<range start="21200" end="21205" />
+			<range start="21210" end="21215" />
+			<range start="21220" end="21225" />
+			<p>
+				<id>{0}</id>
+				<type>{0}/10%10+1</type>
+				<level>{0}%10+1</level>
+			</p>
+			<Tile>
+				<name>i{id}</name>
+				<TileNode><ref>HeroElevate_Tier{type}</ref><deep>0</deep></TileNode>
+				<TileNode><ref>HeroElevate_lv{level}</ref><deep>1</deep></TileNode>
+			</Tile>
+		</TileIntRange>
+		
+		<TileIntRange>
+			<range start="21250" end="21280" />
+			<p>
+				<id>{0}</id>
+				<type>{0}/10%10-4</type>
+				<level>{0}%10+1</level>
+			</p>
+			<Tile>
+				<name>i{id}</name>
+				<TileNode><ref>SkillLevelUp_Tier{type}</ref><deep>0</deep></TileNode>
+				<TileNode><ref>HeroElevate_lv{level}</ref><deep>1</deep></TileNode>
+			</Tile>
+		</TileIntRange>
+		<!--
+		 <Tile>
+			 <name hide="true">button_60_128</name>
+			 <alias>button_frame</alias>
+			 <alias hide="true">button_others</alias>
+			 <alias hide="true">button_60_grey_down128</alias>
+		 </Tile>
+		<Tile>
+			<name>ButtonDown</name>
+			<TileNode>
+				<ref>buttton_60_128</ref>
+				<deep>0</deep>
+				<bounder>
+					<left>32</left>
+					<right>32</right>
+					<top>32</top>
+					<bottom>32</bottom>
+				</bounder>
+			</TileNode>
+			<TileNode>
+				<ref>button_60_grey_down128</ref>
+				<deep>1</deep>
+				<bounder>
+					<left>16</left>
+					<right>16</right>
+					<top>16</top>
+					<bottom>16</bottom>
+				</bounder>
+			</TileNode>
+		</Tile>
+		-->
+	</Tiles>
+</Atlas>

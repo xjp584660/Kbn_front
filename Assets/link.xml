@@ -1,0 +1,19 @@
+<linker>
+    <assembly fullname="mscorlib">
+        <namespace fullname="System.Security.Cryptography" preserve="all"/>
+    </assembly>
+    <assembly fullname="System">
+        <type fullname="System.Net.Configuration.WebRequestModuleHandler" preserve="all"/>
+        <type fullname="System.Net.HttpRequestCreator" preserve="all"/>
+	</assembly>
+	<assembly fullname="System">
+
+    <type fullname="System.ComponentModel.TypeConverter" preserve="all" />
+
+    <!-- <namespace fullname="System.ComponentModel" preserve="all" /> -->
+
+  	</assembly>
+  	<assembly fullname="System.Core">
+        <type fullname="System.Linq.Expressions.Interpreter.LightLambda" preserve="all" />
+    </assembly>
+</linker>

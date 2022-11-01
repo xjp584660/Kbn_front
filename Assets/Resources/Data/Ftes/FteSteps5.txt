@@ -1,0 +1,217 @@
+{
+    "Datas": [
+        {
+            "Id": 1,
+            "Name": "InitGearUpgradeData",
+            "GuideAction": "GearLevelupInit",
+            ".Init": {
+                "Datas": {
+                    "InList": {
+                        "GearId": 1001001,
+                        "GearCount": 1,
+                        "GearStarLevel": 1,
+                        "GearSkillLevel": 1,
+                        "GearPlayerId": -1000,
+                        "GearSkill": [
+                            20120001,
+                            20120001,
+                            20000000,
+                            20000000
+                        ]
+                    },
+                    "InScroll": {
+                        "0": {
+                            "ItemId": 5001,
+                            "ItemCount": 1
+                        },
+                        "1": {
+                            "ItemId": 5101,
+                            "ItemCount": 4
+                        },
+                        "3": {
+                            "ItemId": 5004,
+                            "ItemCount": 1
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "Id": 2,
+            "Name": "xxx1111",
+            "IsCanSkip": false,
+            "IsNotifyServer": true,
+            "SkipPhpNames": ["gearStrengthen.php"],
+            "FakeDatas": null,
+            "CompleteConditions": null,
+            "Rewards": null,
+            "GuideAction": "ShowDialog",
+            "HasDialog": true,
+            "DialogAvatar": "xxxxAvatar",
+            "DialogContent": "Gear.UpgradeGearFTE1",
+            "DialogLayout": "Center",
+            "HasGuideArrow": false,
+            "GuideArrowLayout": "Rightwards",
+            "HasHighlightBorder": false,
+            "HighlightLayout": "Wrap",
+            "TraceUIObject": null,
+            "TraceDragDroppedTargetObj": null
+        },
+        {
+            "Id": 3,
+            "Name": "xxx33333",
+            "IsCanSkip": false,
+            "IsNotifyServer": true,
+            "SkipPhpNames": ["gearStrengthen.php"],
+            "FakeDatas": null,
+            "CompleteConditions": null,
+            "Rewards": null,
+            "GuideAction": "GuideDragDrop",
+            "HasDialog": false,
+            "DialogAvatar": "xxxxAvatar",
+            "DialogContent": "",
+            "DialogLayout": "Top",
+            "HasGuideArrow": false,
+            "GuideArrowLayout": "Upwards",
+            "HasHighlightBorder": true,
+            "HighlightLayout": "Wrap",
+            "TraceUIObject": "ArmMenu.tabControl.Items.arrayItem1.strengthenItemsView.arrayItem0",
+            "HasDragIndicator": true,
+            "IndicatorText": "Gear.FTEDragTips",
+            "TraceDragDroppedTargetObj": "ArmMenu.tabControl.Items.arrayItem1.centerArm",
+            "TraceTargetType": "Done"
+        },
+	{
+            "Id": 4,
+            "Name": "wait time",
+	    "SkipPhpNames": ["gearStrengthen.php"],
+            "GuideAction": "WaitTime",
+            "WaitTime": 0.6,
+	    "NetServerReturn": {
+                "gearStrengthen.php": {
+                    "ok": true,
+                    "currentLevel": 1,
+                    "isWorldGems": false,
+		    "randStr":"41_900",
+		    "incMight":"6",
+		   "costHammerCnt":1,
+		   "hammerItemId":5001,
+		   "costItemId":5101,
+		   "costItemCnt":2
+                }
+            }
+        },
+        {
+            "Id": 5,
+            "Name": "xxx33333",
+            "IsCanSkip": false,
+            "IsNotifyServer": true,
+            "SkipPhpNames": ["gearStrengthen.php"],
+            "FakeDatas": null,
+            "CompleteConditions": null,
+            "Rewards": null,
+            "GuideAction": "ShowDialog",
+            "HasDialog": true,
+            "DialogAvatar": "xxxxAvatar",
+            "DialogContent": "Gear.UpgradeGearFTE2",
+            "DialogLayout": "BottomCenter",
+            "HasGuideArrow": false,
+            "GuideArrowLayout": "Upwards",
+            "HasHighlightBorder": false,
+            "HighlightLayout": "Wrap",
+            "TraceUIObject": null,
+            "TraceDragDroppedTargetObj": null
+        },
+        {
+            "Id": 6,
+            "Name": "xxx33333",
+            "IsCanSkip": false,
+            "IsNotifyServer": true,
+            "SkipPhpNames": ["gearStrengthen.php"],
+            "FakeDatas": null,
+            "CompleteConditions": null,
+            "Rewards": null,
+            "GuideAction": "GuideDragDrop",
+            "HasDialog": false,
+            "DialogAvatar": "xxxxAvatar",
+            "DialogContent": "",
+            "DialogLayout": "Top",
+            "HasGuideArrow": false,
+            "GuideArrowLayout": "Upwards",
+            "HasHighlightBorder": true,
+            "HighlightLayout": "Wrap",
+            "TraceUIObject": "ArmMenu.tabControl.Items.arrayItem1.strengthenItemsView.arrayItem3",
+            "HasDragIndicator": true,
+            "IndicatorText": "Gear.FTEDragTips",
+            "TraceDragDroppedTargetObj": "ArmMenu.tabControl.Items.arrayItem1.centerArm"
+        },
+		{
+            "Id": 7,
+            "Name": "wait time",
+			"SkipPhpNames": ["gearStrengthen.php"],
+            "GuideAction": "WaitTime",
+            "WaitTime": 0.6,
+	  		"NetServerReturn": {
+                "gearStrengthen.php": {
+                    "ok": true,
+                    "currentLevel": 2,
+                    "isWorldGems": false,
+		    		"randStr":"41_900",
+		    		"incMight":"6",
+		   			"costHammerCnt":1,
+		   			"hammerItemId":5004,
+					"costItemId":5101,
+					"costItemCnt":2
+                }
+            }
+        },
+        {
+            "Id": 8,
+            "Name": "xxx33333",
+            "IsCanSkip": false,
+            "IsNotifyServer": true,
+            "SkipPhpNames": ["gearStrengthen.php"],
+            "FakeDatas": null,
+            "CompleteConditions": null,
+            "Rewards": null,
+            "GuideAction": "ShowDialog",
+            "HasDialog": true,
+            "DialogAvatar": "xxxxAvatar",
+            "DialogContent": "Gear.UpgradeGearFTE3",
+            "DialogLayout": "BottomCenter",
+            "HasGuideArrow": false,
+            "GuideArrowLayout": "Upwards",
+            "HasHighlightBorder": false,
+            "HighlightLayout": "Wrap",
+            "TraceUIObject": null,
+            "TraceDragDroppedTargetObj": null
+        },
+        {
+            "Id": 9,
+            "Name": "ClearAllItemInWeaponContain",
+			"SkipPhpNames": ["gearStrengthen.php"],
+            "GuideAction": "ClearFakeDatas"
+        },
+        {
+            "Id": 10,
+            "Name": "xxx33333",
+            "IsCanSkip": false,
+            "IsNotifyServer": true,
+            "SkipPhpNames": ["gearStrengthen.php"],
+            "FakeDatas": null,
+            "CompleteConditions": null,
+            "Rewards": null,
+            "GuideAction": "GuideButton",
+            "HasDialog": false,
+            "DialogAvatar": "xxxxAvatar",
+            "DialogContent": "Gear.ChangeGearFTE2",
+            "DialogLayout": "Center",
+            "HasGuideArrow": true,
+            "GuideArrowLayout": "Upwards",
+            "HasHighlightBorder": false,
+            "HighlightLayout": "Wrap",
+            "TraceUIObject": "ArmMenu.mMenuHead.btn_left",
+            "TraceDragDroppedTargetObj": null
+        }
+    ]
+}

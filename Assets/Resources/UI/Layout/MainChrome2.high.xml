@@ -1,0 +1,731 @@
+<KBNMenu>
+	<Grid Name="MainChrom">
+		<!-- Top -->
+		<ContainRef Name="MainChrom.TopBar" Grid.Row = "0" Grid.Col="0">
+<!--            <Label NormalBackground="{Texture black_Translucent:DECORATION}" ContainRef.deep="0" />-->
+<!--			<ObjToUI RefName="topBg" ContainRef.deep="1"/>-->
+				<Label rect="{0,0,640,152}" >
+				<Label.RealObj.mystyle.normal background="{Texture black_Translucent:DECORATION}"/>
+				<Label.RealObj.mystyle border="{2,2,2,2}"/>
+				<Label.RealObj.mystyle overflow="{0,0,0,-45}"/>
+			</Label>
+			<Grid Name="MainChrom.TopBar.TopButtonFrame">
+				<!-- Data -->
+				<Grid Name="MainChrom.TopBar.TopButtonFrame.TopButtonBar" Grid.Row = "0" Grid.Col="0">
+					<Grid.RowDefinitions>
+						<RowDefinition Height="175"/>
+					</Grid.RowDefinitions>
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="*9"/>
+						<ColumnDefinition Width="*9"/>
+						<!--ColumnDefinition Width="122"/-->
+						<ColumnDefinition Width="*5"/>
+					</Grid.ColumnDefinitions>
+					<ContainRef Name="MainChrom.TopBar.TopButtonFrame.TopButtonBar.TopBottomHome" Grid.Row="0" Grid.Col="0">
+						<ObjToUI RefName="btnHome" ContainRef.deep = "0" ContainRef.hFill = "Fill" ContainRef.vFill = "DockTop" ContainRef.lockRadio = "false" >
+							<ObjToUI.RealObj.mystyle.normal background="{Texture button_user info_normal_HD:BUTTON}"/>
+							<ObjToUI.RealObj.mystyle.active background="{Texture button_user info_down_HD:BUTTON}"/>
+							<ObjToUI.RealObj.mystyle border="{50,50,50,50}"/>
+						</ObjToUI>
+						<Grid Name="MainChrom.TopBar.TopButtonFrame.TopButtonBar.TopBottomHome.TopHomeButtonGrid" Border="{5,20,0,0}">
+							<Grid.RowDefinitions>
+								<RowDefinition />
+							</Grid.RowDefinitions>
+							<Grid.ColumnDefinitions>
+								<ColumnDefinition Width="*4"/>
+								<ColumnDefinition Width="*7"/>
+							</Grid.ColumnDefinitions>
+                            <Grid Border = "{15,0,15,25}" Grid.Col="0" Grid.Row="0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*1"/>
+                                    <RowDefinition Height="*1"/>
+                                </Grid.RowDefinitions>
+                                <ContainRef Name="VIPLevel" Border="{6,10,0,0}" Grid.Col="0" Grid.Row="0">
+                                    <Label ContainRef.deep = "0">
+										<Label.RealObj.mystyle.normal background="{Texture city_background2:BACKGROUND}"/>
+									</Label>
+                                    <Label FontSizeEnum="Font_40" NormalTextColorEnum="Button_White" Alignment="MiddleLeft"  ContainRef.deep = "1">
+                                        <Label.RealObj image="{Texture VIP:DECORATION}" txt="0"/>
+                                    </Label>
+                                </ContainRef>
+                                <ContainRef Border="{6,0,0,0}" Name="MainChrom.TopBar.TopButtonFrame.TopButtonBar.TopBottomHome.TopHomeButtonGird.TopLevelBall" Grid.Col="0" Grid.Row="1">
+									<Label NormalBackground="{Texture square_black:DECORATION}" BackgroundBorder="{15,15,10,10}" ContainRef.deep="0" />
+                                    <ContainRef Border="{3,0,3,3}" >
+                                        <Grid>
+                                            <ContainRef Grid.Col="0" Grid.Row="0">
+                                                <Label ContainRef.deep="0" ContainRef.lockRadio="true">
+                                                   <Label.RealObj rect="{0,0,101,68}"/>
+                                                    <Label.RealObj.mystyle.normal background="{Texture Button_UserInfo_lv_HD:DECORATION}"/>
+                                               </Label>
+                                            </ContainRef>
+                                            <ContainRef Grid.Col="1" Grid.Row="0">
+                                                <ObjToUI RefName="crown" FontSizeEnum="Font_40" NormalTextColorEnum="Button_White" FontTypeEnum="TREBUC" Alignment="MiddleLeft">
+                                                	<ObjToUI.RealObj.mystyle.border left="30" />
+                                                	<ObjToUI.RealObj.mystyle contentOffset="{0,0}"/>
+                                                </ObjToUI>
+                                            </ContainRef>
+                                        </Grid>
+                                    </ContainRef>
+                                </ContainRef>
+
+                            </Grid>
+                            <Grid Name="MainChrom.TopBar.TopButtonFrame.TopButtonBar.TopBottomHome.TopHomeButtonGird.TopHomeButtonRightsInfo" Grid.Col="1" Grid.Row="0">
+
+								<Grid.RowDefinitions>
+									<RowDefinition Height="*2"/>
+									<RowDefinition Height="*4"/>
+									<RowDefinition Height="*4"/>
+									<RowDefinition Height="*3"/>
+									<RowDefinition Height="*2"/>
+								</Grid.RowDefinitions>
+								<ContainRef Name="TopName" Grid.Row="1" Grid.Col="0">
+									<ObjToUI RefName="userName" FontSizeEnum="Font_36" />
+								</ContainRef>
+								<ContainRef Name="TopMight" Grid.Row="2" Grid.Col="0" >
+									<ObjToUI RefName="might" FontSizeEnum="Font_36" />
+								</ContainRef>
+								<ContainRef Name="TopXpBar" Grid.Row="3" Grid.Col="0">
+									<ObjToUI RefName="xpBar" ContainRef.deep="0" ContainRef.vFill = "Center" ContainRef.hFill="Fill" ContainRef.lockType="LockHeight" >
+										<ObjToUI.RealObj rect="{0,0,66,34}"/>
+										<ObjToUI.RealObj.mystyle.normal background="{Texture lv_The-progress-bar2_HD:DECORATION}"/>
+										<ObjToUI.RealObj.mystyle border="{20,20,0,0}"/>
+										<ObjToUI.RealObj.thumb.mystyle.normal background="{Texture lv_The-progress-bar1_HD:DECORATION}"/>
+										<ObjToUI.RealObj.thumb.mystyle border="{20,20,0,0}"/>
+									</ObjToUI>
+								</ContainRef>
+							</Grid>
+						</Grid>
+					</ContainRef>
+					<ContainRef Name="MainChrom.TopBar.TopButtonFrame.TopButtonBar.TopBottomCity" Grid.Row="0" Grid.Col="1">
+						<ObjToUI RefName="btnCities">
+							<ObjToUI.RealObj.mystyle.normal background="{Texture button_user info_normal_HD:BUTTON}"/>
+							<ObjToUI.RealObj.mystyle.active background="{Texture button_user info_down_HD:BUTTON}"/>
+							<ObjToUI.RealObj.mystyle border="{50,50,50,50}"/>
+						</ObjToUI>
+						<Panel>
+							<Grid>
+								<Grid.RowDefinitions>
+									<RowDefinition />
+									<RowDefinition Height="22"/>
+								</Grid.RowDefinitions>
+								<Grid.ColumnDefinitions>
+									<ColumnDefinition Width="22"/>
+									<ColumnDefinition Width="318"/>
+								</Grid.ColumnDefinitions>
+								<ContainRef Grid.Col="1" Grid.Row="0">
+									<ObjToUI RefName="l_city">
+										<ObjToUI.RealObj InGroup="true"/>
+										<!-- <ObjToUI.RealObj.mystyle.normal background="{PrefabTexture f1_0_4_1:Building}"/> -->
+										<!-- <ObjToUI.RealObj.mystyle.overflow left="21" right="21" top="131" bottom="92"/> -->
+									</ObjToUI>
+								</ContainRef>
+							</Grid>
+							<Grid Name="MainChrom.TopBar.TopButtonFrame.TopButtonBar.TopBottomCity.TopCityGrid">
+								<Grid.RowDefinitions>
+									<RowDefinition Height="10"/>
+									<RowDefinition/>
+									<RowDefinition Height="10"/>
+								</Grid.RowDefinitions>
+								<Grid.ColumnDefinitions>
+									<ColumnDefinition Width="10"/>
+									<ColumnDefinition />
+									<ColumnDefinition />
+									<ColumnDefinition Width="20"/>
+								</Grid.ColumnDefinitions>
+								<ContainRef Name="MainChrom.TopBar.TopButtonFrame.TopButtonBar.TopBottomCity.TopCityGrid.CityIcon" MaxWidth="250" Grid.Row="1" Grid.Col="1">
+									<!--ObjToUI RefName="cityBack" ContainRef.deep="0" ContainRef.lockRadio = "true"/-->
+                                    <Panel>
+                                        <ContainRef Name="CityDefenseStatus" Panel.inDeep="2" Border="{10,0,0,10}">
+                                            <Label rect="{0,0,70,90}" ContainRef.deep="0" ContainRef.hFill="DockLeft" ContainRef.vFill="DockBottom" ContainRef.lockType="LockSize">
+                                                <Label.RealObj tile="{Tile IconSpt:city_troops_unhidden}"/>
+                                            </Label>
+                                        </ContainRef>
+                                    </Panel>
+								</ContainRef>
+								<Grid Name="MainChrom.TopBar.TopButtonFrame.TopButtonBar.TopBottomCity.TopCityGrid.CityInfoGrid" Border="{0,10,10,10}" Grid.Row="1" Grid.Col="2">
+									<Grid.RowDefinitions>
+										<RowDefinition Height="*4"/>
+										<RowDefinition Height="*7"/>
+									</Grid.RowDefinitions>
+									<ContainRef Name="MainChrom.TopBar.TopButtonFrame.TopButtonBar.TopBottomCity.TopCityGrid.CityInfoGrid.TopCityName" Grid.Row="0" Grid.Col="0">
+										<ObjToUI RefName="cityName" FontSizeEnum="Font_36" Alignment="MiddleRight"/>
+									</ContainRef>
+									<ContainRef Name="MainChrom.TopBar.TopButtonFrame.TopButtonBar.TopBottomCity.TopCityGrid.CityInfoGrid.TopCityCoord" Grid.Row="1" Grid.Col="0">
+										<ObjToUI RefName="citycoord" FontSizeEnum="Font_36" Alignment="MiddleRight"/>
+									</ContainRef>
+								</Grid>
+							</Grid>
+						</Panel>
+					</ContainRef>
+					<!--ContainRef Name="MainChrom.TopBar.TopButtonFrame.TopButtonBar.SODA" Grid.Col="2" Grid.Row="0">
+						<ObjToUI RefName="btnSODA" FontSizeEnum="Font_18" ContainRef.deep="0" ContainRef.lockRadio="false">
+							<ObjToUI.RealObj.mystyle.normal background="{Texture button_soda:BUTTON}"/>
+							<ObjToUI.RealObj.mystyle.active background="{Texture button_soda_down:BUTTON}"/>
+							<ObjToUI.RealObj.mystyle border="{15,15,5,5}"/>
+						</ObjToUI>
+					</ContainRef-->
+
+					<ContainRef Name="MainChrom.TopBar.TopButtonFrame.TopButtonBar.TopBottomGem" Grid.Col="2" Grid.Row="0">
+						<ObjToUI RefName="btnMoney" FontSizeEnum="Font_36" ContainRef.deep="0" ContainRef.lockRadio="false">
+							<ObjToUI.RealObj.mystyle.normal background="{Texture button_gem_60_green_normal_HD:BUTTON}"/>
+							<ObjToUI.RealObj.mystyle.active background="{Texture button_gem_60_green_down_HD:BUTTON}"/>
+							<ObjToUI.RealObj.mystyle border="{50,50,50,50}"/>
+						</ObjToUI>
+						<ObjToUI RefName="gemsAnimation" ContainRef.deep="1" ContainRef.lockRadio="false"/>
+						<Grid Name="MainChrom.TopBar.TopButtonFrame.TopButtonBar.TopBottomGem.TopGemGrid" Border="{25,0,0,0}" >
+							<Grid.RowDefinitions>
+								<RowDefinition/>
+							</Grid.RowDefinitions>
+							<Grid.ColumnDefinitions>
+								<ColumnDefinition/>
+								<ColumnDefinition Width="120"/>
+							</Grid.ColumnDefinitions>
+							<ContainRef Name="MainChrom.TopBar.TopButtonFrame.TopButtonBar.TopBottomGem.TopGemGrid.TopGemPic" Grid.Col = "1" Grid.Row="0">
+								<ObjToUI RefName="gemIcon" ContainRef.deep="0" ContainRef.hFill="DockRight" ContainRef.vFill="Fill" ContainRef.lockType="LockRadio"/>
+							</ContainRef>
+							<Grid Name="MainChrom.TopBar.TopButtonFrame.TopButtonBar.TopBottomGem.TopGemGrid.MoneyGrid" Grid.Col="0" Grid.Row="0">
+								<Grid.RowDefinitions>
+									<RowDefinition Height="*3"/>
+									<RowDefinition Height="*2"/>
+									<RowDefinition Height="*1"/>
+								</Grid.RowDefinitions>
+								<ContainRef Name="MainChrom.TopBar.TopButtonFrame.TopButtonBar.TopBottomGem.TopGemGrid.MoneyGrid.TopMoneyNum" MinWidth="32" Grid.Col="0" Grid.Row="0">
+									<ObjToUI RefName="money" FontSizeEnum="Font_36" Alignment="LowerCenter" />
+								</ContainRef>
+								<ContainRef Grid.Col="0" Grid.Row="1">
+									<Label FontSizeEnum="Font_36" Text="{DataTxt Common.GetMore}" FontTypeEnum="GEORGIAB" rect="{0, 0, 180,60}" NormalTextColorEnum="Button_White" Alignment="MiddleLeft" >
+									</Label>
+								</ContainRef>
+							</Grid>
+						</Grid>
+					</ContainRef>
+				</Grid>
+				<ContainRef Name="MainChrom.TopBar.TopButtonFrame.TopResourcesArea" Grid.Col="0" Grid.Row="1" MaxHeight="96">
+					<ObjToUI RefName="resourceBg">
+						<ObjToUI.RealObj.mystyle.normal background="{Texture resource bar_normal_HD:DECORATION}"/>
+						<ObjToUI.RealObj.mystyle border="{85,85,0,0}"/>
+					</ObjToUI>
+					<Grid Name="MainChrom.TopBar.TopButtonFrame.TopResourcesArea.TopResourceBar">
+						<Grid.RowDefinitions>
+							<RowDefinition Height="2"/>
+							<RowDefinition/>
+							<RowDefinition Height="0"/>
+						</Grid.RowDefinitions>
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition Width="45"/>
+<!--							<ColumnDefinition Width="150"/>-->
+							<ColumnDefinition MinWidth="400"/>
+							<ColumnDefinition Width="64"/>
+						</Grid.ColumnDefinitions>
+						
+						
+<!--						<ContainRef Name="MainChrom.TopBar.TopButtonFrame.TopResourcesArea.TopResourceBar.TopTime" Grid.Col="1" Grid.Row="1">
+							<ObjToUI RefName="time" FontSizeEnum="Font_36" Alignment="MiddleCenter" ContainRef.deep="1" ContainRef.hFill="Fill" ContainRef.vFill="Center" ContainRef.lockType="LockRadio"/>			
+						</ContainRef>-->
+						
+						<ContainRef Name="MainChrom.TopBar.TopButtonFrame.TopResourcesArea.TopResourceBar.ResBar" Height="70" Grid.Col="1" Grid.Row="1">
+							<ObjToUI RefName="btnRes">
+								<ObjToUI.RealObj.mystyle.normal background="{Texture button_resource bar_normal_HD:BUTTON}"/>
+								<ObjToUI.RealObj.mystyle.active background="{Texture button_resource bar_down_HD:BUTTON}"/>
+								<ObjToUI.RealObj.mystyle border="{50,50,70,70}"/>
+							</ObjToUI>
+							<Grid Name="MainChrom.TopBar.TopButtonFrame.TopResourcesArea.TopResourceBar.ResList" Border="{40,30,0,0}" >
+								<Grid.ColumnDefinitions>
+									<ColumnDefinition Width="72"/><ColumnDefinition/>
+									<ColumnDefinition Width="72"/><ColumnDefinition/>
+									<ColumnDefinition Width="72"/><ColumnDefinition/>
+									<ColumnDefinition Width="72"/><ColumnDefinition/>
+									<ColumnDefinition Width="72"/><ColumnDefinition/>
+									<ColumnDefinition Width="72"/><ColumnDefinition/>
+								</Grid.ColumnDefinitions>
+								
+								<ContainRef Grid.Col="0" Grid.Row="0">
+									<Label NormalBackground="{Texture resource_Food_icon:ICON}" ContainRef.deep="0" ContainRef.lockRadio="true" />
+								</ContainRef>
+								<ContainRef Grid.Col="1" Grid.Row="0">
+									<ObjToUI RefName="food" FontSizeEnum="Font_32" />
+								</ContainRef>
+								<ContainRef Grid.Col="2" Grid.Row="0">
+									<Label NormalBackground="{Texture resource_Wood_icon:ICON}" ContainRef.deep="0" ContainRef.lockRadio="true" />
+								</ContainRef>
+								<ContainRef Grid.Col="3" Grid.Row="0">
+									<ObjToUI RefName="lumber" FontSizeEnum="Font_32" />
+								</ContainRef>
+								<ContainRef Grid.Col="4" Grid.Row="0">
+									<Label NormalBackground="{Texture resource_Stone_icon:ICON}" ContainRef.deep="0" ContainRef.lockRadio="true" />
+								</ContainRef>
+								<ContainRef Grid.Col="5" Grid.Row="0">
+									<ObjToUI RefName="stone" FontSizeEnum="Font_32" />
+								</ContainRef>
+								<ContainRef Grid.Col="6" Grid.Row="0">
+									<Label NormalBackground="{Texture resource_Ore_icon:ICON}" ContainRef.deep="0" ContainRef.lockRadio="true" />
+								</ContainRef>
+								<ContainRef Grid.Col="7" Grid.Row="0">
+									<ObjToUI RefName="steel" FontSizeEnum="Font_32" />
+								</ContainRef>								
+								<ContainRef Grid.Col="8" Grid.Row="0">
+									<Label NormalBackground="{Texture resource_Steel_icon:ICON}" ContainRef.deep="0" ContainRef.lockRadio="true" />
+								</ContainRef>
+								<ContainRef Grid.Col="9" Grid.Row="0">
+									<ObjToUI RefName="carmot" FontSizeEnum="Font_32" />
+								</ContainRef>
+								<ContainRef Grid.Col="10" Grid.Row="0">
+									<Label NormalBackground="{Texture resource_Gold_icon:ICON}" ContainRef.deep="0" ContainRef.lockRadio="true" />
+								</ContainRef>
+								<ContainRef Grid.Col="11" Grid.Row="0">
+									<ObjToUI RefName="gold" FontSizeEnum="Font_32" />
+								</ContainRef>
+							</Grid>
+						</ContainRef>
+					</Grid>
+				</ContainRef>
+				
+					<Grid Name="MainChrom.TopBar.TopButtonFrame.TopResourcesArea.TopResourceBar.TopTime.TopGrid" Grid.Col="0" Grid.Row="2" >
+							<Grid.RowDefinitions>
+								<RowDefinition Height="47"/>								
+							</Grid.RowDefinitions>
+							<Grid.ColumnDefinitions>
+								<ColumnDefinition Width="*12"/>
+								<ColumnDefinition Width="*4"/>
+								<ColumnDefinition Width="*12"/>
+							</Grid.ColumnDefinitions>
+							
+							<ContainRef Name="MainChrom.TopBar.TopButtonFrame.TopResourcesArea.TopResourceBar.TopTime" Grid.Col="1" Grid.Row="0"  MaxWidth="180">			
+						
+							<ObjToUI RefName="time" FontSizeEnum="Font_32" >	
+								<ObjToUI.RealObj.mystyle.normal background="{Texture time_bg_icon:DECORATION}" />
+								<ObjToUI.RealObj.balloon.mystyle.padding left="53" right="0" top="0" bottom="0"/>
+							</ObjToUI>
+							
+							</ContainRef>
+			</Grid>
+				
+				
+			</Grid>
+		</ContainRef>
+		<!-- Body -->
+		<Panel Name="BodyFrame" Grid.Col="0" Grid.Row="1">
+			<ContainRef Name="_BodyFrame">
+				<ObjToUI RefName="null"/>
+				<Grid Name="MainChrom.MiddelFrame">
+					<Grid.RowDefinitions>
+						<RowDefinition Height="0"/>
+						<RowDefinition/>
+					</Grid.RowDefinitions>
+					<Grid Grid.Col="0" Grid.Row="1">
+						<Grid.RowDefinitions>
+                            <RowDefinition Height="140"/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="10"/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="10"/>
+                        </Grid.ColumnDefinitions>
+                        <!-- the chr frame bind from code -->
+                        <Panel Name="MainChrom.MiddleFrame.Top" Grid.Col="1" Grid.Row="0">
+                        	<ContainRef Name="MainChrom.MiddelFrame.LeftIconsGrid.RightDats.TopBuffIconsGrid.TopBuffIconsFrame" />
+                        	<Grid>
+                        		<Grid.RowDefinitions>
+                        			<RowDefinition Height="15" />
+                        			<RowDefinition Height="110" />
+                        			<RowDefinition />
+                        		</Grid.RowDefinitions>
+                        		<Grid.ColumnDefinitions>
+                        			<ColumnDefinition Width="70" />
+                        			<ColumnDefinition />
+                        			<ColumnDefinition Width="720"/>
+                        		</Grid.ColumnDefinitions>
+                        		<ContainRef Grid.Row="1" Grid.Col="1">
+                        			<ObjToUI RefName="missionBalloon" ContainRef.deep="0" ContainRef.hFill="DockLeft" ContainRef.vFill="DockTop" ContainRef.lockType="None">
+                                		<ObjToUI.RealObj elasticAmplitude="0.0"/>
+                                		<ObjToUI.RealObj elasticPeriod="0.6"/>
+                                		<ObjToUI.RealObj visibleBorder="{0,0,30,0}"/>
+                                		<ObjToUI.RealObj balloonRelative="{0.0,0.0,1.0,1.0}"/>
+                                		<ObjToUI.RealObj buttonClaimRelative="{-80,30,50,50}"/><!-- custom rules, hard coded in MissionBalloon.js -->
+                                		<ObjToUI.RealObj buttonDetailRelative="{-80,30,50,50}"/>
+                                    	<ObjToUI.RealObj.balloon.mystyle.normal background="{Texture quest_pointkuang:DECORATION}"/>
+                                    	<ObjToUI.RealObj.balloon.mystyle.active background="{Texture quest_pointkuang:DECORATION}"/>
+                                    	<ObjToUI.RealObj.balloon.mystyle border="{20,20,10,10}"/>
+                                    	<ObjToUI.RealObj.balloon.mystyle.padding left="80" right="80" top="0" bottom="0"/>
+                                    	<ObjToUI.RealObj.balloon.mystyle contentOffset="{0, 0}"/>
+                                    	<ObjToUI.RealObj.balloon txt=""/>
+                                    	<ObjToUI.RealObj.balloon fontType="TREBUC"/>
+                                    	<ObjToUI.RealObj.balloon font="Font_32"/>
+	                        		    <ObjToUI.RealObj.buttonDetail.mystyle.normal background="{Texture question_mark:ICON}"/>
+                                    	<ObjToUI.RealObj.buttonDetail.mystyle.active background="{Texture question_mark:ICON}"/>
+	                        			<ObjToUI.RealObj.buttonDetail.mystyle border="{0,0,0,0}"/>
+	                        			<ObjToUI.RealObj.buttonDetail txt=""/>
+	                        		    <ObjToUI.RealObj.buttonClaim.mystyle.normal background="{Texture icon_satisfactory:ICON}"/>
+                                    	<ObjToUI.RealObj.buttonClaim.mystyle.active background="{Texture icon_satisfactory:ICON}"/>
+	                        			<ObjToUI.RealObj.buttonClaim.mystyle border="{0,0,0,0}"/>
+	                        			<ObjToUI.RealObj.buttonClaim txt=""/>
+                                	</ObjToUI>
+                        		</ContainRef>
+                        	</Grid>
+                        	<ContainRef Name="MainChrom.CurrentMission">
+                        		<ObjToUI RefName="btnMissionHead" ContainRef.deep="0" ContainRef.hFill="DockLeft" ContainRef.vFill="DockTop" ContainRef.lockType="LockRadio">
+                        			<ObjToUI.RealObj.mystyle.normal background="{Texture quest_point:DECORATION}" />
+                        			<ObjToUI.RealObj.mystyle.active background="{Texture quest_point_down:DECORATION}" />
+                        			<ObjToUI.RealObj.mystyle border="{0,0,0,0}"/>
+                        		</ObjToUI>
+                        	</ContainRef>
+                        	<Grid>
+                        		<Grid.RowDefinitions>
+                        			<RowDefinition Height="45"/>
+                        			<RowDefinition Height="50"/>
+                        			<RowDefinition />
+                        		</Grid.RowDefinitions>
+                        		<Grid.ColumnDefinitions>
+                        			<ColumnDefinition Width="105" />
+                        			<ColumnDefinition Width="50" />
+                        			<ColumnDefinition />
+                        		</Grid.ColumnDefinitions>
+                        		<ContainRef Grid.Row="1" Grid.Col="1">
+                        			<ObjToUI RefName="missionArrow">
+	                        			<ObjToUI.RealObj.mystyle border="{0,0,0,0}"/>
+                        			</ObjToUI>
+                        		</ContainRef>
+                        	</Grid>
+                        	<Grid>
+                        		<Grid.RowDefinitions>
+                        			<RowDefinition Height="10"/>
+                        			<RowDefinition Height="32"/>
+                        			<RowDefinition />
+                        		</Grid.RowDefinitions>
+                        		<Grid.ColumnDefinitions>
+                        			<ColumnDefinition Width="107"/>
+                        			<ColumnDefinition Width="32"/>
+                        			<ColumnDefinition />
+                        		</Grid.ColumnDefinitions>
+                        		<ContainRef Grid.Row="1" Grid.Col="1">
+                        			<ObjToUI RefName="missionRedDot">
+	                        			<ObjToUI.RealObj.mystyle.normal background="{Texture RedDot:DECORATION}" />
+	                        			<ObjToUI.RealObj.mystyle border="{0,0,0,0}"/>
+                        			</ObjToUI>
+                        		</ContainRef>
+                        	</Grid>
+                        </Panel>
+
+                        <Grid Name="MainChrom.MiddelFrame.LeftIconsGrid" Grid.Col="1" Grid.Row="1">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition MinWidth = "105" MaxWidth="135"/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <Grid Name="MainChrom.MiddelFrame.LeftIconsGrid.ltIcons" Grid.Col="0" Grid.Row="0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition MaxHeight="152"/>
+                                    <RowDefinition MaxHeight="40"/>
+                                    <!-- <RowDefinition MaxHeight="152"/>
+                                    <RowDefinition MaxHeight="40"/> -->
+                                    <RowDefinition MaxHeight="152"/>
+                                    <RowDefinition MaxHeight="40"/>
+                                    <RowDefinition MaxHeight="152"/>
+                                    <RowDefinition MinHeight="40"/>
+                                    <RowDefinition MaxHeight="152"/>
+                                </Grid.RowDefinitions>
+                                <ContainRef Name="RoundTower_ServerMerge" Grid.Col="0" Grid.Row="0">
+<!--	                                <ObjToUI RefName="btnRoundTower" ContainRef.deep="0" ContainRef.hFill="DockLeft" ContainRef.vFill="DockTop" ContainRef.lockType="LockRadio" />-->
+	                             	<Button OnClick="OpenServerMerge" rect="{0,0,90,90}" NormalBackground="{Texture icon_serversmerge:ICON}" ContainRef.deep="1" ContainRef.hFill="DockLeft" ContainRef.vFill="DockTop" ContainRef.lockType="LockRadio" >
+	                             		<Button.RealObj NeedScreenRect = "true"/>
+	                             	</Button>
+	                             	<Label rect="{0,0,90,30}" NormalBackground="{Texture Chrome_icon_Countdown2:BACKGROUND}" Alignment="MiddleCenter" ContainRef.deep="2" ContainRef.hFill="Fill" ContainRef.vFill="DockBottom" ContainRef.lockType="LockHeight" >
+	                             		<Label.RealObj.mystyle border="{10,10,0,3}"/>
+	                             	</Label>
+	                             	<Button OnClick="OpenNoticePad" NormalBackground="{Texture shared_icon:ICON}" ContainRef.deep="3" ContainRef.hFill="DockLeft" ContainRef.vFill="DockTop" ContainRef.lockType="LockRadio" >
+	                             		<Button.RealObj NeedScreenRect = "true"/>
+	                             	</Button>
+	                             	<Button OnClick="OpenAvaEvent" rect="{0,0,90,90}" NormalBackground="{Texture icon_ava_entrance_chrome:ICON}" ContainRef.deep="4" ContainRef.hFill="DockLeft" ContainRef.vFill="DockTop" ContainRef.lockType="LockRadio" >
+	                             		<Button.RealObj NeedScreenRect = "true"/>
+	                             	</Button>
+	                             	<!-- <Button OnClick="OpenWorldBossEventMenu" rect="{0,0,90,90}" NormalBackground="{Texture worldboss_in:DECORATION}" ContainRef.deep="5" ContainRef.hFill="DockLeft" ContainRef.vFill="DockTop" ContainRef.lockType="LockRadio" >
+	                             		<Button.RealObj NeedScreenRect = "true"/>
+	                             	</Button>
+	                             	<Label rect="{0,0,90,20}" NormalTextColorEnum="Milk_White" NormalBackground="{Texture None:BACKGROUND}" Alignment="MiddleCenter" ContainRef.deep="6" ContainRef.hFill="Fill" ContainRef.vFill="DockBottom" ContainRef.lockType="LockHeight" >
+	                             		<Label.RealObj.mystyle border="{10,10,0,3}"/>
+	                             	</Label> -->
+	                            </ContainRef>
+	                            <!-- <ContainRef Name="WorldBoss" Grid.Col="0" Grid.Row="2">
+	                            	<Button OnClick="OpenWorldBossEventMenu" rect="{0,0,90,90}" NormalBackground="{Texture worldboss_in:DECORATION}" ContainRef.deep="1" ContainRef.hFill="DockLeft" ContainRef.vFill="DockTop" ContainRef.lockType="LockRadio" >
+	                             		<Button.RealObj NeedScreenRect = "true"/>
+	                             	</Button>
+                            	</ContainRef> -->
+                                <!--ContainRef Name="MainChrom.MiddelFrame.LeftIconsGrid.ltIcons.RoundTower" Grid.Col="0" Grid.Row="0">
+                                    <ObjToUI RefName="btnRoundTower" ContainRef.deep="0" ContainRef.hFill="DockLeft" ContainRef.vFill="DockTop" ContainRef.lockType="LockRadio"/>
+                                </ContainRef>-->
+                                <ContainRef Name="MainChrom.MiddleFrame.LeftIconsGrid.ltIcons.DailyLogin" Grid.Col="0" Grid.Row="2">
+                                    <ObjToUI RefName="btnDailyLogin" rect="{0,0,90,90}" ContainRef.deep="0" ContainRef.hFill="DockLeft" ContainRef.vFill="DockTop" ContainRef.lockType="LockRadio"
+                                            FontSizeEnum="Font_22">
+                                        <ObjToUI.RealObj.mystyle.normal background="{Texture Login_calendar:DECORATION}"/>
+                                        <ObjToUI.RealObj.mystyle.active background="{Texture Login_calendar:DECORATION}"/>
+                                        <ObjToUI.RealObj.mystyle contentOffset="{0,12}"/>
+                                    </ObjToUI>
+                                </ContainRef>
+                                <ContainRef Name="MainChrom.MiddelFrame.LeftIconsGrid.ltIcons.EventCenter" Grid.Col="0" Grid.Row="4">
+                                    <ObjToUI RefName="btnWheelGame" rect="{0,0,90,90}" ContainRef.deep="0" ContainRef.hFill="DockLeft" ContainRef.vFill="DockTop" ContainRef.lockType="LockRadio">
+                                        <ObjToUI.RealObj.mystyle.normal background="{Texture Wheelgame_icon:BUTTON}"/>
+                                    </ObjToUI>
+									<ObjToUI RefName="lbWheelGameLessTime" rect="{0,0,0,44}" NormalTextColorEnum="Milk_White" FontSizeEnum="Font_32" Alignment="MiddleCenter" ContainRef.deep="1" ContainRef.hFill="DockLeft" ContainRef.vFill="DockBottom" ContainRef.lockType="LockHeight" >
+                                        <ObjToUI.RealObj.mystyle border="{0,0,0,0}"/>
+                                        <ObjToUI.RealObj.mystyle.normal background="{Texture Chrome_icon_Countdown2:BACKGROUND}"/>
+                                    </ObjToUI>
+                                </ContainRef>
+                                <ContainRef Name="MainChrom.MiddelFrame.LeftIconsGrid.ltIcons.EventCenter" Grid.Col="0" Grid.Row="5">
+                                    <ObjToUI RefName="btnEventCenter" ContainRef.deep="0" ContainRef.hFill="DockLeft" ContainRef.vFill="DockTop" ContainRef.lockType="LockRadio"/>
+                                </ContainRef>
+                            </Grid>
+                            <Grid Name="MainChrom.MiddelFrame.LeftIconsGrid.RightDats.BuffIconsFrame" Grid.Col="1" Grid.Row="0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition />
+                                    <ColumnDefinition Width="156" />
+                                </Grid.ColumnDefinitions>
+                                <Grid Name="BuffIconsGrid" Grid.Col="1" Grid.Row="0">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="152"/><!--blue and offer-->
+                                        <RowDefinition Height="40"/><!--offer label-->
+                                        <RowDefinition Height="152"/><!--btnSaleIcon.icon-->
+                                        <RowDefinition Height="152"/><!--btnSaleIcon.description-->
+                                        <RowDefinition Height="152"/><!--btnBeginner-->
+                                        <RowDefinition Height="152"/><!--labelBeginnerTimer-->
+                                        <RowDefinition />
+                                    </Grid.RowDefinitions>
+                                    <ContainRef Grid.Col="0" Grid.Row="0">
+                                        <!-- Beginner and Universal Offer -->
+                                        <ObjToUI RefName="btnUniversalOffer" rect="{0,0,130,130}" ContainRef.deep="1" ContainRef.hFill="DockRight" ContainRef.vFill="DockTop" ContainRef.lockType="LockSize" />
+                                        <ObjToUI RefName="labelOfferTimer" rect="{0,0,0,44}" FontSizeEnum="Font_36" ContainRef.deep="2" ContainRef.hFill="Fill" ContainRef.vFill="DockBottom" ContainRef.lockType="LockHeight" >
+                                            <ObjToUI.RealObj.mystyle border="{0,0,0,0}"/>
+                                        </ObjToUI>
+                                    </ContainRef>
+                                    <ContainRef Grid.Col="0" Grid.Row="2">
+                                        <!-- Payer / Non-Payer Offer -->
+                                        <ObjToUI RefName="btnBeginner" rect="{0,0,130,130}" ContainRef.deep="0" ContainRef.hFill="DockRight" ContainRef.vFill="DockTop" ContainRef.lockType="LockSize" />
+                                        <ObjToUI RefName="labelBeginnerTimer" rect="{0,0,0,44}" FontSizeEnum="Font_36" ContainRef.deep="1" ContainRef.hFill="Fill" ContainRef.vFill="DockBottom" ContainRef.lockType="LockHeight" >
+                                            <ObjToUI.RealObj.mystyle border="{0,0,0,0}"/>
+                                        </ObjToUI>
+                                    </ContainRef>
+									<ContainRef Grid.Col="0" Grid.Row="3">
+										<ObjToUI RefName="btnSeasonPass" rect="{0,0,130,130}" ContainRef.deep="0" ContainRef.hFill="DockRight" ContainRef.vFill="DockTop" ContainRef.lockType="LockSize">
+                                            <!-- <ObjToUI.RealObj.mystyle.normal background="{Texture btnPassSeason:BUTTON}"/>
+                                            <ObjToUI.RealObj.mystyle.active background="{Texture btnPassSeason:BUTTON}"/> -->
+                                        </ObjToUI>
+										<ObjToUI RefName="labelSeasonPassTimer" rect="{0,0,0,44}" NormalTextColorEnum="Milk_White" FontSizeEnum="Font_32" Alignment="MiddleCenter" ContainRef.deep="1" ContainRef.hFill="DockLeft" ContainRef.vFill="DockBottom" ContainRef.lockType="LockHeight" >
+                                        	<ObjToUI.RealObj.mystyle border="{0,0,0,0}"/>
+                                        	<ObjToUI.RealObj.mystyle.normal background="{Texture Chrome_icon_Countdown:BACKGROUND}"/>
+                                    	</ObjToUI>
+                                    </ContainRef>
+                                    <ContainRef Grid.Col="0" Grid.Row="4">
+                                        <ObjToUI RefName="btnSaleIcon.btnDefault" ContainRef.deep="3"/>
+                                        <ObjToUI RefName="btnSaleIcon.icon" rect="{0,0,130,130}" ContainRef.deep="1" ContainRef.hFill="DockRight" ContainRef.vFill="DockTop" ContainRef.lockType="LockSize" />
+                                        <ObjToUI RefName="btnSaleIcon.description" FontSizeEnum="Font_36" ContainRef.deep="2" ContainRef.hFill="Fill" ContainRef.vFill="DockBottom" ContainRef.lockType="LockHeight" >
+                                            <ObjToUI.RealObj rect="{0,0,0,44}" />
+                                            <ObjToUI.RealObj.mystyle border="{0,0,0,0}"/>
+                                        </ObjToUI>
+                                        
+                                        <ObjToUI RefName="btnStatePopup" rect="{0,0,130,130}" ContainRef.deep="0" ContainRef.hFill="DockRight" ContainRef.vFill="DockTop" ContainRef.lockType="LockSize">
+                                            <ObjToUI.RealObj.mystyle.normal background="{Texture ChromeIconOrganizerEntrance:BUTTON}"/>
+                                            <ObjToUI.RealObj.mystyle.active background="{Texture ChromeIconOrganizerEntrance:BUTTON}"/>
+                                        </ObjToUI>
+                                    </ContainRef>
+									<ContainRef Grid.Col="0" Grid.Row="5">
+										 <!-- third party payment  -->
+                                        <ObjToUI RefName="btnThirdPartyPayment" rect="{0,0,130,130}" ContainRef.deep="0" ContainRef.hFill="DockRight" ContainRef.vFill="DockTop" ContainRef.lockType="LockSize" />
+                                    </ContainRef>
+									<ContainRef Grid.Col="0" Grid.Row="6">
+                                      <!-- mistexpedition  -->
+                                        <ObjToUI RefName="btnMistExpedition" rect="{0,0,130,130}" ContainRef.deep="0" ContainRef.hFill="DockRight" ContainRef.vFill="DockTop" ContainRef.lockType="LockSize" />
+                                    </ContainRef>
+                                </Grid>
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                </Grid>
+			</ContainRef>
+			<Grid Name="ProgressView" Panel.inDeep="10" >
+				<Grid.RowDefinitions>
+					<RowDefinition/>
+					<RowDefinition/>
+				</Grid.RowDefinitions>
+				<Grid Grid.Col="0" Grid.Row="1">
+					<Grid.RowDefinitions>
+						<RowDefinition/>
+						<RowDefinition/>
+					</Grid.RowDefinitions>
+					<Grid Grid.Col="0" Grid.Row="0">
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition/>
+							<ColumnDefinition/>
+						</Grid.ColumnDefinitions>
+						<Grid Name="MainChrom.MiddelFrame.LeftIconsGrid.RightDats.MarchProgressGrid.ProgressBtnsGrid" Grid.Col="1" Grid.Row="0">
+							<Grid.RowDefinitions>
+								<RowDefinition Height="112"/>
+							</Grid.RowDefinitions>
+							<Grid.ColumnDefinitions>
+								<ColumnDefinition/>
+								<ColumnDefinition Width="195" />
+								<ColumnDefinition Width="195" />
+								<ColumnDefinition Width="195" />
+								<ColumnDefinition Width="195" />
+								<ColumnDefinition Width="85" />
+							</Grid.ColumnDefinitions>
+							<Panel Grid.Col="1" Grid.Row="0">
+								<Grid>
+									<Grid.RowDefinitions>
+										<RowDefinition Height="*1"/>
+										<RowDefinition Height="*3"/>
+									</Grid.RowDefinitions>
+									<ContainRef Grid.Col="0" Grid.Row="1">
+										<ObjToUI RefName="btnExplore" FontSizeEnum="Font_36"/>
+									</ContainRef>
+								</Grid>
+								<ContainRef Name="MainChrom.MiddelFrame.LeftIconsGrid.RightDats.MarchProgressGrid.ProgressBtnsGrid.BtnProgress0">
+									<ObjToUI RefName="exploreNote" FontSizeEnum="Font_32" ContainRef.deep="0" ContainRef.hFill="DockRight" ContainRef.vFill="DockTop" ContainRef.lockType="LockSize">
+										<ObjToUI.RealObj rect="{0,0,66,68}"/>
+									</ObjToUI>
+								</ContainRef>
+							</Panel>
+							<Panel Grid.Col="2" Grid.Row="0">
+								<Grid>
+									<Grid.RowDefinitions>
+										<RowDefinition Height="*1"/>
+										<RowDefinition Height="*3"/>
+									</Grid.RowDefinitions>
+									<ContainRef Grid.Col="0" Grid.Row="1">
+										<ObjToUI RefName="btnMarch" FontSizeEnum="Font_36" />
+									</ContainRef>
+								</Grid>
+								<ContainRef Name="MainChrom.MiddelFrame.LeftIconsGrid.RightDats.MarchProgressGrid.ProgressBtnsGrid.BtnProgress1">
+									<ObjToUI RefName="marchNote" FontSizeEnum="Font_32" ContainRef.deep="0" ContainRef.hFill="DockRight" ContainRef.vFill="DockTop" ContainRef.lockType="LockSize">
+										<ObjToUI.RealObj rect="{0,0,66,68}"/>
+									</ObjToUI>
+								</ContainRef>
+							</Panel>
+							<Panel Grid.Col="3" Grid.Row="0">
+								<Grid>
+									<Grid.RowDefinitions>
+										<RowDefinition Height="*1"/>
+										<RowDefinition Height="*3"/>
+									</Grid.RowDefinitions>
+									<ContainRef Grid.Col="0" Grid.Row="1">
+										<ObjToUI RefName="btnTrain" FontSizeEnum="Font_36" />
+									</ContainRef>
+								</Grid>
+								<ContainRef Name="MainChrom.MiddelFrame.LeftIconsGrid.RightDats.MarchProgressGrid.ProgressBtnsGrid.BtnProgress2">
+									<ObjToUI RefName="trainNote" FontSizeEnum="Font_32" ContainRef.deep="0" ContainRef.hFill="DockRight" ContainRef.vFill="DockTop" ContainRef.lockType="LockSize">
+										<ObjToUI.RealObj rect="{0,0,66,68}"/>
+									</ObjToUI>
+								</ContainRef>
+							</Panel>
+							<Panel Grid.Col="4" Grid.Row="0">
+								<Grid>
+									<Grid.RowDefinitions>
+										<RowDefinition Height="*1"/>
+										<RowDefinition Height="*3"/>
+									</Grid.RowDefinitions>
+									<ContainRef Grid.Col="0" Grid.Row="1">
+										<ObjToUI RefName="btnBuildQueue" FontSizeEnum="Font_36" />
+									</ContainRef>
+								</Grid>
+								<ContainRef Name="MainChrom.MiddelFrame.LeftIconsGrid.RightDats.MarchProgressGrid.ProgressBtnsGrid.BtnProgress3">
+									<ObjToUI RefName="buildNote" FontSizeEnum="Font_32" ContainRef.deep="0" ContainRef.hFill="DockRight" ContainRef.vFill="DockTop" ContainRef.lockType="LockSize">
+										<ObjToUI.RealObj rect="{0,0,66,68}"/>
+									</ObjToUI>
+								</ContainRef>
+							</Panel>
+							<Panel Grid.Col="5" Grid.Row="0">
+								<Grid>
+									<Grid.RowDefinitions>
+										<RowDefinition Height="*1"/>
+										<RowDefinition Height="*3"/>
+									</Grid.RowDefinitions>
+									<ContainRef Grid.Col="0" Grid.Row="1">
+										<ObjToUI RefName="btnShowList"/>
+									</ContainRef>
+								</Grid>
+								<!--ContainRef Name="MainChrom.MiddelFrame.LeftIconsGrid.RightDats.MarchProgressGrid.ProgressBtnsGrid.BtnProgress0">
+									<ObjToUI RefName="exploreNote" ContainRef.deep="0" ContainRef.hFill="DockRight" ContainRef.vFill="DockTop" ContainRef.lockType="LockSize"/>
+								</ContainRef-->
+							</Panel>
+						</Grid>
+					</Grid>
+					<Grid Name="MainChrom.MiddelFrame.LeftIconsGrid.RightDats.MarchProgressGrid" Grid.Col="0" Grid.Row="1">
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition/>
+							<ColumnDefinition/>
+						</Grid.ColumnDefinitions>
+						<ContainRef Name="MainChrom.MiddelFrame.LeftIconsGrid.RightDats.MarchProgressGrid.ProgressView" Grid.Col="1" Grid.Row="0" />
+					</Grid>
+				</Grid>
+			</Grid>
+		</Panel>
+		<!-- Bottom -->
+		<Grid Name="MainChrom.BT" Grid.Col="0" Grid.Row="2">
+			<ContainRef Name="MainChrom.BT.BToolbarBKG" Height="173" Grid.Col="0" Grid.Row="1">
+				<Label NormalBackground="{Texture tool bar_bottom:BACKGROUND}" ContainRef.deep="0" ContainRef.hFill="Fill" ContainRef.vFill="Fill" ContainRef.lockType="None" />
+				<!--ObjToUI RefName="bottomBar"/-->
+				<Grid Name="MainChrom.BT.BToolbarBKG.BToolBarGrid">
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition />
+						<ColumnDefinition />
+					</Grid.ColumnDefinitions>
+					<Panel Width="173" Height="173" Grid.Col="0" Grid.Row="0">
+						<ContainRef Name="MainChrom.BT.BToolbarBKG.BToolBarGrid.BSwitchBtn" Panel.inDeep="5">
+							<ObjToUI RefName="btnSwitchView" ContainRef.deep="0" ContainRef.lockRadio="true">
+								<ObjToUI.RealObj rect="{0,0,173,173}"/>
+							</ObjToUI>
+						</ContainRef>
+					</Panel>
+					<ContainRef Name="MainChrom.BT.BToolbarBKG.BToolBarGrid.BShortButtonView" Grid.Col="1" Grid.Row="0">
+						<ObjToUI RefName="chromBtnsScroll" ContainRef.deep="0"/>
+						<Label NormalBackground="{Texture chrome_icon_Mask:DECORATION}" ContainRef.deep="1" ContainRef.hFill="DockLeft" ContainRef.vFill="Fill" ContainRef.lockType="LockWidth"/>
+						<Label NormalBackground="{Texture chrome_icon_Mask2:DECORATION}" ContainRef.deep="2" ContainRef.hFill="DockRight" ContainRef.vFill="Fill" ContainRef.lockType="LockWidth"/>
+						<Grid>
+							<Grid.ColumnDefinitions>
+								<ColumnDefinition />
+								<ColumnDefinition />
+							</Grid.ColumnDefinitions>
+							<ContainRef Name="MainChrom.BT.BToolbarBKG.BToolBarGrid.BPopUpBtn" Width="180" Grid.Col="1" Grid.Row="0">
+								<ObjToUI RefName="btnPopUp" ContainRef.deep="0" ContainRef.hFill="DockRight" ContainRef.vFill="Fill" ContainRef.lockType="LockRadio">
+									<ObjToUI.RealObj.mystyle border="{0,2,0,0}"/>
+								</ObjToUI>
+							</ContainRef>
+						</Grid>
+					</ContainRef>
+				</Grid>
+			</ContainRef>
+			<ContainRef Name="MainChrom.BT.BChatBKG" Grid.Col="0" Grid.Row="0">
+				<ObjToUI RefName="chatText" />
+				<Grid Name="MainChrom.BT.BChatBKG.ChtGrid">
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition/>
+						<ColumnDefinition/>
+					</Grid.ColumnDefinitions>
+					<ContainRef Name="MainChrom.BT.ChtGrid.ChtBtn" Height="114" Width="114" Grid.Col="0" Grid.Row="0">
+						<ObjToUI RefName="btnChat" ContainRef.deep="0" ContainRef.lockRadio="true"/>
+					</ContainRef>
+					<Grid Name="MainChrom.BT.BChatBKG.ChtGrid.ChtShowerGrid" Grid.Col="1" Grid.Row="0">
+						<Grid.RowDefinitions>
+							<RowDefinition/>
+							<RowDefinition/>
+						</Grid.RowDefinitions>
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition MaxWidth="57"/>
+							<ColumnDefinition/>
+						</Grid.ColumnDefinitions>
+						<ContainRef Name="MainChrom.BT.BChatBKG.ChtGrid.ChtShowerGrid.ChtIcon1" Grid.Col="0" Grid.Row="0">
+							<ObjToUI RefName="chatIcon1"/>
+						</ContainRef>
+						<ContainRef Name="MainChrom.BT.BChatBKG.ChtGrid.ChtShowerGrid.ChtIcon2" Grid.Col="0" Grid.Row="1">
+							<ObjToUI RefName="chatIcon2"/>
+						</ContainRef>
+						<ContainRef Name="MainChrom.BT.BChatBKG.ChtGrid.ChtShowerGrid.ChtText1" Grid.Col="1" Grid.Row="0">
+							<ObjToUI RefName="chatText1" FontSizeEnum="Font_36"/>
+						</ContainRef>
+						<ContainRef Name="MainChrom.BT.BChatBKG.ChtGrid.ChtShowerGrid.ChtText2" Grid.Col="1" Grid.Row="1">
+							<ObjToUI RefName="chatText2" FontSizeEnum="Font_36"/>
+						</ContainRef>
+					</Grid>
+				</Grid>
+			</ContainRef>
+		</Grid>
+	</Grid>
+</KBNMenu>

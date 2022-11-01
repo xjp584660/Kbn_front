@@ -1,0 +1,73 @@
+<KBNMenu MaxHeight="90">
+	<ContainRef>
+		<ObjToUI RefName="bgLabel">
+			<ObjToUI.RealObj.mystyle.normal background="{Texture small_bar_bottom:BACKGROUND}"/>
+		</ObjToUI>
+		<Grid Border="{5, 5, 10, 20}" >
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="75"/>
+				<ColumnDefinition Width="75"/>
+				<ColumnDefinition Width="32"/>
+				<ColumnDefinition MinWidth="42"/>
+				<ColumnDefinition Width="32"/>
+				<ColumnDefinition MinWidth="42"/>
+				<ColumnDefinition Width="20" />
+				<ColumnDefinition Width="75" />
+				<ColumnDefinition Width="75"/>
+				<ColumnDefinition Width="75"/>
+			</Grid.ColumnDefinitions>
+			<ContainRef Grid.Col="0" Grid.Row="0">
+				<ObjToUI RefName="myCityBtn" rect="{0,0,75,75}" ContainRef.deep="0" ContainRef.vFill="Center" ContainRef.hFill="Center" ContainRef.lockType="LockSize" />
+				<Label NormalBackground="{Texture city_wall_icon:BUTTON}" ContainRef.deep="1" ContainRef.vFill="Center" ContainRef.hFill="Center" ContainRef.lockType="LockSize" >
+					<Label.RealObj rect="{0,0,63,59}"/>
+				</Label>
+			</ContainRef>
+			<ContainRef Grid.Col="1" Grid.Row="0">
+				<ObjToUI RefName="bookmarkBtn" rect="{0,0,75,75}" ContainRef.deep="0" ContainRef.vFill="Center" ContainRef.hFill="Center" ContainRef.lockType="LockSize" />
+				<Label NormalBackground="{Texture button_bookmark_big:BUTTON}" ContainRef.deep="1" ContainRef.vFill="Center" ContainRef.hFill="Center" ContainRef.lockType="LockSize" >
+					<Label.RealObj rect="{0,0,63,59}"/>
+				</Label>
+			</ContainRef>
+			<ContainRef Grid.Col="2" Grid.Row="0">
+				<ObjToUI RefName="xLabel" FontSizeEnum="Font_BEGIN" rect="{0,0,32,32}" ContainRef.deep="0" ContainRef.vFill="Center" ContainRef.hFill="Center" ContainRef.lockType="LockSize">
+					<ObjToUI.RealObj.mystyle alignment="MiddleCenter"/>
+				</ObjToUI>
+			</ContainRef>
+			<ContainRef Grid.Col="3" Grid.Row="0">
+				<ObjToUI RefName="textInputX" FontSizeEnum="Font_BEGIN" rect="{0,0,32,64}" ContainRef.deep="0" ContainRef.vFill="Center" ContainRef.hFill="Fill" ContainRef.lockType="LockHeight">
+                    <ObjToUI.RealObj.mystyle.normal background="{Texture type_box:DECORATION}" />
+                </ObjToUI>
+			</ContainRef>
+			<ContainRef Grid.Col="4" Grid.Row="0">
+				<ObjToUI RefName="yLabel" FontSizeEnum="Font_BEGIN" rect="{0,0,32,32}" ContainRef.deep="0" ContainRef.vFill="Center" ContainRef.hFill="Center" ContainRef.lockType="LockSize">
+					<ObjToUI.RealObj.mystyle alignment="MiddleCenter"/>
+				</ObjToUI>
+			</ContainRef>
+			<ContainRef Grid.Col="5" Grid.Row="0">
+				<ObjToUI RefName="textInputY" FontSizeEnum="Font_BEGIN" rect="{0,0,32,64}" ContainRef.deep="0" ContainRef.vFill="Center" ContainRef.hFill="Fill" ContainRef.lockType="LockHeight">
+                    <ObjToUI.RealObj.mystyle.normal background="{Texture type_box:DECORATION}" />
+                </ObjToUI>
+			</ContainRef>
+			<ContainRef Grid.Col="7" Grid.Row="0">
+				<ObjToUI RefName="searchBtn" rect="{0,0,75,75}" ContainRef.deep="0" ContainRef.vFill="Center" ContainRef.hFill="Center" ContainRef.lockType="LockSize" />
+				<Label NormalBackground="{Texture button_search_big_normal:BUTTON}" ContainRef.deep="1" ContainRef.vFill="Center" ContainRef.hFill="Center" ContainRef.lockType="LockSize" >
+					<Label.RealObj rect="{0,0,63,59}"/>
+				</Label>
+			</ContainRef>
+			
+			<ContainRef Grid.Col="8" Grid.Row="0">
+				<ObjToUI RefName="showLevelBtn" rect="{0,0,75,75}" ContainRef.deep="0" ContainRef.vFill="Center" ContainRef.hFill="Center" ContainRef.lockType="LockSize" />
+				<Label NormalBackground="{Texture button_showlevel_normal:BUTTON}" ContainRef.deep="1" ContainRef.vFill="Center" ContainRef.hFill="Center" ContainRef.lockType="LockSize" >
+					<Label.RealObj rect="{0,0,63,59}"/>
+				</Label>
+			</ContainRef>
+			
+			<ContainRef Grid.Col="9" Grid.Row="0">
+				<ObjToUI RefName="showMarchLineBtn" rect="{0,0,75,75}" ContainRef.deep="0" ContainRef.vFill="Center" ContainRef.hFill="Center" ContainRef.lockType="LockSize" />
+				<Label NormalBackground="{Texture button_showmarchline_normal:BUTTON}" ContainRef.deep="1" ContainRef.vFill="Center" ContainRef.hFill="Center" ContainRef.lockType="LockSize" >
+					<Label.RealObj rect="{0,0,63,59}"/>
+				</Label>
+			</ContainRef>
+		</Grid>
+	</ContainRef>
+</KBNMenu>

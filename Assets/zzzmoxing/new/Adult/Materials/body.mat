@@ -1,0 +1,92 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: body
+  m_Shader: {fileID: 4800000, guid: 13cac59e5ed14c04c8da05a2395d5470, type: 3}
+  m_ShaderKeywords: []
+  m_CustomRenderQueue: -1
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 2800000, guid: 3260c426788804c10af4b1a1ed368645, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _DecalTex
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _ID01Tex
+        second:
+          m_Texture: {fileID: 2800000, guid: d18db96a63131784da293d252a9bc191, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _ID02Tex
+        second:
+          m_Texture: {fileID: 2800000, guid: b557af70642db4a4f87ce3bcace1db00, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _EmissionTex
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _Shininess
+        second: 1
+      data:
+        first:
+          name: _Alphapow
+        second: 0
+      data:
+        first:
+          name: _RimPower
+        second: 2.3125
+      data:
+        first:
+          name: _Rimstrong
+        second: .550000012
+      data:
+        first:
+          name: _EmissionMultiple
+        second: 1
+    m_Colors:
+      data:
+        first:
+          name: _Color
+        second: {r: .463235319, g: .463235319, b: .463235319, a: 1}
+      data:
+        first:
+          name: _Emission
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _SpecColor
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _RimColor
+        second: {r: .0389273427, g: .265565008, b: .529411793, a: 1}
+      data:
+        first:
+          name: _Selflu
+        second: {r: 0, g: .647058845, b: .0312373787, a: .509803951}

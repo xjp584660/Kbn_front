@@ -1,0 +1,26 @@
+<Atlas>
+	<GConfig>
+		<dstPath>OTA_Resources/OTA_Icons/Atlas/</dstPath>
+		<rootPath>Textures/UI/Atlas/</rootPath>
+		<dstName>Wheelgames.bytes</dstName>
+		<boundSize>2</boundSize>
+		<clampBoundSize>1</clampBoundSize>
+		<clearBound>true</clearBound>
+	</GConfig>
+	<Images>
+		<Image name="Wheelgames_0">
+			<src path="OriginTexture/wheelgames" />
+		</Image>
+	</Images>
+	<Distribution>
+		<Release>
+			<meta ref="Wheelgames_0"/>
+		</Release>
+<!--		<Release>
+			<dstPath>Resources/low/Textures/UI/Atlas/</dstPath>
+			<meta ref="Wheelgames_0">
+				<scaleSize>2</scaleSize>
+			</meta>
+		</Release>-->
+	</Distribution>
+</Atlas>

@@ -1,0 +1,189 @@
+{
+    "Datas": [
+        {
+            "Id": 10001,
+            "Type": "Fte",
+            "Name": "Gear equipment guide",
+            "Description": "hahaha",
+            "IsCanSkip": true,
+            "OpenConditions": {
+                "Building1": {
+                    "BuildingId": 7,
+                    "BuildingLevel": 6
+                },
+                "Building2": {
+                    "BuildingId": 15,
+                    "BuildingLevel": 6
+                },
+                "OpenMenu": "GeneralMenu",
+                "TabControlIndex": "GeneralMenu.titleTab.arrayItem1"
+            },
+            "CompleteConditions": 0,
+            "FakeDatas": {
+                "Knights": [
+                    {
+                        "KnightId": 100000000,
+                        "KnightLevel": 15
+                    }
+                ]
+            },
+            "Rewards": null,
+            "StepsFileName": "FteSteps1"
+        },
+        {
+            "Id": 10002,
+            "Type": "Fte",
+            "Name": "xxx",
+            "Description": "hahaha",
+            "IsCanSkip": true,
+            "OpenConditions": {
+                "Building1": {
+                    "BuildingId": 5,
+                    "BuildingLevel": 3
+                },
+                "Building2": {
+                    "BuildingId": 1,
+                    "BuildingLevel": 3
+                },
+                "OpenMenu": "GearMenu",
+                "TabControlIndex": "GearMenu.tabControl.toolBar.arrayItem0"
+            },
+            "CompleteConditions": 0,
+            "FakeDatas": {
+                "Knights": [
+                    {
+                        "KnightId": 100000000,
+                        "KnightLevel": 15
+                    }
+                ],
+                "Gears":
+                [
+                    {
+                        "GearId": 1001001,
+                        "GearCount": 1,
+                        "GearStarLevel": 1,
+                        "GearSkillLevel": 1,
+                        "GearSkill1": 20120001,
+                        "GearSkill2": 20000000,
+                        "GearSkill3": 20000000,
+                        "GearSkill4": 20000000
+                    },
+		    {
+                        "GearId": 2001001,
+                        "GearCount": 1,
+                        "GearStarLevel": 1,
+                        "GearSkillLevel": 1,
+                        "GearSkill1": 20120001,
+                        "GearSkill2": 20000000,
+                        "GearSkill3": 20000000,
+                        "GearSkill4": 20000000
+                    },
+		    {
+                        "GearId": 3001001,
+                        "GearCount": 1,
+                        "GearStarLevel": 1,
+                        "GearSkillLevel": 1,
+                        "GearSkill1": 20120001,
+                        "GearSkill2": 20000000,
+                        "GearSkill3": 20000000,
+                        "GearSkill4": 20000000
+                    },
+		    {
+                        "GearId": 4001001,
+                        "GearCount": 1,
+                        "GearStarLevel": 1,
+                        "GearSkillLevel": 1,
+                        "GearSkill1": 20120001,
+                        "GearSkill2": 20000000,
+                        "GearSkill3": 20000000,
+                        "GearSkill4": 20000000
+                    },
+		    {
+                        "GearId": 5001001,
+                        "GearCount": 1,
+                        "GearStarLevel": 1,
+                        "GearSkillLevel": 1,
+                        "GearSkill1": 20120001,
+                        "GearSkill2": 20000000,
+                        "GearSkill3": 20000000,
+                        "GearSkill4": 20000000
+                    }
+                ]
+            },
+            "Rewards": null,
+	    "UpdateMenu":"GearMenu",
+            "StepsFileName": "FteSteps2"
+        },
+        {
+            "Id": 10003,
+            "Type": "Fte",
+            "Name": "Gear unlock Attribute",
+            "Description": "hahaha",
+            "IsCanSkip": true,
+            "OpenConditions": {
+                "Building1": {
+                    "BuildingId": 7,
+                    "BuildingLevel": 13
+                },
+                "Building2": {
+                    "BuildingId": 15,
+                    "BuildingLevel": 13
+                },
+                "OpenMenu": "ArmMenu",
+                "TabControlIndex": "ArmMenu.tabControl.toolBar.arrayItem2"
+            },
+            "CompleteConditions": 0,
+            "FakeDatas": null,
+            "Rewards": null,
+	    "UpdateMenu":"ArmMenu",
+            "StepsFileName": "FteSteps3"
+        },
+        {
+            "Id": 10004,
+            "Type": "Fte",
+            "Name": "Gear upgrade",
+            "Description": "hahaha",
+            "IsCanSkip": true,
+            "OpenConditions": {
+                "Building1": {
+                    "BuildingId": 7,
+                    "BuildingLevel": 3
+                },
+                "Building2": {
+                    "BuildingId": 15,
+                    "BuildingLevel": 3
+                },
+                "OpenMenu": "ArmMenu",
+                "TabControlIndex": "ArmMenu.tabControl.toolBar.arrayItem0"
+            },
+            "CompleteConditions": 0,
+			"UpdateMenu":"ArmMenu",
+			"Rewards": null,
+            "StepsFileName": "FteSteps4"
+        },
+        {
+            "Id": 10005,
+            "Type": "Fte",
+            "Name": "Gear enchase",
+            "Description": "hahaha",
+            "IsCanSkip": true,
+            "OpenConditions": {
+                "Building1": {
+                    "BuildingId": 7,
+                    "BuildingLevel": 3
+                },
+                "Building2": {
+                    "BuildingId": 15,
+                    "BuildingLevel": 3
+                },
+                "OpenMenu": "ArmMenu",
+                "TabControlIndex": "ArmMenu.tabControl.toolBar.arrayItem1"
+            },
+            "CompleteConditions": 0,
+            "FakeDatas": null,
+	     "UpdateMenu":"ArmMenu",
+            "Rewards": null,
+            "StepsFileName": "FteSteps5"
+        }
+    ]
+}

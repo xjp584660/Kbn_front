@@ -1,0 +1,920 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72fb5480ea3af70458d43df8464b132e, type: 3}
+  m_Name: tk2dSystem
+  m_EditorClassIdentifier: 
+  allResourceEntries:
+  - resourceGUID: 303b12a23801e49548ace1cd7d782a4f
+    assetName: 
+    assetGUID: a7c10de99a4ab4bccad5b103993b7884
+  - resourceGUID: 18fd3ff69722c4cf7ae233a03048e0bb
+    assetName: 
+    assetGUID: 1c7f04a300ad44263957db46b62eaed2
+  - resourceGUID: c24d146514c5e42d3936c5835cda281b
+    assetName: 
+    assetGUID: cadc143fe708a4a0fb2934507a20009d
+  - resourceGUID: d72d6bdf5f32042e8baf2a4c2ba764e7
+    assetName: 
+    assetGUID: 029cde0fd788543b8a21c576700ae580
+  - resourceGUID: 052b5e6b0ed6245bfbc5d862675bb187
+    assetName: 
+    assetGUID: 6a10b412f6128460999947a65b51a02c
+  - resourceGUID: c49b8afd7e5ad4b2aa6f74ba6f0df076
+    assetName: 
+    assetGUID: c11aff8ca7cb24d49b72ad9e7245a162
+  - resourceGUID: 2817d5031b3fb471f8cd6efd75a6aa68
+    assetName: 
+    assetGUID: 69bf26f1f164b478e96112603d7f07e6
+  - resourceGUID: a9e64dc6e47e74427b3d6b46e67b586f
+    assetName: 
+    assetGUID: 0c004a597938849c4839d30c70ea3e50
+  - resourceGUID: e259ebe539a7d46eabbe95fe55d1a3f1
+    assetName: 
+    assetGUID: 50aaebd46f7744351bc9fe2a716fa797
+  - resourceGUID: 9a5bcc40c9573498f96642c54ea98f38
+    assetName: 
+    assetGUID: 55512b40a8c114b07887d51859393ce2
+  - resourceGUID: e663fb089c4a6482ca4b1f0b911b7311
+    assetName: 
+    assetGUID: 8a58dfd033ed741ca866acf558b12ffc
+  - resourceGUID: 7ced91b00e7d94c5bb2795176a83333b
+    assetName: 
+    assetGUID: 4cd43e31475b441bb8f999efbbc80f55
+  - resourceGUID: b226a0c309f234e09b19d26ce3d8d614
+    assetName: 
+    assetGUID: 5e8f6c93b1482454ebf992c70f9ed911
+  - resourceGUID: a5e9e310b0b3b4a78840ede52a47917a
+    assetName: 
+    assetGUID: 78d64a1a570e0460abe8cdb153fb6b66
+  - resourceGUID: 03775eecdbe5740e8b3591a97156ad57
+    assetName: 
+    assetGUID: 4f21ad304858b4ca7916fc367130c146
+  - resourceGUID: c145b680dec5d4c91a2e5e8fde08ef01
+    assetName: 
+    assetGUID: 8e5868ba0160e4776874f096cae34d14
+  - resourceGUID: fcaffc5926d2f43e3a06d0e9e0767525
+    assetName: 
+    assetGUID: f46e5c2af9e99423a8fe4cb7e67c3d3a
+  - resourceGUID: c92c9429e83584135b00a0e2657835d4
+    assetName: 
+    assetGUID: 3eeeebe2f9c0f40a2b6a9631d8c07846
+  - resourceGUID: 3b41ffaebd3fc4ac1a213e69753433a5
+    assetName: 
+    assetGUID: 3fbc15f7d13bd43d3a249f9920d29fd9
+  - resourceGUID: 1a6040a77260146689dd216d6d36e7e2
+    assetName: 
+    assetGUID: 6f1121802ddd34f41a2e57ae83e5f98f
+  - resourceGUID: e195a902ac81447478a6d8fa1cf85e13
+    assetName: 
+    assetGUID: 11134114083184125b8dc9a28f5c9550
+  - resourceGUID: 56f2ce0a9758f4ea3856984aebb0b7dd
+    assetName: 
+    assetGUID: acfbefd1d12ba4bc28601d7d298062f0
+  - resourceGUID: 4cbc6e31b7eba4e6aa920c317bfc372b
+    assetName: 
+    assetGUID: 5f36be315aa154cf08bd1330bf1e401e
+  - resourceGUID: 90790e7417ba54a3a922c4140c211c28
+    assetName: 
+    assetGUID: 1483879db7e3743088ebe918cb5fb9b2
+  - resourceGUID: 5026b19362d5d4fcba45915ea691ac1c
+    assetName: 
+    assetGUID: f5ba1ec22f09541f5ab05ad012cb200f
+  - resourceGUID: c55f7c9830eef4a3cae3aedb5cfa4f75
+    assetName: 
+    assetGUID: 8bcef1eb4899c422fada3bdf658d6a19
+  - resourceGUID: c7849fe64047449158564e83ac4b3460
+    assetName: 
+    assetGUID: 71ceecc9af5654a90ac80735828bf29d
+  - resourceGUID: bdc7ce2c2eb8948b0959898926b822d0
+    assetName: 
+    assetGUID: b81b4269a180742a28427600a62c9f14
+  - resourceGUID: f6d978792123549519b2f614222a3af1
+    assetName: 
+    assetGUID: d95873ca4a553411ba932ff072728927
+  - resourceGUID: edb70849ad0844713bdc96383020f2c9
+    assetName: 
+    assetGUID: 41257307379714493820fa9fdcd2feae
+  - resourceGUID: 1ac83e19c2c644445a06204cfa8a2a31
+    assetName: 
+    assetGUID: e807f1981d7694912806846c3034a634
+  - resourceGUID: ccf13112ffbca48e9b0effe55f424e0c
+    assetName: 
+    assetGUID: fc25808c3adbf4ac59461cbf22f92054
+  - resourceGUID: ae2bb6c808868478196a676cc1504df3
+    assetName: 
+    assetGUID: ca9b052c03a38417dace36dc850a01bd
+  - resourceGUID: 9526f695a6f6a4b4da356bc4e47fcdb1
+    assetName: 
+    assetGUID: 8972a0d82a9ee4550a6204a8615e264f
+  - resourceGUID: 5e6f9c2500f504fbe9e50f195112486f
+    assetName: 
+    assetGUID: 830bb61a85d794fe7bea93cf0639d6b4
+  - resourceGUID: 085dfc1f81cce4397ae0b7a305c3fc52
+    assetName: 
+    assetGUID: 898ceaa05965d455f9e9039612ae2032
+  - resourceGUID: b714c1a4fd2cb4906ab18d7cd1f484df
+    assetName: ' '
+    assetGUID: 93e07ad0b4d9f4c05a766085bfe0975a
+  - resourceGUID: eeaf3cf9f8e65482b862686dda55e235
+    assetName: ' '
+    assetGUID: 3e66359b8b9174de19853cd608da1144
+  - resourceGUID: c62612d975a584e39bcaaf471a7ce6e8
+    assetName: ' '
+    assetGUID: 729d597376b5b4e7287257690e7bc65d
+  - resourceGUID: e5336657e0d694b628bbd11225bbb031
+    assetName: ' '
+    assetGUID: e86db3a767a76412b82b58402d987bc8
+  - resourceGUID: 061ca5a5c218443018dfea2f7af2e7e7
+    assetName: ' '
+    assetGUID: 9b949e15e4ed14612a24095fe90ebaf3
+  - resourceGUID: 0463841b80e33407bbdc92f9f222e9b7
+    assetName: ' '
+    assetGUID: e0e2830c73d3f4479a0a3afb90174a05
+  - resourceGUID: 2853e9b4959a24becaa98b0f255147be
+    assetName: ' '
+    assetGUID: ba225270db0e345bf86d72c97d16fe29
+  - resourceGUID: 863300af227f444cca5ca21eb369e569
+    assetName: ' '
+    assetGUID: 17a63f2a28fd44216b89a1d54de91abb
+  - resourceGUID: 55c38d79d993a4faa89609b009a175db
+    assetName: ' '
+    assetGUID: b3f6c9c50f2ab44149565b060ef5e145
+  - resourceGUID: dfe5da62e0918499eb4dc2838142737f
+    assetName: ' '
+    assetGUID: beba4b0a4f35a48da8313767f9a5289d
+  - resourceGUID: ff2b1f25b3e3f4eb58b79c524768470d
+    assetName: ' '
+    assetGUID: 35265a38940344a89b77745fa5a7baab
+  - resourceGUID: 34cebaac30584425a9151766631a8228
+    assetName: ' '
+    assetGUID: 8ef14e3e9687a4fc9933c8fd80a00b68
+  - resourceGUID: 8a99d5f6640e84e9b831542c2dce5c1d
+    assetName: ' '
+    assetGUID: a70b3726640974454869ea4da341c8af
+  - resourceGUID: 1816dc7219d754b2c96ff7cbafb116f6
+    assetName: ' '
+    assetGUID: b791459772def4ce4bec4ca3d35e4e14
+  - resourceGUID: 769f9f575c2744b6295344f106d253a4
+    assetName: ' '
+    assetGUID: 1a82abb5361f743218d6a5fe879b35c7
+  - resourceGUID: 72bd66ae1d8824091bee21e60fcfe50f
+    assetName: ' '
+    assetGUID: 6351c3ffdfda74d4faa7380a1784017c
+  - resourceGUID: 501c61f56dd464a52b013a03ce5230fa
+    assetName: 
+    assetGUID: db76d267f11c94a27aeaff86727a765b
+  - resourceGUID: 7d47dae3361d347e5b8eabe6febb37b6
+    assetName: 
+    assetGUID: cfcfa4940c0ae498b93d570679fa00d8
+  - resourceGUID: 2d5a82487d74948dda3b1578b801f967
+    assetName: 
+    assetGUID: 5450460f7b2ba4878aaaa525d7bac481
+  - resourceGUID: cb52f5506ef6b4d6a97745456fb24228
+    assetName: 
+    assetGUID: 0a2c393924cae4f6e83e6bb79e042f12
+  - resourceGUID: 8a4873a34319d46d284deadfc60b42be
+    assetName: 
+    assetGUID: 59230b6eb56434fcfb882ad6aaec2307
+  - resourceGUID: 90aaf43a5d6584b1e84e08ede977f7b1
+    assetName: 
+    assetGUID: 152a269a467cb4fb8aeb23a822f816de
+  - resourceGUID: 0f54a51d0872544a2a3196a457d74e85
+    assetName: 
+    assetGUID: 7ac4b0a97d02c4607ab8dfed82e1464d
+  - resourceGUID: 61b69fefa5cb5408880c862626f52440
+    assetName: 
+    assetGUID: 985afd028aae84e74a092818312943ab
+  - resourceGUID: 6a85f56b579574a25a306c5f7914b69a
+    assetName: 
+    assetGUID: e959f4b63a61a4f438a8b3baeda65625
+  - resourceGUID: 8d26bb469645846f18e2ea39c7d6b42e
+    assetName: 
+    assetGUID: 8f7bcaf4ddf0d4691ae56146b0711f3e
+  - resourceGUID: 9658ef92ac134494684c4af2e2089dff
+    assetName: 
+    assetGUID: 09bf2895fb0304053b8d2ee14eed0d90
+  - resourceGUID: ce23127c166264e76b63e9fb1587c0f1
+    assetName: 
+    assetGUID: e3b940ff9e0b846e5b7d1547ad09fd96
+  - resourceGUID: 2a8cea9857e0d4500a14486cf5c01d63
+    assetName: 
+    assetGUID: dd0374bbc84b444a099a2cfcd4b8cc12
+  - resourceGUID: b178d22d99c314c288e357cc86df9240
+    assetName: 
+    assetGUID: 76d5e99d1fbec4b14a8481fab122bd8c
+  - resourceGUID: cfa4557bde8b241d48a4c9ea9e01b484
+    assetName: 
+    assetGUID: aba0c43a02cb54916814d2db05593e27
+  - resourceGUID: 269897d57b4f84f38852256f238c2423
+    assetName: 
+    assetGUID: 55ae7cf1d1d204cf2a06a9664f5f0a64
+  - resourceGUID: ad5b1cf27ddb14f3d87ab8dae29094ab
+    assetName: 
+    assetGUID: 902c9542079aa4bad8f9f16c919255ed
+  - resourceGUID: 2de122e0a099e42879b6b3cf30bf7237
+    assetName: 
+    assetGUID: 9462b149e1d5c4c1f981c3d7de7f408c
+  - resourceGUID: ff96c5c9d894c4196865b7e671b632c0
+    assetName: 
+    assetGUID: 8afe69dcbb3f7422297a875475acacdc
+  - resourceGUID: d5e20773b594b408c839a7c392e8fdef
+    assetName: 
+    assetGUID: 19aefbab806834a26a58c87788597584
+  - resourceGUID: 359e861d7383341048326bf1cd6f1ab6
+    assetName: 
+    assetGUID: b36768e4cc88749aca739a65ade540ca
+  - resourceGUID: 132a8cc9375de406f8fd40c9802cec9e
+    assetName: 
+    assetGUID: c70ebe720cb0b447785ceadfe43e9426
+  - resourceGUID: 04fb2ff912c7745689caf2bedd297af4
+    assetName: 
+    assetGUID: dcae765dd4d7a4598a2a91b59d0c142b
+  - resourceGUID: f4b97538504fd4ffbb573e3633a1d74a
+    assetName: 
+    assetGUID: ffd4028cb8ecd4901b8d2fe1b41cab7f
+  - resourceGUID: aa71fe2d79de04beea95632ebb94055a
+    assetName: 
+    assetGUID: aa901b208035e495c81ee7bd74d3c604
+  - resourceGUID: 456e3215da43143368deee7a39c6644e
+    assetName: 
+    assetGUID: dd28f996da0f14009b92cfc322d336de
+  - resourceGUID: b824d52b9945845029664320363bce30
+    assetName: 
+    assetGUID: b9205ce6d92d34559a49fde39bc51598
+  - resourceGUID: 2737852c4953848c58952a7ab0877254
+    assetName: 
+    assetGUID: 6a399bccfcc1a4fb0a0a9e6abe774376
+  - resourceGUID: a2dde4fb5a7cd42e2a7c0d96dcf50d50
+    assetName: 
+    assetGUID: ae5300c2398314e0b8b16e7c3b0a8bad
+  - resourceGUID: 5754a969665ea4adf99f4dfd7483be66
+    assetName: 
+    assetGUID: 8d3f4dc3a79a34c159ee76edc1ed7167
+  - resourceGUID: e57b2b010d11c4cf39d793aa2d7015c0
+    assetName: 
+    assetGUID: 0d262cef5910c4b7bbf6e467de9dba31
+  - resourceGUID: a0ce7cfcf89eb4b15a547b5ebd031e60
+    assetName: 
+    assetGUID: c7e6997a3fa4041bc8c726d9b0da8157
+  - resourceGUID: 0f4f460f8a9884f22ac62c3518113f60
+    assetName: 
+    assetGUID: d36978be779b3442e9d4a9138ccf9c20
+  - resourceGUID: 6c2c64ed90a164b3fa5883f7915b1f2d
+    assetName: 
+    assetGUID: e5a8fe0494a454a5f9938073a609bea7
+  - resourceGUID: 9e55a07c5ee27447db3409cf7141cae0
+    assetName: 
+    assetGUID: 1b938abb18d5f4afdb50b355b257f79f
+  - resourceGUID: 30521b0634eaf4728ab3a131fd780f68
+    assetName: 
+    assetGUID: 7b4a3eec2d5b0485298cc0d2a97b690e
+  - resourceGUID: e82bbf43d26614e548a3a0195978b6f7
+    assetName: 
+    assetGUID: c2eaa8b1d21da4fef87dd2e99fb0dc26
+  - resourceGUID: f6f2c6b4930514a3f8160e095ed6ab78
+    assetName: 
+    assetGUID: 872513d15d12d41aeade2270f06f18dc
+  - resourceGUID: 3b45942d29165490d959b7e3da42d336
+    assetName: 
+    assetGUID: fdc09287c7de844cc9a5dccaf76b8d55
+  - resourceGUID: 69b40b6d18c35401ca197866395e8e52
+    assetName: 
+    assetGUID: 63b63d1ee3f7a45ed82ea76d94a2fc5f
+  - resourceGUID: 129e34c3c8cbe4e259d69f6d3ecfd870
+    assetName: 
+    assetGUID: ab3a2ae465a534bed94c7afc71e10f6d
+  - resourceGUID: 93571b18f52bf4b2bab8ac3f5746d269
+    assetName: 
+    assetGUID: 14c05acf9e87646e0bf81df686d4cc09
+  - resourceGUID: a30fcbf39eec24948848867a31689ae4
+    assetName: 
+    assetGUID: 81039f5cd7fad49af8c2eca34bd505bc
+  - resourceGUID: 0bafd8b9c42a04b84a100b673525b743
+    assetName: 
+    assetGUID: 66d2e40c876844906a39e58625f48001
+  - resourceGUID: 4e17d00b4aeba4de1a95cafb86e9bd6b
+    assetName: 
+    assetGUID: 94f4ccee4673f4d258dedabb270232c1
+  - resourceGUID: 88ca14f9c739146b3bc90e4879cd99dd
+    assetName: 
+    assetGUID: 59e2f8efc78454de682e77d2b09721f0
+  - resourceGUID: a9e55756050d34f0a936d4f1e8da6548
+    assetName: 
+    assetGUID: 4c0ddbe94ab8d4b13985e25edfb282b2
+  - resourceGUID: c95792771bd8c44a19d119e72d8bdd9a
+    assetName: 
+    assetGUID: b0d1664f77a414a2b9b304ea5d800352
+  - resourceGUID: fefc2d64dc24f4223a552ce6c42efa6e
+    assetName: ' '
+    assetGUID: 7744b264a1cd543bbb9de1a2d4cf3eaa
+  - resourceGUID: 8a90c1b0b7a684ca79134e99f944080e
+    assetName: ' '
+    assetGUID: f2aab2fab31374a95982582cf76e16f0
+  - resourceGUID: 065abbcda3c5b4e1d87c48b9a116da84
+    assetName: ' '
+    assetGUID: 0a777000e52454b9eacbf65ac4ae4c3a
+  - resourceGUID: 32e5af930efbb465a9886fab1e850ceb
+    assetName: ' '
+    assetGUID: 66a7a4b46b92c4366ae4e69557f89beb
+  - resourceGUID: e47f33707d8984328931c4350ab5e3b4
+    assetName: ' '
+    assetGUID: 9a7985bb5dae940c0a9319a9173426f7
+  - resourceGUID: 99d88932f70e04a12bac8d653565e3cb
+    assetName: ' '
+    assetGUID: 7f4f8be1be685419db7492b3c56068f3
+  - resourceGUID: f91f53e07f7d74a0495ccbae7b9948c0
+    assetName: ' '
+    assetGUID: 60252c8337212438b8772cff84ddd60e
+  - resourceGUID: 19dd50b792fa84fcc97014154c82fd1c
+    assetName: ' '
+    assetGUID: b46be35beabf14473a738f9507729cc0
+  - resourceGUID: a8d7e93f3efa9404d83771a136784ceb
+    assetName: ' '
+    assetGUID: d4e1e923fd051401c8c3b12476c28d9b
+  - resourceGUID: 508b7719cc8e74100889bae114057977
+    assetName: ' '
+    assetGUID: cfd9be273aa65424fb3b644c95d30829
+  - resourceGUID: d08c099fb584c4cc0ab88d8474eda7e5
+    assetName: ' '
+    assetGUID: f16cee66fa5434a1ab127ee413bb696a
+  - resourceGUID: 6a57a458d24cf4017a4e8bea8b77caf2
+    assetName: ' '
+    assetGUID: 92fd93889a7c244d59cb895a67803e68
+  - resourceGUID: c10d2941d73654774b048944c6c1cbef
+    assetName: ' '
+    assetGUID: 0f60b3dc0c9cc439dbbffcfddb5889b1
+  - resourceGUID: 1828d668864e2479bafb0016889267e6
+    assetName: ' '
+    assetGUID: 44b4f3f6f02774e63b6028d387997f4b
+  - resourceGUID: 9e29223b403c1441fbe3fd889a4718e1
+    assetName: ' '
+    assetGUID: 0dd8ead6bee844667b4f0a03c37f1080
+  - resourceGUID: 09e51efe382334166981485433c249d9
+    assetName: ' '
+    assetGUID: cd75e66b0c464482ab504aff6f33ed39
+  - resourceGUID: 1885b585511194976b5b0b360c9cd088
+    assetName: ' '
+    assetGUID: f0906be6a0146440bae9a42a0e0ae4ea
+  - resourceGUID: 3d0c434b43cfa41c2a6f269004e30f77
+    assetName: ' '
+    assetGUID: 06e0a1488b0d243b887ea484aec30afb
+  - resourceGUID: c493ca08412b847bab7392609da91a35
+    assetName: ' '
+    assetGUID: c086c58bf8b3440a89c9486f785d24a8
+  - resourceGUID: bd168cc81bef74922bf9c80f328bd1ca
+    assetName: ' '
+    assetGUID: 25cede7fb145c4f22b85eb35f9125032
+  - resourceGUID: 7e719b12ee14648c88f1b8fc9348a292
+    assetName: ' '
+    assetGUID: 09a202a64fcde446fb37ec340e37b203
+  - resourceGUID: cc7fd0836fac749338219322c8b80727
+    assetName: ' '
+    assetGUID: 3ffeb4ab7066b4700bf5431c862d5229
+  - resourceGUID: ebc7dcee51de0433c84f466899cbb9de
+    assetName: 
+    assetGUID: b4bdcf1139fec4c469c02a0c8f923825
+  - resourceGUID: 093ca7cd8576f4ef7861e31fd8084203
+    assetName: 
+    assetGUID: f08848bec488b42d2b348a388c84c882
+  - resourceGUID: e11cc485200d041b494299f80343edb3
+    assetName: 
+    assetGUID: 8cc9e4c161b894f1180de61f4d3c1f9b
+  - resourceGUID: 04c231d7c8ec04f58a8ba2d67c33f277
+    assetName: 
+    assetGUID: 039221c7f165f4609bf56b9d4257891c
+  - resourceGUID: 3991702cc4b1d47b1bcd092623a56d09
+    assetName: 
+    assetGUID: 24cfefdc503084ecb95b4c133de4788e
+  - resourceGUID: af1c73e29d80f46b2a0f7ed718acb975
+    assetName: 
+    assetGUID: fdb319a9e4f874903a838b35c4fb72d6
+  - resourceGUID: 113c9922df30a41cfa351fdd74746c61
+    assetName: 
+    assetGUID: 4aaf26f4e7afb4138872b91b323b0b63
+  - resourceGUID: 6db022403734541f289cc990918f8ad8
+    assetName: 
+    assetGUID: c487c14b2eab541ed9dd1783155023f4
+  - resourceGUID: 7a28e7a9e5ea3498c800891dcbab7252
+    assetName: 
+    assetGUID: b85f07827bc1648ecb1fe3b62e690f97
+  - resourceGUID: e896d7697019642bd90fc240036da1c7
+    assetName: 
+    assetGUID: 5cdad3ee74e1945b9bc64548d7bf1c10
+  - resourceGUID: 4f7394fd6c21642339cc937063dcebd4
+    assetName: ' '
+    assetGUID: 1c06096ce4e36ef459a94a437f77a423
+  - resourceGUID: cc89f0a062c97456791cb3efa9919337
+    assetName: ' '
+    assetGUID: 586e260a65944eb47b4cadfd5d8ca851
+  - resourceGUID: eb8f3e5d4a6f34af3b70d0667da4b4b3
+    assetName: ' '
+    assetGUID: a6a1c76dd1d33fb4a8e762b795aa83ea
+  - resourceGUID: 30a3847b4dada405ca8c2a8c4effb8b7
+    assetName: ' '
+    assetGUID: 2e9c907e999e4fb4cbd50599b6d75583
+  - resourceGUID: f154d28e593f24f3fb201839ca9a08d6
+    assetName: ' '
+    assetGUID: 2d73b74c99b059340aa8c9163c80e912
+  - resourceGUID: 7d21eb66d0b524078b7629cec6912ff4
+    assetName: ' '
+    assetGUID: 10bdd7078abfdfd4d9f4f258ce730da8
+  - resourceGUID: 5e64f8abda088491da3c0a7ffc2441f3
+    assetName: ' '
+    assetGUID: 3ee2c43d16800d148816ec170cab2a55
+  - resourceGUID: 188f09cff14e248f7964376bbb8d7c20
+    assetName: ' '
+    assetGUID: 6d8633b5d44f47a44b72892be714bb8c
+  - resourceGUID: 67f8f3653b7ad456f98402a5cbddc165
+    assetName: ' '
+    assetGUID: 33f6a605f9f92d5469c68e6ba553a41e
+  - resourceGUID: 75ce75befd11b45ee8d83c45af0e1902
+    assetName: ' '
+    assetGUID: d6f69a314f992d149a0828dd64e15e29
+  - resourceGUID: 98dd2cf837c6c4b1e9b1211688ec7ece
+    assetName: ' '
+    assetGUID: 355463517544c114a8984a9c1d844929
+  - resourceGUID: f5ec7913bae2846baaf333e447d4a89f
+    assetName: ' '
+    assetGUID: a4f1d402935ab4f44b4d569e5df1911d
+  - resourceGUID: 40e01f859a9bc43089333d95a1147375
+    assetName: ' '
+    assetGUID: 2c8ee9b4da33340339a059e838644c5e
+  - resourceGUID: 64c8177d155fe4665818b1870c177262
+    assetName: ' '
+    assetGUID: ff7675d9fc2774cf488f659bda919fe9
+  - resourceGUID: ea1b7075e6947447fa28f7e059b234c9
+    assetName: ' '
+    assetGUID: e406de4c3d38c4f8f8af41f6485f7ac4
+  - resourceGUID: 43fbf0094a9044ac2803e96cae872a15
+    assetName: ' '
+    assetGUID: fa5cbc1b81292490981038f5220faa04
+  - resourceGUID: 8e425f0aa4a7146e98cd29e173c12324
+    assetName: ' '
+    assetGUID: 0afbd2ff8dcdf4caa9277d91d225eb9e
+  - resourceGUID: ebf58d8b9308a47de839d9a215d86948
+    assetName: ' '
+    assetGUID: 2e6d2005aa6f34383a106a9532e818e4
+  - resourceGUID: 336d1c6e9ce524bfd95cb1870e14ecdb
+    assetName: ' '
+    assetGUID: 0ba19ac10f55b4f4683e3f046074c9d7
+  - resourceGUID: 7cf5889ece2594d348fb7c7291bdaf2e
+    assetName: ' '
+    assetGUID: 77e37c70d37c949adb474fe33fed021e
+  - resourceGUID: 167b1731589a44c969c678e82231175e
+    assetName: ' '
+    assetGUID: 81cfea3f057a24c56bee710ccd249b6d
+  - resourceGUID: 9c7078082c76f4a54a951130841595d7
+    assetName: ' '
+    assetGUID: dec92d60c3b6e4fa8885061b182f70de
+  - resourceGUID: a61db2994704c4212a11f44f0cf23acf
+    assetName: ' '
+    assetGUID: 00b69fa6804974a7180dfacabaee89bb
+  - resourceGUID: 63d7dbaa07a064c95860e90b2157578c
+    assetName: ' '
+    assetGUID: b8e0fa0bd33aa4921ace265221b4b721
+  - resourceGUID: 06fdb142fffa14139ad291589281fceb
+    assetName: ' '
+    assetGUID: d0ba5d67235ed4d4caeeb47cf738536a
+  - resourceGUID: 3ae3484a393ed4641a17a2349d14d76c
+    assetName: ' '
+    assetGUID: 4ebc3655b0a1a4fce95eaf46eeb87141
+  - resourceGUID: 24576c37ac45d48798079d30d442f6d5
+    assetName: ' '
+    assetGUID: 76e24e5248d4547019c2afe2bac2ae30
+  - resourceGUID: fe7f160ab20984a4cb725214995e3c2c
+    assetName: ' '
+    assetGUID: 42e48dc4976954deb94d5f5ebb571fb7
+  - resourceGUID: b5305793f2b8942a89603b1679b8d2ab
+    assetName: ' '
+    assetGUID: c2b9aeb3ab536453bb6265ce3194c4ac
+  - resourceGUID: 725ab17cace31467c8f65dd20e8081e6
+    assetName: ' '
+    assetGUID: be1b8ade8d19447beb724f6e91d14db6
+  - resourceGUID: 0358d1a90d33545c8ad9a0d8c4d8d9aa
+    assetName: ' '
+    assetGUID: 2f511eb79b962429a98f5f26f195d963
+  - resourceGUID: 114534f87af834ad3b7afcc36d46c261
+    assetName: ' '
+    assetGUID: c3dead5cb14b14366a8fdbd0acdd9ce2
+  - resourceGUID: 4f9cd246aa43843d48700f1a93dd6754
+    assetName: 
+    assetGUID: 7cdd574bd8047413c954799082741b45
+  - resourceGUID: 948f8ee9dcd054195aec5631177990da
+    assetName: 
+    assetGUID: c09ddcc0972924b89a040c59aa7c225e
+  - resourceGUID: c4d06255067674294a9d01597cf9b356
+    assetName: ' '
+    assetGUID: 298cd296e51e3486099d50db12258d06
+  - resourceGUID: e8f45a6f22b9943ef9392aa2ecad33c6
+    assetName: ' '
+    assetGUID: 65497768ecb9b421db7c6138961bf5fe
+  - resourceGUID: b30d0a2aeeb1a4e4f9190a2f0edf4ea5
+    assetName: ' '
+    assetGUID: fd70b967f1c3f468686665d1de2530d5
+  - resourceGUID: faeddca0fc32f4607abfa4f4441f7c8a
+    assetName: ' '
+    assetGUID: 93d3dcb3a6c224ed89e6b1b75595eaff
+  - resourceGUID: f0e8802acd2834ac5b47324be25e3574
+    assetName: ' '
+    assetGUID: 7df2460a1e12b4c498ad5fc6deb04d78
+  - resourceGUID: d19aef3ac768848199492e5829eb2160
+    assetName: ' '
+    assetGUID: f499c236a69b9425b953bd337fb37acc
+  - resourceGUID: 6d54f8f9f4eeb43bda6f091697dc7307
+    assetName: ' '
+    assetGUID: dc310012105bf453588e695f372825ed
+  - resourceGUID: fd660ba258c05431c8647430b155e25e
+    assetName: ' '
+    assetGUID: 06770d2314ac64c119bce5fc6d21b4b3
+  - resourceGUID: 94a7fe906a196441c92016b6241e8695
+    assetName: ' '
+    assetGUID: 1269378f1f3eb427f92cde1f2007279f
+  - resourceGUID: 7d62b4a5118914a8ba0f2bfba676216a
+    assetName: ' '
+    assetGUID: 49ac97b2981024a0eb0549d7e451ba25
+  - resourceGUID: 543927e84ae8c4ccf85670b5bbf9c4e2
+    assetName: ' '
+    assetGUID: 8b4a4e7f56f65435182c737dc7d5a0ca
+  - resourceGUID: 28bc22a65e10f4e798663d187c9ee118
+    assetName: ' '
+    assetGUID: 0431df567deea4d7db4adad50a79530b
+  - resourceGUID: 1f8c6860a010042549ce3732b1ec6fea
+    assetName: ' '
+    assetGUID: 2b0ed66059b27426a8d1d9ee0427d3ba
+  - resourceGUID: 3372d1bc16baa47d8a450fc1e36a7696
+    assetName: ' '
+    assetGUID: 9432722d34ce84e37b2d0cbdc22e4eb7
+  - resourceGUID: 1b5b3deda00a6408ebbc5caa678bdd6c
+    assetName: ' '
+    assetGUID: 1cbdb9f24ae0d408cb4b3eabbc710c9f
+  - resourceGUID: a2ea479a6df314f9697460f876e65bf4
+    assetName: ' '
+    assetGUID: 173d96a862e3f46a08476f621c51545a
+  - resourceGUID: a7813b02c4ae84b21a9e7939cf234d83
+    assetName: ' '
+    assetGUID: f5b1997cf56364e45a5eb542cb4a8405
+  - resourceGUID: 7b773bfa55eb54e858dde818180a3082
+    assetName: ' '
+    assetGUID: da38153855dc145f48ba75ac3e1550f0
+  - resourceGUID: 45bb00e87c4b5481bb4207c752bf8ff0
+    assetName: ' '
+    assetGUID: 34eb5f36a2cde44b8aef969382c11b84
+  - resourceGUID: 1f8c457369bbb4edfa24d98f21e735b4
+    assetName: ' '
+    assetGUID: 1c1f0c4c70dca483788b4dac16513db9
+  - resourceGUID: ea6eab853384d4b04a51f6af3fa06c4a
+    assetName: ' '
+    assetGUID: 2d2f287d3c02245929325a12e9edcd89
+  - resourceGUID: 5aad792e1418e42cd9f560292ad16b65
+    assetName: ' '
+    assetGUID: 99cc1a3f54b954d97b6e9b4ee4a504e3
+  - resourceGUID: b30e909df59f5474db619bc896d0015e
+    assetName: ' '
+    assetGUID: 8f332bc1ca5ab4d2ea3e8b1100aa0433
+  - resourceGUID: 295d1245acc8f48cf959e4e11e86dd99
+    assetName: ' '
+    assetGUID: 54502301728464287adf1aef74c55db2
+  - resourceGUID: 49356c186554f44ef8aac0229b356998
+    assetName: ' '
+    assetGUID: 4e4a6f28a245f488b96cf3bf6d4d1bee
+  - resourceGUID: ac2432f24238c404eac9900bcf69516c
+    assetName: ' '
+    assetGUID: ff66e7a74080f4f2da6798e16c1bf411
+  - resourceGUID: 21960ed191db74f879eced6ca6e5b6c5
+    assetName: ' '
+    assetGUID: c817a5eef52e948f1985fdcc2ebd07aa
+  - resourceGUID: f36ff8a798da4484782e60900363b117
+    assetName: ' '
+    assetGUID: 1307c98f627134e808d5cf4f08fb1175
+  - resourceGUID: 7e9426ea9c0d14ce798bfaa35eeac0e6
+    assetName: ' '
+    assetGUID: fb845f18b233c4556b1a0c15478c74a9
+  - resourceGUID: 33628d41d7ff3457e8d3951e2405cae2
+    assetName: ' '
+    assetGUID: 6d33f75326f3444128fe919455d532c5
+  - resourceGUID: e3a19bc5e3d054115a8dccc0005a1f92
+    assetName: ' '
+    assetGUID: 5c756d9d9d0dd4ddeb5e02ecab949a93
+  - resourceGUID: 38dddfdd9aedd4558b28ffd032098ff8
+    assetName: ' '
+    assetGUID: 21185dd175e144fcc9fb84710cb8cc2e
+  - resourceGUID: 2ac7f27334def462d900d6c135fa03f3
+    assetName: ' '
+    assetGUID: 9dfc6f9d93b2243b6b0231041d3da216
+  - resourceGUID: ffc7d220d910f4f3983b52e0b10d089e
+    assetName: ' '
+    assetGUID: 7472fa8e63a1747febc5b4ca011014f7
+  - resourceGUID: 96d620436c5c94a1ea3904ecbec016ba
+    assetName: ' '
+    assetGUID: 799cbe27ac00d4d1589fff388d4823fd
+  - resourceGUID: 229075880eae344c7a909119950e8829
+    assetName: ' '
+    assetGUID: 47ecee3b8e0f64f5490885c244ed92e3
+  - resourceGUID: 34d316cd4c0574acc861934816154608
+    assetName: ' '
+    assetGUID: cfad594a567454f73a6fda589539edaf
+  - resourceGUID: d1b8167252c134a6cbd1946f3d8be63a
+    assetName: ' '
+    assetGUID: ba5ce10e7d73e4504897c4882043c140
+  - resourceGUID: aa78ae741fbed40108c558374cfca632
+    assetName: ' '
+    assetGUID: 94120d7905ad3410295d9b5d8de329ad
+  - resourceGUID: b08d2fbe657eb4fb387ee760af3ebb39
+    assetName: ' '
+    assetGUID: 8fd2ab4e1dd2e4dd5be9fa399c4f5287
+  - resourceGUID: 55fb6574f0bd4486f9c5b23ed99b1234
+    assetName: ' '
+    assetGUID: b022a7621205145eead0f6b0cd9a94a0
+  - resourceGUID: e94e64b71135149fca147a7fdc3c7def
+    assetName: ' '
+    assetGUID: 2ff1ff5d060854c88bba395f004fe34c
+  - resourceGUID: 55fdba8e5c85d430cb21f45e4c8e505a
+    assetName: ' '
+    assetGUID: b77bb3837bbd94c0cbaad01543320e01
+  - resourceGUID: db2443808bfb747c7bee7f08090b45b5
+    assetName: ' '
+    assetGUID: e606ff87d00594af4a281425985e1181
+  - resourceGUID: e7929361d2a884b2f93ca6365b99cbda
+    assetName: ' '
+    assetGUID: a0d6bb3bcde2e4ad19977dc2f3b3e1ed
+  - resourceGUID: 03ca98909d03e4e11ab36d67a838bef2
+    assetName: ' '
+    assetGUID: c3d4581f0d10d4c44946390f4a5e7f87
+  - resourceGUID: a9e1f58541a5e46809b9a7ba280ad0ad
+    assetName: 
+    assetGUID: 62c81723401684c95abb7b03d7dc6a1c
+  - resourceGUID: 94a2c75759cc34829baebb9ece96b18d
+    assetName: 
+    assetGUID: 146d4c3e267d340689bcb30f1cbc25e2
+  - resourceGUID: 9f37aeb1f2d164b5992473f4642fb061
+    assetName: 
+    assetGUID: 3a625de2ba9604e748a04c543dd34d6b
+  - resourceGUID: 01e09095577774addaa778941305ff2b
+    assetName: 
+    assetGUID: 1108abf9068ec4d6eb3b7ab7cead1ba9
+  - resourceGUID: 43edf7e8d5e2c4ba199f5f0d898b9faf
+    assetName: 
+    assetGUID: 465a16d77691b4061b7116cba3ad2d4c
+  - resourceGUID: f13135e7a440e47e89ca9743db04ee7f
+    assetName: 
+    assetGUID: 7f3adc6e9d3c54d62b5287e976e73eb1
+  - resourceGUID: a41f41b0bc3cd4252ae7d0a493b1a5ab
+    assetName: 
+    assetGUID: 7425c2d047a7944e48a660f3c4cb3d93
+  - resourceGUID: ee41970f215f045519803f6a63146560
+    assetName: 
+    assetGUID: 49fc6ace44d0b4090bfbadbb5a6ad3b5
+  - resourceGUID: 7de575c1627ad432baa87763fc95d379
+    assetName: 
+    assetGUID: 5e430c6fedc7c4baeb4ad7b9becd1ddc
+  - resourceGUID: 7c8ff6bb5d7d14e52886a2d618ba6d15
+    assetName: 
+    assetGUID: 10ffde909cc60461e9a3c427a9e55732
+  - resourceGUID: 2f8cb4ccfd0fd468daef7f4b5e6e138f
+    assetName: 
+    assetGUID: 00e514054567646fa934a7e7c1656561
+  - resourceGUID: 0a610157530364ba0bafbf81d8dd71f1
+    assetName: 
+    assetGUID: 01032d6270cbc4332964416d9962b308
+  - resourceGUID: 1a63bb5f9849b964583cab61c2304053
+    assetName: c1_0_1_1halloweenSC@2x
+    assetGUID: 3209cc559f695a24a94a4045ad83524a
+  - resourceGUID: 4632b4ef8f0dd8c4f824923717f39965
+    assetName: c1_0_1_1halloweenSC@1x
+    assetGUID: 3d5c91ac44d2ddf42a75753c2683ebf6
+  - resourceGUID: e990ce09a42210141b1b9397b13d669b
+    assetName: c1_0_2_1halloweenSC@2x
+    assetGUID: f7a0a43bf2358ab4ea1154402b3701bd
+  - resourceGUID: 007afa2ba659bd8439ac2b24ee785836
+    assetName: c1_0_2_1halloweenSC@1x
+    assetGUID: 55807504ba6628e45974262da2d48e9b
+  - resourceGUID: 3a1cf3b5d5c0fd549a0a99173fff8b56
+    assetName: c1_0_3_1halloweenSC@2x
+    assetGUID: 5671acd48273a2441a510295c0a226cb
+  - resourceGUID: 4a1106535cc3f6d4395bcc7fff090db5
+    assetName: c1_0_3_1halloweenSC@1x
+    assetGUID: 3baa4d210585632409dc1f154f6ec73c
+  - resourceGUID: e8f16590619588c4d9fab7fc72027a26
+    assetName: c1_0_4_1halloweenSC@2x
+    assetGUID: 3839f4bec8f0df3429929b69e5ffe262
+  - resourceGUID: 553c823bf6f3ac2469db1a60fb80b13f
+    assetName: c1_0_4_1halloweenSC@1x
+    assetGUID: 87c7567f6a42217478482223a7ae568b
+  - resourceGUID: 22e9230227ddc3c43a0f9ac39941e795
+    assetName: c1_0_5_1halloweenSC@2x
+    assetGUID: b4aba37047535724dbdd0b0d9a25c607
+  - resourceGUID: 2f5400261c936044e85d3daf7c195ed2
+    assetName: c1_0_5_1halloweenSC@1x
+    assetGUID: 2881083bfb011f144ac27a44d9375611
+  - resourceGUID: 63c9ef65963cee54f9252dd7f4faac19
+    assetName: c1_0_6_1halloweenSC@2x
+    assetGUID: 04a7ba6d17a72f9488b9da2836600d21
+  - resourceGUID: bcac573afde841a43952b6a5c7ec47a3
+    assetName: c1_0_6_1halloweenSC@1x
+    assetGUID: 81e6e69ec016e9f4bb7fca4229d0c3d0
+  - resourceGUID: 5fcb64e08be32f74da457a3f25d6c53f
+    assetName: c2_0_1_1halloweenSC@2x
+    assetGUID: a87db12df9efe9e428c93518be3fb927
+  - resourceGUID: 787e243a7f9b96e49adf89376cbcf7a1
+    assetName: c2_0_1_1halloweenSC@1x
+    assetGUID: a2929b506b801d94d84df5f798f90ca5
+  - resourceGUID: d81450e802c539d49a1ab59ec905e770
+    assetName: c2_0_2_1halloweenSC@2x
+    assetGUID: e506de1498844cb429d40e324c3248b3
+  - resourceGUID: 634dac2262d1b1b4c91b220a59bc284b
+    assetName: c2_0_2_1halloweenSC@1x
+    assetGUID: 375043a7aa09db649a4fe976f2c7d8dc
+  - resourceGUID: f5dd9ba0a1b3aaf46bef088a59d30e01
+    assetName: c2_0_3_1halloweenSC@2x
+    assetGUID: 1237f950f408f5a4d84789cab2dd456e
+  - resourceGUID: 3163b46f3accabb4ca895f30907f967a
+    assetName: c2_0_3_1halloweenSC@1x
+    assetGUID: f4c540327a64b864f80dee82fcccdb3a
+  - resourceGUID: 43f37efff194f094b9edd93563ef2f65
+    assetName: 
+    assetGUID: afc56883eebd79146a699a3f7f927349
+  - resourceGUID: 534969dca4359c6488cc46ffc0cd1669
+    assetName: 
+    assetGUID: fef5f40804013ca4c927e7429493b2d5
+  - resourceGUID: 270686f040904694abb41a26ba4377c3
+    assetName: 
+    assetGUID: e4da0f04b46c37b42a73c745275539ba
+  - resourceGUID: 0fef26dd0082ab340a624006156226fa
+    assetName: 
+    assetGUID: e86682a988a686f47ba466473386da24
+  - resourceGUID: 77a85b97f0b023145947707659a99679
+    assetName: c2_0_6_1halloweenSC@2x
+    assetGUID: fadff0e37db3ef642b7217338b6fe20f
+  - resourceGUID: 8a2b1e9528bbc0d48ad4b961b28e0850
+    assetName: c2_0_6_1halloweenSC@1x
+    assetGUID: 6c5cb178e64b95f4eae5e13f4daef47c
+  - resourceGUID: f75b970c70099364c8cea6b3abf81748
+    assetName: c3_0_1_1halloweenSC@2x
+    assetGUID: 71941ab85ea6ec34e8ca550a80c16219
+  - resourceGUID: c541657e35154a74b9fbe785e84e1ee9
+    assetName: c3_0_1_1halloweenSC@1x
+    assetGUID: da0f4cceabfe54141969ea5d671dec32
+  - resourceGUID: cf460694b5b348b41b45d7647d5a626a
+    assetName: c3_0_2_1halloweenSC@2x
+    assetGUID: 89e37a3a3ac62e54598baa56ad187cbf
+  - resourceGUID: 595b4d1782fa34540a602fa71e29f9af
+    assetName: c3_0_2_1halloweenSC@1x
+    assetGUID: 49d194cfa4ec294428bb209591ae3c6f
+  - resourceGUID: 5a4172465bbc8574c9bd00be4038868b
+    assetName: c3_0_3_1halloweenSC@2x
+    assetGUID: 5fe61a9bf8f636749aa751c39c108e54
+  - resourceGUID: 0cdfa33ad3050844aa31f2af98b4cf95
+    assetName: c3_0_3_1halloweenSC@1x
+    assetGUID: 5f49b8ab211196c4ba7094184a92ac07
+  - resourceGUID: 79411ebec485a354eaa459c3b309045e
+    assetName: c3_0_4_1halloweenSC@2x
+    assetGUID: a3f24d94a981cc840a12ce3978e62f1c
+  - resourceGUID: 87db13845a26e704292f375710faa8b9
+    assetName: c3_0_4_1halloweenSC@1x
+    assetGUID: f171bf2b9e3c5c044bf5a4bcde2ba714
+  - resourceGUID: cbfe489b1e1e9d741bd9f4e1f67e2c97
+    assetName: c3_0_5_1halloweenSC@2x
+    assetGUID: 3327b3b39a983544fa787b7679e137ff
+  - resourceGUID: 03b99a9c95e96c845a19664dcf43027b
+    assetName: c3_0_5_1halloweenSC@1x
+    assetGUID: 9ffd114d41bd8b348817bd6f29ddbeb5
+  - resourceGUID: 05042ebd93bd93a4d8ee95aedf9d55ef
+    assetName: c3_0_6_1halloweenSC@2x
+    assetGUID: 55c9c562ecb906246a25f097b7a37959
+  - resourceGUID: ad679c18dcfe7a64a8b518ba0cfc7a1c
+    assetName: c3_0_6_1halloweenSC@1x
+    assetGUID: 408fe00a1abd1d64ca283c3d5d7b2b7c
+  - resourceGUID: 95ee0ebc70384bf49aa5388182075727
+    assetName: c4_0_1_1halloweenSC@2x
+    assetGUID: 73d817e93dfd8624a9a5d6b7447a6bf5
+  - resourceGUID: 25981792cb9bcac4cb6d6ce716dbae82
+    assetName: c4_0_1_1halloweenSC@1x
+    assetGUID: 1a9596e99850d004b8fb07539fc54698
+  - resourceGUID: 99e02e7922a853645b5a59d12e71f16a
+    assetName: c4_0_2_1halloweenSC@2x
+    assetGUID: 41f4241fe70c9b5458d34ede526014bc
+  - resourceGUID: 6f89f59fd2058e948adc3510ed7fb8fe
+    assetName: c4_0_2_1halloweenSC@1x
+    assetGUID: 072767826a7948c49bbdb17723801dbe
+  - resourceGUID: d746fb59a9d48454b85763a0a70fadfd
+    assetName: c4_0_3_1halloweenSC@2x
+    assetGUID: de150f015bbc1ad45ae039402e1d4619
+  - resourceGUID: 54e2785da63171e47ae583b6051d9687
+    assetName: c4_0_3_1halloweenSC@1x
+    assetGUID: 03935db52463ce5419946cb438c41bb6
+  - resourceGUID: 8ab10d37c9856ee44b9cccf6bde6781c
+    assetName: c4_0_4_1halloweenSC@2x
+    assetGUID: 22c169360c6f25847b36d53cbbb611f7
+  - resourceGUID: c25760bc49b32874397f09d371f616b8
+    assetName: c4_0_4_1halloweenSC@1x
+    assetGUID: 12f7a31d0a8fb5749abf1e7d9f942de2
+  - resourceGUID: 60c4b8f836f367c4fb58d7a84c6cea1f
+    assetName: c4_0_5_1halloweenSC@2x
+    assetGUID: 191b390c208f86e44823299d1b4e3e09
+  - resourceGUID: 6a4c78c8db5e6b94e98b262bfd67b1de
+    assetName: c4_0_5_1halloweenSC@1x
+    assetGUID: 8f8a5e9c172e3804ab2706827158e570
+  - resourceGUID: 337a86ee59e9df54d85311b4c9299393
+    assetName: c4_0_6_1halloweenSC@2x
+    assetGUID: f0bbffe492c2d0049898c6cc3ac09330
+  - resourceGUID: d29353f2c6aec74449a256716a274673
+    assetName: c4_0_6_1halloweenSC@1x
+    assetGUID: 03623151199b0674b9a899e729b7a710
+  - resourceGUID: 3fef36a0839ae844eba07f6267fe05cc
+    assetName: c5_0_1_1halloweenSC@2x
+    assetGUID: b1f3931652d49464ab9d47bdbf5fcddd
+  - resourceGUID: 772122e73577c934ba69ece752e260cb
+    assetName: c5_0_1_1halloweenSC@1x
+    assetGUID: ae24394e9551b524e96af52f39af031b
+  - resourceGUID: 17a0dd8737d93b248b36c2bb26f19e0b
+    assetName: c5_0_2_1halloweenSC@2x
+    assetGUID: 770015e861bf219418ab4ab0821ba0ff
+  - resourceGUID: 477057ed619f3384c89bdd669a7cb3ee
+    assetName: c5_0_2_1halloweenSC@1x
+    assetGUID: 21b6661e96f53cb45b08553c66185553
+  - resourceGUID: 097e67512d8aa4240a792e4488bbb9e6
+    assetName: c5_0_3_1halloweenSC@2x
+    assetGUID: 1daae14d570b34843aad7eabb1a589ce
+  - resourceGUID: e8f4d4332ae69b643a21175c972829db
+    assetName: c5_0_3_1halloweenSC@1x
+    assetGUID: 9d2784c787cbbdd44afe9dcf61cc3587
+  - resourceGUID: 8abd43c35aff0cb4c8daf89ab6c9cfe4
+    assetName: c5_0_4_1halloweenSC@2x
+    assetGUID: f863e8869d42a7c43af18c9f86d05c74
+  - resourceGUID: b997bef0c16fd294e933fdfc8edbab3c
+    assetName: c5_0_4_1halloweenSC@1x
+    assetGUID: dabbfb5bc916bb540b2ad3963e20948a
+  - resourceGUID: 42a3918111392494eb3e9d2cab2283c1
+    assetName: c5_0_5_1halloweenSC@2x
+    assetGUID: f4963de8dcd23a84285945f72f392d95
+  - resourceGUID: 0cfc2558936451047a680ef7e39ce1fb
+    assetName: c5_0_5_1halloweenSC@1x
+    assetGUID: 062775d6a1747704c981bbb66abd79cf
+  - resourceGUID: 944d1e7d7531c4e4bba6c407a15bc8fd
+    assetName: c5_0_6_1halloweenSC@2x
+    assetGUID: 492956e6af0f7d2499fd43a9f4b1abed
+  - resourceGUID: 538d47f71d527384fbdb53c8ab65a37a
+    assetName: c5_0_6_1halloweenSC@1x
+    assetGUID: 0b59f917c1aa834448249c93d6f4f755
+  - resourceGUID: 37e66705894f79f42a812f4ce049f7a8
+    assetName: c1_0_1_1halloweenSC@2x
+    assetGUID: 9eada900055ccd944bfbc77fdb51ad7f
+  - resourceGUID: 5ed0cf5d03767454db7338c96b987329
+    assetName: c1_0_1_1halloweenSC@1x
+    assetGUID: 61a629601a2bb304b9f53c66c20ab334
+  - resourceGUID: 47b7f8e5cf869aa4fa4c2d4d065e8627
+    assetName: c1_0_1_1halloweenSC@2x
+    assetGUID: 7569bcafa5904cc45a6e64f986cdbb3c
+  - resourceGUID: 424867fd949c994418c6285d1c9d9385
+    assetName: c1_0_1_1halloweenSC@1x
+    assetGUID: a046469d05b41b44dbb0326c7e5dbef6
+  - resourceGUID: c3059b4f2738bff48a424d5bc96bc2cd
+    assetName: c1_0_1_1halloweenSC@2x
+    assetGUID: 94e2275553297e344ae280a7057badcc
+  - resourceGUID: 34631d2d3fc4b7248b69362e7775688d
+    assetName: c1_0_1_1halloweenSC@1x
+    assetGUID: 3172017e52d3da64083ffd660c02de10
+  - resourceGUID: e78daef5c841702468d5ef732b171d4a
+    assetName: c1_0_1_1halloweenSC@2x
+    assetGUID: 0f9ef30f87e1e3e4bbe3fd09a6e456b0
+  - resourceGUID: 86331cd78dc342c4989c8c95e5039fca
+    assetName: c1_0_1_1halloweenSC@1x
+    assetGUID: 74be9d47dbc799b4fae99991fcca2cf0
+  - resourceGUID: 0d87757425324ea47b3e1c44e2b7a668
+    assetName: c1_0_1_1halloweenSC@2x
+    assetGUID: 03cb2d14a013df64c9b09f783aa2e6fb
+  - resourceGUID: 17520f123c99443488320d14f692bdef
+    assetName: c1_0_1_1halloweenSC@1x
+    assetGUID: aeb49f5e2b29e2e4990da053da15d8ac
+  - resourceGUID: 5b16863a1aed52e4286cc4deb2171632
+    assetName: c1_0_1_1halloweenSC@2x
+    assetGUID: ba092e1338f49c84293a36ba492cf0e3
+  - resourceGUID: 0e0652f34ee61d74c920922e1be6f98e
+    assetName: c1_0_1_1halloweenSC@1x
+    assetGUID: 15bbbc00236b7c445bb8c18e47df19a0
+  - resourceGUID: 9c5dcdab491094fb39ca838a9932ae2b
+    assetName: 
+    assetGUID: 96dd82febabc84f8488fe62028ad30f8
+  - resourceGUID: 569595b674fea4971bbf6f0a6d612284
+    assetName: 
+    assetGUID: 7096f9bee8f6b46058b58f2caf400912
+  - resourceGUID: d4d21ec91591043cab3c3f78113c3614
+    assetName: c1_7_4_1SC@2x
+    assetGUID: 026806a34d7f54a2dac64be2e2e48949
+  - resourceGUID: 6c8cefb1ab52b473fb7ee52e0f1a0253
+    assetName: c1_7_4_1SC@1x
+    assetGUID: ce94b67a36ccd4997ab1b2949401bf13
+  - resourceGUID: 00eaf3968271d47bd866f9151ac8ba67
+    assetName: c1_7_3_1SC@2x
+    assetGUID: 4d4d9f5519f3c4e449e84dae6481fc60
+  - resourceGUID: a4b296aeb4d984ba8840d5a7d47660d9
+    assetName: c1_7_3_1SC@1x
+    assetGUID: 93d81570ef69f43e8b384d20aacad86d

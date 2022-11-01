@@ -1,0 +1,3 @@
+class ComposeScrollList extends ScrollList
+{
+}

@@ -1,0 +1,26 @@
+<Atlas>
+	<GConfig>
+		<dstPath>OTA_Resources/2014Halloween/atlas/</dstPath>
+		<rootPath>Textures/UI/Atlas/</rootPath>
+		<dstName>Gears.bytes</dstName>
+		<boundSize>3</boundSize>
+		<clampBoundSize>0</clampBoundSize>
+		<clearBound>true</clearBound>
+	</GConfig>
+	<Images>
+		<Image name="Gears_0">
+			<src path="OriginTexture/gear" />
+		</Image>
+	</Images>
+	<Distribution>
+		<Release>
+			<meta ref="Gears_0"/>
+		</Release>
+<!--		<Release>
+			<dstPath>Resources/low/Textures/UI/Atlas/</dstPath>
+			<meta ref="Gears_0">
+				<scaleSize>2</scaleSize>
+			</meta>
+		</Release>-->
+	</Distribution>
+</Atlas>

@@ -1,0 +1,49 @@
+<KBNMenu Name="BuffIcon">
+	<Grid Name="_Main">
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition/>
+			<ColumnDefinition/>
+			<ColumnDefinition/>
+		</Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+            <RowDefinition Height="16" />
+			<RowDefinition Height="105"/>
+		</Grid.RowDefinitions>
+		<ContainRef Name="AttackZone" Grid.Col="0" Grid.Row="1">
+			<ObjToUI RefName="simpleBtnAlert"/>
+			<Grid>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="105"/>
+					<ColumnDefinition Width="16"/>
+					<ColumnDefinition Width="105"/>
+				</Grid.ColumnDefinitions>
+				<ContainRef Width="105" Grid.Col="0" Grid.Row="0">
+					<ObjToUI RefName="iconAttack" ContainRef.deep="0" ContainRef.hFill="DockRight" ContainRef.vFill="Center" ContainRef.lockType="LockRadio"/>
+				</ContainRef>
+                <ContainRef Width="105" Grid.Col="2" Grid.Row="0">
+                    <ObjToUI RefName="iconAttackNum" FontSizeEnum="Font_50" NormalTextColorEnum="Button_White" Alignment="MiddleLeft" ContainRef.deep="0" ContainRef.hFill="DockRight" ContainRef.vFill="Fill" ContainRef.lockType="None"/>
+                </ContainRef>
+			</Grid>
+		</ContainRef>
+		
+		<ContainRef Name="NormalZone" Grid.Col="2" Grid.Row="1">
+			<Grid>
+				<ContainRef Width="105" Grid.Col="0" Grid.Row="0">
+					<ObjToUI RefName="iconBuff1" ContainRef.deep="0" ContainRef.hFill="DockRight" ContainRef.vFill="DockTop" ContainRef.lockType="LockRadio"/>
+				</ContainRef>
+				<ContainRef Width="105" Grid.Col="1" Grid.Row="0">
+					<ObjToUI RefName="iconBuff2" ContainRef.deep="0" ContainRef.hFill="DockRight" ContainRef.vFill="DockTop" ContainRef.lockType="LockRadio"/>
+				</ContainRef>
+				<ContainRef Width="105" Grid.Col="2" Grid.Row="0">
+					<ObjToUI RefName="iconBuff3" ContainRef.deep="0" ContainRef.hFill="DockRight" ContainRef.vFill="DockTop" ContainRef.lockType="LockRadio"/>
+				</ContainRef>
+				<ContainRef Width="105" Grid.Col="3" Grid.Row="0">
+					<ObjToUI RefName="iconBuff4" ContainRef.deep="0" ContainRef.hFill="DockRight" ContainRef.vFill="DockTop" ContainRef.lockType="LockRadio"/>
+				</ContainRef>
+				<ContainRef Width="105" Grid.Col="4" Grid.Row="0">
+					<ObjToUI RefName="iconBuff5" ContainRef.deep="0" ContainRef.hFill="DockRight" ContainRef.vFill="DockTop" ContainRef.lockType="LockRadio"/>
+				</ContainRef>
+			</Grid>
+		</ContainRef>
+	</Grid>
+</KBNMenu>

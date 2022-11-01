@@ -1,0 +1,126 @@
+<KBNMenu>
+    <Grid Name="PveMainChromMenu">
+		<Grid.RowDefinitions>
+            <RowDefinition Height="140"/>
+            <RowDefinition/>
+			<RowDefinition Height="40"/>
+            <RowDefinition Height="72"/>
+        </Grid.RowDefinitions>
+        <!-- Top -->
+        <ContainRef Grid.Col="0" Grid.Row="0">
+            <ObjToUI RefName="menuHead.backTile" ContainRef.deep="0" ContainRef.hFill="Fill" ContainRef.vFill="Fill" ContainRef.lockType="None"/>
+            <Grid>
+	            <Grid.RowDefinitions>
+	            	<RowDefinition/>
+		          	<RowDefinition/>
+	       		 </Grid.RowDefinitions>
+	       		 <ContainRef Grid.Col="0" Grid.Row="0">
+	       		 	<ObjToUI RefName="menuHead.l_title" ContainRef.deep="1" />
+	       		 	<Grid>
+						<Grid.RowDefinitions>
+							<RowDefinition Height="70"/>
+						</Grid.RowDefinitions>
+		                <Grid.ColumnDefinitions>
+		                    <ColumnDefinition Width="*19"/>
+		                    <ColumnDefinition Width="*19"/>
+		                    <ColumnDefinition Width="*14"/>
+		                </Grid.ColumnDefinitions>
+		                <ContainRef Grid.Col="0" Grid.Row="0">
+		                    <ObjToUI RefName="menuHead.btn_back" ContainRef.deep="0" ContainRef.hFill="DockLeft" ContainRef.vFill="DockTop" ContainRef.lockType="LockWidth" />
+		                </ContainRef>
+		                <ContainRef Grid.Col="2" Grid.Row="0">
+		                    <ObjToUI RefName="menuHead.btn_getmore" Text="{DataTxt Common.GetMore}" FontSizeEnum="Font_18" ContainRef.deep="0" Alignment="MiddleCenter">
+		                    	<ObjToUI.RealObj.mystyle border="{0,0,0,0}"/>
+		                    	<ObjToUI.RealObj.mystyle contentOffset="{-31,0}"/>
+		                    </ObjToUI>
+		                    <Grid>
+		                        <Grid.RowDefinitions>
+		                            <RowDefinition Height="5"/>
+		                            <RowDefinition/>
+		                            <RowDefinition Height="5"/>
+		                        </Grid.RowDefinitions>
+		                        <Grid.ColumnDefinitions>
+		                            <ColumnDefinition Width="30"/>
+		                            <ColumnDefinition/>
+		                            <ColumnDefinition/>
+		                            <ColumnDefinition Width="5"/>
+		                        </Grid.ColumnDefinitions>
+		                        <ContainRef Width="70" Grid.Col = "2" Grid.Row="1">
+		                            <!--Label NormalBackground="{Texture chrome_gems:ICON}" ContainRef.deep="0" ContainRef.hFill="DockRight" ContainRef.vFill="Fill" ContainRef.lockType="LockRadio"/-->
+		                             <ObjToUI RefName="menuHead.l_gem" FontSizeEnum="Font_18" Alignment="UpperCenter">
+		                                    <ObjToUI.RealObj.mystyle contentOffset="{-78,10}"/>
+		                                    <!-- back -->
+		                                    <!--ObjToUI.RealObj.mystyle.normal background="{Texture chrome_gems:ICON}"/-->
+		                             </ObjToUI>
+		                        </ContainRef>
+		                        <Grid Grid.Col="1" Grid.Row="1">
+		                            <Grid.RowDefinitions>
+		                                <RowDefinition/>
+		                                <RowDefinition/>
+		                            </Grid.RowDefinitions>
+		                            <ContainRef MinWidth="32" Grid.Col="0" Grid.Row="0">
+		                               
+		                            </ContainRef>
+		                            <ContainRef Grid.Col="0" Grid.Row="1">
+		                                <!--Label FontSizeEnum="Font_18" Text="{DataTxt Common.GetMore}" FontTypeEnum="TREBUC" rect="{0, 0, 180,60}" NormalTextColorEnum="Button_White" Alignment="MiddleCenter" /-->
+		                            </ContainRef>
+		                        </Grid>
+		                    </Grid>
+		                </ContainRef>
+	            	</Grid>
+	       		 </ContainRef>
+	       		 <ContainRef Grid.Col="0" Grid.Row="1">
+	       		 	<ObjToUI RefName="toolBar" ContainRef.deep="0"/>
+	       		 </ContainRef>
+	       		 
+     		</Grid>
+        </ContainRef>
+        
+        <!-- Body -->
+        <ContainRef Grid.Col="0" Grid.Row="1">
+        	<ObjToUI RefName="line" rect="{0,0,0,50}" ContainRef.deep="0" ContainRef.hFill="Fill" ContainRef.vFill="DockTop" ContainRef.lockType="LockHeight" >
+        		<ObjToUI.RealObj.mystyle border="{27,27,0,0}"/>
+        		<ObjToUI.RealObj.mystyle.overflow top="10"/>
+        	</ObjToUI>
+        </ContainRef>
+		<ContainRef Grid.Col="0" Grid.Row="2">
+        	<ObjToUI RefName="weeklyLimit" FontSizeEnum="Font_25"/>
+        </ContainRef>
+        
+        <!-- bottom -->
+        <ContainRef Grid.Col="0" Grid.Row="3">
+			<ObjToUI RefName="chatText" />
+			<Grid Name="MainChrom.BT.BChatBKG.ChtGrid">
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition/>
+					<ColumnDefinition/>
+				</Grid.ColumnDefinitions>
+				<ContainRef Name="MainChrom.BT.ChtGrid.ChtBtn" Height="72" Width="72" Grid.Col="0" Grid.Row="0">
+					<ObjToUI RefName="btnChat" ContainRef.deep="0" ContainRef.lockRadio="true"/>
+				</ContainRef>
+				<Grid Name="MainChrom.BT.BChatBKG.ChtGrid.ChtShowerGrid" Grid.Col="1" Grid.Row="0">
+					<Grid.RowDefinitions>
+						<RowDefinition/>
+						<RowDefinition/>
+					</Grid.RowDefinitions>
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition MaxWidth="32"/>
+						<ColumnDefinition/>
+					</Grid.ColumnDefinitions>
+					<ContainRef Name="MainChrom.BT.BChatBKG.ChtGrid.ChtShowerGrid.ChtIcon1" Grid.Col="0" Grid.Row="0">
+						<ObjToUI RefName="chatIcon1"/>
+					</ContainRef>
+					<ContainRef Name="MainChrom.BT.BChatBKG.ChtGrid.ChtShowerGrid.ChtIcon2" Grid.Col="0" Grid.Row="1">
+						<ObjToUI RefName="chatIcon2"/>
+					</ContainRef>
+					<ContainRef Name="MainChrom.BT.BChatBKG.ChtGrid.ChtShowerGrid.ChtText1" Grid.Col="1" Grid.Row="0">
+						<ObjToUI RefName="chatText1" FontSizeEnum="Font_BEGIN"/>
+					</ContainRef>
+					<ContainRef Name="MainChrom.BT.BChatBKG.ChtGrid.ChtShowerGrid.ChtText2" Grid.Col="1" Grid.Row="1">
+						<ObjToUI RefName="chatText2" FontSizeEnum="Font_BEGIN"/>
+					</ContainRef>
+				</Grid>
+			</Grid>
+        </ContainRef>
+      </Grid>
+</KBNMenu>

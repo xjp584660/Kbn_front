@@ -1,0 +1,237 @@
+{
+    "Datas": [
+        {
+            "Id": 1,
+            "Name": "InitGearUpgradeData",
+            "GuideAction": "GearUpgradeInit",
+            ".Init": {
+                "Datas": {
+                    "InList": {
+                        "GearId": 1001001,
+                        "GearCount": 1,
+                        "GearStarLevel": 0,
+                        "GearSkillLevel": 1,
+                        "GearPlayerId": -1000,
+                        "GearSkill": [
+                            20120001,
+                            20000000,
+                            20000000,
+                            20000000
+                        ]
+                    },
+                    "InScroll": {
+                        "0": {
+                            "GearId": 1999900,
+                            "GearCount": 1,
+                            "GearStarLevel": 0,
+                            "GearSkillLevel": 1,
+                            "GearPlayerId": -1001,
+                            "GearSkill": [
+                                20120001,
+                                20000000,
+                                20000000,
+                                20000000
+                            ]
+                        },
+                        "1": {
+                            "GearId": 1001001,
+                            "GearCount": 1,
+                            "GearStarLevel": 0,
+                            "GearSkillLevel": 1,
+                            "GearPlayerId": -1002,
+                            "GearSkill": [
+                                20120001,
+                                20000000,
+                                20000000,
+                                20000000
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "Id": 2,
+            "Name": "xxx1111",
+            "IsCanSkip": false,
+            "IsNotifyServer": true,
+            "SkipPhpNames": ["knightGearUnlockSkill.php"],
+            "FakeDatas": null,
+            "CompleteConditions": null,
+            "Rewards": null,
+            "GuideAction": "ShowDialog",
+            "HasDialog": true,
+            "DialogAvatar": "xxxxAvatar",
+            "DialogContent": "Gear.UnlcokAttributesFTE1",
+            "DialogLayout": "Center",
+            "HasGuideArrow": false,
+            "GuideArrowLayout": "Rightwards",
+            "HasHighlightBorder": false,
+            "HighlightLayout": "Wrap",
+            "TraceUIObject": null,
+            "TraceDragDroppedTargetObj": null
+        },
+        {
+            "Id": 3,
+            "Name": "xxx33333",
+            "IsCanSkip": false,
+            "IsNotifyServer": true,
+            "SkipPhpNames": ["knightGearUnlockSkill.php"],
+            "FakeDatas": null,
+            "CompleteConditions": null,
+            "Rewards": null,
+            "GuideAction": "GuideDragDrop",
+            "HasDialog": false,
+            "DialogAvatar": "xxxxAvatar",
+            "DialogContent": "",
+            "DialogLayout": "Top",
+            "HasGuideArrow": false,
+            "GuideArrowLayout": "Upwards",
+            "HasHighlightBorder": true,
+            "HighlightLayout": "Wrap",
+            "TraceUIObject": "ArmMenu.tabControl.Items.arrayItem0.weaponsView.arrayItem0",
+            "HasDragIndicator": true,
+            "IndicatorText": "Gear.FTEDragTips",
+            "TraceDragDroppedTargetObj": "ArmMenu.tabControl.Items.arrayItem0.armPanel.centerArm"
+        },
+	{
+            "Id": 4,
+            "Name": "wait time",
+	    "SkipPhpNames": ["knightGearUnlockSkill.php"],
+            "GuideAction": "WaitTime",
+            "WaitTime": 0.6,
+            "NetServerReturn": {
+                "knightGearUnlockSkill.php": {
+                    "ok": true,
+                    "uniqId": "-1000",
+		    "currentLevel": 0,
+                    "currentExp": 50,
+                    "oldExp": 0,
+                    "incExp": 50,
+                    "toExp": 50
+                }
+            }
+        },
+        {
+            "Id": 5,
+            "Name": "xxx33333",
+            "IsCanSkip": false,
+            "IsNotifyServer": true,
+            "SkipPhpNames": ["knightGearUnlockSkill.php"],
+            "FakeDatas": null,
+            "CompleteConditions": null,
+            "Rewards": null,
+            "GuideAction": "ShowDialog",
+            "HasDialog": true,
+            "DialogAvatar": "xxxxAvatar",
+            "DialogContent": "Gear.UnlcokAttributesFTE2",
+            "DialogLayout": "Center",
+            "HasGuideArrow": false,
+            "GuideArrowLayout": "Upwards",
+            "HasHighlightBorder": false,
+            "HighlightLayout": "Wrap",
+            "TraceUIObject": null,
+            "TraceDragDroppedTargetObj": null
+        },
+        {
+            "Id": 6,
+            "Name": "xxx33333",
+            "IsCanSkip": false,
+            "IsNotifyServer": true,
+            "SkipPhpNames": ["knightGearUnlockSkill.php"],
+            "FakeDatas": null,
+            "CompleteConditions": null,
+            "Rewards": null,
+            "GuideAction": "GuideDragDrop",
+            "HasDialog": false,
+            "DialogAvatar": "xxxxAvatar",
+            "DialogContent": "",
+            "DialogLayout": "Top",
+            "HasGuideArrow": false,
+            "GuideArrowLayout": "Upwards",
+            "HasHighlightBorder": true,
+            "HighlightLayout": "Wrap",
+            "TraceUIObject": "ArmMenu.tabControl.Items.arrayItem0.weaponsView.arrayItem0",
+            "HasDragIndicator": true,
+            "IndicatorText": "Gear.FTEDragTips",
+            "TraceDragDroppedTargetObj": "ArmMenu.tabControl.Items.arrayItem0.armPanel.centerArm",
+            "NetServerReturn": {
+                "knightGearUnlockSkill.php": {
+                    "ok": true,
+                    "uniqId": "-1000",
+                    "currentLevel": 1,
+		    "currentExp": 1050,
+                    "oldExp": 50,
+                    "incExp": 1000,
+                    "toExp": 1050
+                }
+            }
+        },
+	{
+            "Id": 7,
+            "Name": "wait time",
+	    "SkipPhpNames": ["knightGearUnlockSkill.php"],
+            "GuideAction": "WaitTime",
+            "WaitTime": 0.6,
+            "NetServerReturn": {
+                "knightGearUnlockSkill.php": {
+                    "ok": true,
+                    "uniqId": "-1000",
+                    "currentLevel": 1,
+		    "currentExp": 1050,
+                    "oldExp": 50,
+                    "incExp": 1000,
+                    "toExp": 1050
+                }
+            }
+        },
+        {
+            "Id": 8,
+            "Name": "xxx33333",
+            "IsCanSkip": false,
+            "IsNotifyServer": true,
+            "SkipPhpNames": ["knightGearUnlockSkill.php"],
+            "FakeDatas": null,
+            "CompleteConditions": null,
+            "Rewards": null,
+            "GuideAction": "ShowDialog",
+            "HasDialog": true,
+            "DialogAvatar": "xxxxAvatar",
+            "DialogContent": "Gear.UnlcokAttributesFTE3",
+            "DialogLayout": "Center",
+            "HasGuideArrow": false,
+            "GuideArrowLayout": "Upwards",
+            "HasHighlightBorder": false,
+            "HighlightLayout": "Wrap",
+            "TraceUIObject": null,
+            "TraceDragDroppedTargetObj": null
+        },
+        {
+            "Id": 9,
+            "Name": "ClearAllItemInWeaponContain",
+            "SkipPhpNames": ["knightGearUnlockSkill.php"],
+            "GuideAction": "ClearFakeDatas"
+        },
+        {
+            "Id": 10,
+            "Name": "xxx33333",
+            "IsCanSkip": false,
+            "IsNotifyServer": true,
+            "SkipPhpNames": ["knightGearUnlockSkill.php"],
+            "FakeDatas": null,
+            "CompleteConditions": null,
+            "Rewards": null,
+            "GuideAction": "GuideButton",
+            "HasDialog": false,
+            "DialogAvatar": "xxxxAvatar",
+            "DialogContent": "Gear.ChangeGearFTE2",
+            "DialogLayout": "Center",
+            "HasGuideArrow": true,
+            "GuideArrowLayout": "Upwards",
+            "HasHighlightBorder": false,
+            "HighlightLayout": "Wrap",
+            "TraceUIObject": "ArmMenu.mMenuHead.btn_left",
+            "TraceDragDroppedTargetObj": null
+        }
+    ]
+}

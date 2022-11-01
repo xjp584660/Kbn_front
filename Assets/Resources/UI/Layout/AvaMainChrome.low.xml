@@ -1,0 +1,461 @@
+<KBNMenu>
+    <Grid Name="AvaMainChrome">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="90" />
+            <RowDefinition Height="70" />
+            <RowDefinition Height="30" />
+            <RowDefinition />
+            <RowDefinition Height="72" />
+            <RowDefinition Height="105" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <!-- Top (Coordinate Bar) -->
+        <ContainRef Name="Header" Grid.Row="0" Grid.Col="0">
+            <Label NormalBackground="{Texture small_bar_bottom:BACKGROUND}" ContainRef.deep="0" ContainRef.hFill="Fill" ContainRef.vFill="Fill" ContainRef.lockType="None" />
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="5" />
+                    <RowDefinition Height="75" />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="10" />
+                    <ColumnDefinition Width="75" />
+                    <ColumnDefinition Width="30" />
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="30" />
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="5" />
+                    <ColumnDefinition Width="75" />
+                    <ColumnDefinition Width="5" />
+                    <ColumnDefinition Width="75" />
+                    <ColumnDefinition Width="10" />
+                </Grid.ColumnDefinitions>
+
+                <ContainRef Grid.Row="1" Grid.Col="1">
+                    <Button OnClick="OnMyOutpostButton" NormalBackground="{Texture map_icon_button:BUTTON}" ActiveBackground="{Texture map_icon_button_down:BUTTON}" ContainRef.deep="0" ContainRef.hFill="Fill" ContainRef.vFill="Fill" ContainRef.lockType="LockRadio" />
+                    <Label NormalBackground="{Texture city_wall_icon:BUTTON}" ContainRef.deep="1" ContainRef.vFill="Center" ContainRef.hFill="Center" ContainRef.lockType="LockSize" >
+                        <Label.RealObj rect="{0,0,63,59}"/>
+                    </Label>
+                </ContainRef>
+
+                <ContainRef Grid.Row="1" Grid.Col="2">
+                    <Label Text="X" Alignment="MiddleCenter" ContainRef.deep="0" ContainRef.hFill="Fill" ContainRef.vFill="Fill" ContainRef.lockType="None" />
+                </ContainRef>
+
+                <ContainRef Grid.Row="1" Grid.Col="3">
+                    <ObjToUI RefName="textInputX" FontSizeEnum="Font_BEGIN" rect="{0,0,32,64}" ContainRef.deep="0" ContainRef.vFill="Center" ContainRef.hFill="Fill" ContainRef.lockType="LockHeight">
+                        <ObjToUI.RealObj.mystyle.normal background="{Texture type_box:DECORATION}" />
+                    </ObjToUI>
+                </ContainRef>
+
+                <ContainRef Grid.Row="1" Grid.Col="4">
+                    <Label Text="Y" Alignment="MiddleCenter" ContainRef.deep="0" ContainRef.hFill="Fill" ContainRef.vFill="Fill" ContainRef.lockType="None" />
+                </ContainRef>
+
+                <ContainRef Grid.Row="1" Grid.Col="5">
+                    <ObjToUI RefName="textInputY" FontSizeEnum="Font_BEGIN" rect="{0,0,32,64}" ContainRef.deep="0" ContainRef.vFill="Center" ContainRef.hFill="Fill" ContainRef.lockType="LockHeight">
+                        <ObjToUI.RealObj.mystyle.normal background="{Texture type_box:DECORATION}" />
+                    </ObjToUI>
+                </ContainRef>
+
+                <ContainRef Grid.Row="1" Grid.Col="7">
+                    <Button OnClick="OnSearchButton" NormalBackground="{Texture map_icon_button:BUTTON}" ActiveBackground="{Texture map_icon_button_down:BUTTON}" ContainRef.deep="0" ContainRef.hFill="Fill" ContainRef.vFill="Fill" ContainRef.lockType="LockRadio" />
+                    <Label NormalBackground="{Texture button_search_big_normal:BUTTON}" ContainRef.deep="1" ContainRef.vFill="Center" ContainRef.hFill="Center" ContainRef.lockType="LockSize" >
+                        <Label.RealObj rect="{0,0,63,59}"/>
+                    </Label>
+                </ContainRef>
+
+                <ContainRef Grid.Row="1" Grid.Col="9">
+                    <Button OnClick="OnMarchLineButton" NormalBackground="{Texture map_icon_button:BUTTON}" ActiveBackground="{Texture map_icon_button_down:BUTTON}" ContainRef.deep="0" ContainRef.hFill="Fill" ContainRef.vFill="Fill" ContainRef.lockType="LockRadio" />
+                    <Label NormalBackground="{Texture button_showmarchline_normal:BUTTON}" ContainRef.deep="1" ContainRef.vFill="Center" ContainRef.hFill="Center" ContainRef.lockType="LockSize" >
+                        <Label.RealObj rect="{0,0,63,59}"/>
+                    </Label>
+                </ContainRef>
+            </Grid>
+
+        </ContainRef>
+        
+        <ContainRef Name="MarchStats" Grid.Row="1" Grid.Col="0">
+            <Label NormalBackground="{Texture square_black:BACKGROUND}" Alpha="0.7" ContainRef.deep="0" ContainRef.hFill="Fill" ContainRef.vFill="Fill" ContainRef.lockType="None">
+<!--                <Label.RealObj.mystyle border= "{23, 30, 0, 24}" />-->
+            </Label>
+            
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="220"/>
+                    <ColumnDefinition Width=""/>
+                    <ColumnDefinition Width="220"/>
+                </Grid.ColumnDefinitions>
+                
+                <ContainRef Grid.Row="0" Grid.Col="0">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="60" />
+                            <ColumnDefinition Width="" />
+                        </Grid.ColumnDefinitions>
+                        
+                        <ContainRef Grid.Row="0" Grid.Col="0">
+                            <ObjToUI RefName="yourEmblemBg" ContainRef.deep="0" ContainRef.hFill="Center" ContainRef.vFill="Center" ContainRef.lockType="LockSize">
+                                <ObjToUI.RealObj rect="{8, 98, 44, 54}" />
+                                <ObjToUI.RealObj.mystyle.normal background="{Texture white_tex:DECORATION}" />
+                                <ObjToUI.RealObj.mystyle border="{1,1,1,1}" />
+                            </ObjToUI>
+                            <ObjToUI RefName="yourEmblem" ContainRef.deep="1" ContainRef.hFill="Center" ContainRef.vFill="Center" ContainRef.lockType="LockSize">
+                                <ObjToUI.RealObj rect="{10, 100, 40, 50}"/>
+                            </ObjToUI>
+                        </ContainRef>
+                        <ContainRef Grid.Row="0" Grid.Col="1">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*3" />
+                                    <RowDefinition Height="*3" />
+                                </Grid.RowDefinitions>
+                                
+                                <ContainRef Grid.Row="0" Grid.Col="0">
+                                    <ObjToUI RefName="yourAllianceName" FontSizeEnum="Font_BEGIN" NormalTextColorEnum="Blue" ContainRef.deep="1" ContainRef.hFill="DockLeft" ContainRef.vFill="Center" ContainRef.lockType="LockSize">
+                                    </ObjToUI>
+                                </ContainRef>
+                                <ContainRef Grid.Row="1" Grid.Col="0">
+                                    <ObjToUI RefName="yourScore" FontSizeEnum="Font_BEGIN" NormalTextColorEnum="Milk_White" ContainRef.deep="1" ContainRef.hFill="DockLeft" ContainRef.vFill="Center" ContainRef.lockType="LockSize">
+                                    </ObjToUI>
+                                </ContainRef>
+                            </Grid>
+                        </ContainRef>
+                    </Grid>
+                </ContainRef>
+                
+                <ContainRef Grid.Row="0" Grid.Col="1">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="36" />
+                            <RowDefinition Height="" />
+                        </Grid.RowDefinitions>
+                        
+                        <ContainRef Grid.Row="0" Grid.Col="0">
+                            <Label NormalBackground="{Texture ava_timeframe:DECORATION}" Alpha="1" BackgroundBorder="{50, 50, 0, 0}" ContainRef.deep="0" ContainRef.hFill="Fill" ContainRef.vFill= "Fill" ContainRef.lockType="None" />
+                            <ObjToUI RefName="remainingTime" FontSizeEnum="Font_22" ContainRef.deep="1" ContainRef.hFill="Center" ContainRef.vFill="Fill" ContainRef.lockType="None">
+                                <ObjToUI.RealObj.mystyle alignment="MiddleCenter"/>
+                                <ObjToUI.RealObj normalTxtColor="Light_Yellow" />
+                            </ObjToUI>
+                            <ObjToUI RefName="blinkFrame" ContainRef.deep="2" ContainRef.hFill="Fill" ContainRef.vFill="Fill" ContainRef.lockType="None">
+                                <ObjToUI.RealObj.mystyle.border left="50" right="50" top="0" bottom="0" />
+                                <ObjToUI.RealObj.mystyle.normal background="{Texture ava_timeframe_flash:DECORATION}" />
+                            </ObjToUI>
+                        </ContainRef>
+                    </Grid>
+                </ContainRef>
+                
+                <ContainRef Grid.Row="0" Grid.Col="2">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="" />
+                            <ColumnDefinition Width="60" />
+                        </Grid.ColumnDefinitions>
+                        
+                        <ContainRef Grid.Row="0" Grid.Col="0">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*3" />
+                                    <RowDefinition Height="*3" />
+                                </Grid.RowDefinitions>
+                                
+                                <ContainRef Grid.Row="0" Grid.Col="0">
+                                    <ObjToUI RefName="enemyAllianceName" FontSizeEnum="Font_BEGIN" NormalTextColorEnum="Red" ContainRef.deep="1" ContainRef.hFill="DockRight" ContainRef.vFill="Center" ContainRef.lockType="LockSize">
+                                    </ObjToUI>
+                                </ContainRef>
+                                <ContainRef Grid.Row="1" Grid.Col="0">
+                                    <ObjToUI RefName="enemyScore" FontSizeEnum="Font_BEGIN" NormalTextColorEnum="Milk_White" ContainRef.deep="1" ContainRef.hFill="DockRight" ContainRef.vFill="Center" ContainRef.lockType="LockSize">
+                                    </ObjToUI>
+                                </ContainRef>
+                            </Grid>
+                        </ContainRef>
+                        <ContainRef Grid.Row="0" Grid.Col="1">
+                            <ObjToUI RefName="enemyEmblemBg" ContainRef.deep="0" ContainRef.hFill="Center" ContainRef.vFill="Center" ContainRef.lockType="LockSize">
+                                <ObjToUI.RealObj rect="{588, 98, 44, 54}" />
+                                <ObjToUI.RealObj.mystyle.normal background="{Texture white_tex:DECORATION}" />
+                                <ObjToUI.RealObj.mystyle border="{1,1,1,1}" />
+                            </ObjToUI>
+                            <ObjToUI RefName="enemyEmblem"  ContainRef.deep="1" ContainRef.hFill="Center" ContainRef.vFill="Center" ContainRef.lockType="LockSize">
+                                <ObjToUI.RealObj rect="{590, 100, 40, 50}"/>
+                            </ObjToUI>
+                        </ContainRef>
+                    </Grid>
+                </ContainRef>
+            </Grid>
+        </ContainRef>
+
+       <ContainRef Name="MarchStatsNew" Grid.Row="2" Grid.Col="0">
+            <Label NormalBackground="{Texture square_black:BACKGROUND}" Alpha="0.7" ContainRef.deep="0" ContainRef.hFill="Fill" ContainRef.vFill="Fill" ContainRef.lockType="None">
+            </Label>
+            
+             <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*2"/>
+                    <ColumnDefinition Width="*2"/>
+                </Grid.ColumnDefinitions>
+
+                <ContainRef Grid.Row="0" Grid.Col="0">  
+                    <Grid>                  
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0" />
+                            <ColumnDefinition Width="30" />
+                            <ColumnDefinition Width="30" />
+                            <ColumnDefinition Width="30" />
+                            <ColumnDefinition Width="30" />
+                            <ColumnDefinition Width="" />
+                        </Grid.ColumnDefinitions>
+                            
+                        <ContainRef Grid.Row="1" Grid.Col="1">
+                            <ObjToUI RefName="bigWonderIcon" ContainRef.deep="0" ContainRef.hFill="Center" ContainRef.vFill="Center" ContainRef.lockType="LockSize">
+                            <ObjToUI.RealObj rect="{8, 160, 20, 20}" />
+                            <ObjToUI.RealObj.mystyle.normal background="{Texture myBigWonderIcon:DECORATION}" />
+                            <ObjToUI.RealObj.mystyle border="{1,1,1,1}" />
+                            </ObjToUI>
+                        </ContainRef>
+                        <ContainRef Grid.Row="1" Grid.Col="2">
+                            <ObjToUI RefName="ownBigWonderNum" FontSizeEnum="Font_BEGIN" NormalTextColorEnum="Milk_White" ContainRef.deep="1" ContainRef.hFill="DockLeft" ContainRef.vFill="Center" ContainRef.lockType="LockSize">
+                            <ObjToUI.RealObj rect="{30, 160, 20, 20}" />
+                            </ObjToUI>                           
+                        </ContainRef>
+                        <ContainRef Grid.Row="1" Grid.Col="3">
+                             <ObjToUI RefName="smallWonderIcon" ContainRef.deep="0" ContainRef.hFill="Center" ContainRef.vFill="Center" ContainRef.lockType="LockSize">
+                            <ObjToUI.RealObj rect="{50, 160, 20, 20}" />
+                            <ObjToUI.RealObj.mystyle.normal background="{Texture mySmallWonderIcon:DECORATION}" />
+                            <ObjToUI.RealObj.mystyle border="{1,1,1,1}" />
+                            </ObjToUI>
+                        </ContainRef>
+                        <ContainRef Grid.Row="1" Grid.Col="4">
+                            <ObjToUI RefName="ownSmallWonderNum" FontSizeEnum="Font_BEGIN" NormalTextColorEnum="Milk_White" ContainRef.deep="1" ContainRef.hFill="DockLeft" ContainRef.vFill="Center" ContainRef.lockType="LockSize">
+                            <ObjToUI.RealObj rect="{72, 160, 20, 20}" />
+                            </ObjToUI>
+                        </ContainRef>
+                         <ContainRef Grid.Row="1" Grid.Col="5">
+                            <ObjToUI RefName="ownSpeed" FontSizeEnum="Font_BEGIN" NormalTextColorEnum="Milk_White" ContainRef.deep="1" ContainRef.hFill="DockLeft" ContainRef.vFill="Center" ContainRef.lockType="LockSize">
+                            <ObjToUI.RealObj rect="{92, 160, 20, 20}" />
+                            </ObjToUI>
+                        </ContainRef>
+                    </Grid>
+                </ContainRef>
+
+                <ContainRef Grid.Row="0" Grid.Col="1">  
+                    <Grid>                  
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="" />
+                            <ColumnDefinition Width="60" />
+                            <ColumnDefinition Width="30" />
+                            <ColumnDefinition Width="30" />
+                            <ColumnDefinition Width="30" />
+                            <ColumnDefinition Width="30" />
+
+                        </Grid.ColumnDefinitions>
+                            
+                        <ContainRef Grid.Row="1" Grid.Col="1">
+                            <ObjToUI RefName="enemySpeed" FontSizeEnum="Font_BEGIN" NormalTextColorEnum="Milk_White" ContainRef.deep="1" ContainRef.hFill="DockRight" ContainRef.vFill="Center" ContainRef.lockType="LockSize">
+                            <ObjToUI.RealObj rect="{92, 160, 20, 20}" />
+                            </ObjToUI>
+                        </ContainRef>
+                         <ContainRef Grid.Row="1" Grid.Col="2">
+                            <ObjToUI RefName="enemySmallWonderNum" FontSizeEnum="Font_BEGIN" NormalTextColorEnum="Milk_White" ContainRef.deep="1" ContainRef.hFill="DockRight" ContainRef.vFill="Center" ContainRef.lockType="LockSize">
+                            <ObjToUI.RealObj rect="{160, 160, 20, 20}" />
+                            </ObjToUI>
+                        </ContainRef>
+                        <ContainRef Grid.Row="1" Grid.Col="3">
+                             <ObjToUI RefName="enemySmallWonderIcon" ContainRef.deep="0" ContainRef.hFill="Center" ContainRef.vFill="Center" ContainRef.lockType="LockSize">
+                            <ObjToUI.RealObj rect="{140, 160, 20, 20}" />
+                            <ObjToUI.RealObj.mystyle.normal background="{Texture enemySmallWonderIcon:DECORATION}" />
+                            <ObjToUI.RealObj.mystyle border="{1,1,1,1}" />
+                            </ObjToUI>
+                        </ContainRef>
+                        <ContainRef Grid.Row="1" Grid.Col="4">
+                            <ObjToUI RefName="enemyBigWonderNum" FontSizeEnum="Font_BEGIN" NormalTextColorEnum="Milk_White" ContainRef.deep="1" ContainRef.hFill="DockRight" ContainRef.vFill="Center" ContainRef.lockType="LockSize">
+                            <ObjToUI.RealObj rect="{70, 10, 20, 20}" />
+                            </ObjToUI>                           
+                        </ContainRef>
+                         <ContainRef Grid.Row="1" Grid.Col="5">
+                            <ObjToUI RefName="enemyBigWonderIcon" ContainRef.deep="0" ContainRef.hFill="Center" ContainRef.vFill="Center" ContainRef.lockType="LockSize">
+                            <ObjToUI.RealObj rect="{50, 160, 20, 20}" />
+                            <ObjToUI.RealObj.mystyle.normal background="{Texture enemyBigWonderNum:DECORATION}" />
+                            <ObjToUI.RealObj.mystyle border="{1,1,1,1}" />
+                            </ObjToUI>
+                        </ContainRef>                     
+                    </Grid>
+                </ContainRef>
+            </Grid>
+    </ContainRef>
+
+        <Panel Name="BodyFrame" Grid.Row="3" Grid.Col="0">
+            <Grid Name="BodyFrame.IncomingAttackIcon" Panel.inDeep="5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="15"/>
+                    <RowDefinition Height="60"/>
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="5"/>
+                    <ColumnDefinition Width="60"/>
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                
+                <ContainRef Grid.Col="1" Grid.Row="1">
+                    <ObjToUI RefName="incomingAttackIcon" ContainRef.deep="0" ContainRef.hFill="Center" ContainRef.vFill="Center" ContainRef.lockType="None"/>
+                    <ObjToUI RefName="incomingAttackBtn" ContainRef.deep="1" ContainRef.hFill="Center" ContainRef.vFill="Center" ContainRef.lockType="None"/>
+                </ContainRef>
+            </Grid>
+            
+            <Grid Name="BodyFrame.IncomingAttackNum" Panel.inDeep="6">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="3"/>
+                    <RowDefinition Height="33"/>
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="45"/>
+                    <ColumnDefinition Width="33"/>
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                
+                <ContainRef Grid.Col="1" Grid.Row="1">
+                    <ObjToUI RefName="incomingAttackNum" FontSizeEnum="Font_20" NormalTextColorEnum="TabDown" Alignment="MiddleCenter" ContainRef.deep="0" ContainRef.hFill="DockRight" ContainRef.vFill="Fill" ContainRef.lockType="None">
+                        <ObjToUI.RealObj.mystyle.normal background="{Texture task_list_number_bottom:ICON}"/>
+                    </ObjToUI>
+                </ContainRef>
+            </Grid>
+        
+            <Grid Name="ProgressView" Panel.inDeep="10" >
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Col="0" Grid.Row="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Col="0" Grid.Row="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Grid Name="MainChrom.MiddelFrame.LeftIconsGrid.RightDats.MarchProgressGrid.ProgressBtnsGrid" Grid.Col="1" Grid.Row="0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition MinHeight="48" MaxHeight="72"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition MinWidth="80" MaxWidth="104"/>
+                                <ColumnDefinition MinWidth="80" MaxWidth="104"/>
+                                <ColumnDefinition MinWidth="80" MaxWidth="104"/>
+                                <ColumnDefinition MinWidth="80" MaxWidth="104"/>
+                                <ColumnDefinition MinWidth="54" MaxWidth="54"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Panel Grid.Col="4" Grid.Row="0">
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="*1"/>
+                                        <RowDefinition Height="*3"/>
+                                    </Grid.RowDefinitions>
+                                    <ContainRef Grid.Col="0" Grid.Row="1">
+                                        <ObjToUI RefName="btnMarch" FontSizeEnum="Font_20" />
+                                    </ContainRef>
+                                </Grid>
+                                <ContainRef Name="MainChrom.MiddelFrame.LeftIconsGrid.RightDats.MarchProgressGrid.ProgressBtnsGrid.BtnProgress1">
+                                    <ObjToUI RefName="marchNote" FontSizeEnum="Font_22" rect="{0,0,33,34}" ContainRef.deep="0" ContainRef.hFill="DockRight" ContainRef.vFill="DockTop" ContainRef.lockType="LockSize"/>
+                                </ContainRef>
+                            </Panel>
+
+                            <Panel Grid.Col="5" Grid.Row="0">
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="*1"/>
+                                        <RowDefinition Height="*3"/>
+                                    </Grid.RowDefinitions>
+                                    <ContainRef Grid.Col="0" Grid.Row="1">
+                                        <ObjToUI RefName="btnShowList"/>
+                                    </ContainRef>
+                                </Grid>
+                            </Panel>
+                        </Grid>
+                    </Grid>
+                    <Grid Name="MainChrom.MiddelFrame.LeftIconsGrid.RightDats.MarchProgressGrid" Grid.Col="0" Grid.Row="1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <ContainRef Name="MainChrom.MiddelFrame.LeftIconsGrid.RightDats.MarchProgressGrid.ProgressView" Grid.Col="1" Grid.Row="0" />
+                    </Grid>
+                </Grid>
+            </Grid>
+        </Panel>
+
+        <!-- Chat Bar -->
+        <ContainRef Name="ChatBar" Grid.Row="4" Grid.Col="0">
+            <Button OnClick="OnChatButton" NormalBackground="{Texture square_black:BACKGROUND}">
+                <Button.RealObj alpha="0.8" />
+            </Button>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="72" />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+
+                <ContainRef Grid.Row="0" Grid.Col="0">
+                    <Button OnClick="OnChatButton" NormalBackground="{Texture button_chat_normal:BUTTON}" ActiveBackground="{Texture button_chat_down:BUTTON}" ContainRef.deep="0" ContainRef.hFill="Fill" ContainRef.vFill="Fill" ContainRef.lockType="LockRadio" />
+                </ContainRef>
+
+                <Grid Grid.Row="0" Grid.Col="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition MaxWidth="32" />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+
+                    <ContainRef Grid.Col="0" Grid.Row="0">
+                        <ObjToUI RefName="chatIcon1"/>
+                    </ContainRef>
+                    <ContainRef Grid.Col="0" Grid.Row="1">
+                        <ObjToUI RefName="chatIcon2"/>
+                    </ContainRef>
+                    <ContainRef Grid.Col="1" Grid.Row="0">
+                        <ObjToUI RefName="chatText1" FontSizeEnum="Font_BEGIN"/>
+                    </ContainRef>
+                    <ContainRef Grid.Col="1" Grid.Row="1">
+                        <ObjToUI RefName="chatText2" FontSizeEnum="Font_BEGIN"/>
+                    </ContainRef>
+
+                </Grid>
+
+            </Grid>
+        </ContainRef>
+        
+
+        <!-- Bottom -->
+        <ContainRef Name="Bottom" Grid.Row="5" Grid.Col="0">
+            <Label NormalBackground="{Texture tool bar_bottom:BACKGROUND}" ContainRef.deep="0" ContainRef.hFill="Fill" ContainRef.vFill="Fill" ContainRef.lockType="None" />
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="105" />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+
+                <ContainRef Grid.Row="0" Grid.Col="0">
+                    <Button OnClick="OnHomeButton" rect="{0, 0, 105, 105}" NormalBackground="{Texture button_switchview_home:BUTTON}" ContainRef.deep="0" ContainRef.hFill="DockLeft" ContainRef.vFill="DockTop" ContainRef.lockType="LockRadio" />
+                </ContainRef>
+                
+                <ContainRef Grid.Row="0" Grid.Col="1">
+                    <ObjToUI RefName="buttonScrollView" ContainRef.deep="0" />
+                </ContainRef>
+
+            </Grid>
+        </ContainRef>
+    </Grid>
+</KBNMenu>

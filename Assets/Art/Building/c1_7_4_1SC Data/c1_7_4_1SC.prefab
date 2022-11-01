@@ -1,0 +1,121 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &113774
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 413774}
+  - 114: {fileID: 11413774}
+  m_Layer: 0
+  m_Name: c1_7_4_1SC
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &413774
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 113774}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11413774
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 113774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d546f34a90531a14eaba82a43b05b86b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 3
+  materialIdsValid: 1
+  needMaterialInstance: 0
+  spriteDefinitions:
+  - name: c1_7_4_1
+    boundsData:
+    - {x: -.03125, y: .125, z: 0}
+    - {x: 7.9375, y: 7.75, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 8, y: 8, z: 0}
+    texelSize: {x: .03125, y: .03125}
+    positions:
+    - {x: -4, y: -3.75, z: 0}
+    - {x: 3.9375, y: -3.75, z: 0}
+    - {x: -4, y: 4, z: 0}
+    - {x: 3.9375, y: 4, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .00391015643, y: .00391015643}
+    - {x: .996089816, y: .00391015643}
+    - {x: .00391015643, y: .972652316}
+    - {x: .996089816, y: .972652316}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: bd7875b44ffe34bbf84fc018fa3c6e0a, type: 2}
+    materialId: 0
+    sourceTextureGUID: f1aafa76602604eb6a471e55f57519f7
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  premultipliedAlpha: 0
+  material: {fileID: 0}
+  materials:
+  - {fileID: 2100000, guid: bd7875b44ffe34bbf84fc018fa3c6e0a, type: 2}
+  textures:
+  - {fileID: 2800000, guid: fecb9f65a14874e1bac41af0deac0a91, type: 3}
+  pngTextures: []
+  materialPngTextureId: 00000000
+  textureFilterMode: 1
+  textureMipMaps: 0
+  allowMultipleAtlases: 0
+  spriteCollectionGUID: 45f51e0d900664b088869e6d9f327cce
+  spriteCollectionName: c1_7_4_1SC
+  assetName: 
+  loadable: 0
+  invOrthoSize: .100000001
+  halfTargetHeight: 320
+  buildKey: 576888040
+  dataGuid: ae04b66b44fec4323b78bea87a073d19
+  managedSpriteCollection: 0
+  hasPlatformData: 0
+  spriteCollectionPlatforms: []
+  spriteCollectionPlatformGUIDs: []
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 113774}
+  m_IsPrefabParent: 1
+  m_IsExploded: 1

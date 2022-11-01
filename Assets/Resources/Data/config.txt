@@ -1,0 +1,146 @@
+{
+"version":10001,
+"server":[
+	{"name":"product","mainDomain":".kocbattle.com/", "subDomain":"https://www"},
+	{"name":"beta", "mainDomain":".kocbattle.com/", "subDomain":"https://beta"},
+	{"name":"server1", "mainDomain":".cmdev1.kabam.asia/", "subDomain":"http://www"},
+	{"name":"server2", "mainDomain":".cmdev2.kabam.asia/", "subDomain":"http://www"},
+	{"name":"server4","mainDomain":".cmdev4.kabam.asia/", "subDomain":"http://www"},
+	{"name":"server5","mainDomain":".cmdev5.kabam.asia/", "subDomain":"http://www"},
+	{"name":"server6","mainDomain":".cmdev6.kabam.asia/", "subDomain":"http://www"},
+	{"name":"server7","mainDomain":".cmdev7.kabam.asia/", "subDomain":"http://www"},
+    {"name":"server8","mainDomain":".cmdev8.kabam.asia/", "subDomain":"http://www"},
+    {"name":"server9","mainDomain":".cmdev9.kabam.asia/", "subDomain":"http://www"},
+    {"name":"server10","mainDomain":".cmdev10.kabam.asia/", "subDomain":"http://www"},
+    {"name":"qa1", "mainDomain":".cmqa1.kabam.asia/", "subDomain":"http://www"},
+	{"name":"qa2", "mainDomain":".cmqa2.kabam.asia/", "subDomain":"http://www"},
+	{"name":"qa3", "mainDomain":".cmqa3.kabam.asia/", "subDomain":"http://www"},
+	{"name":"stage", "mainDomain":".kocbattle.com/", "subDomain":"http://stage"},
+	{"name":"delta", "mainDomain":".kocbattle.com/", "subDomain":"https://delta"}
+],
+"payment":{"prefix":"com.kabam.kocmobile"},
+
+"gameconfig":{
+	"UserVoice":{"Vector":"OpenSSL for Ruby",
+				 "Secret":"XHPWMVeEmuIxyPpRRzsmNlS4VFfh3456w76hRU7cbI",
+				 "Site":"battleforthenorth.uservoice.com",
+				 "Key":"HuqRtcIn9vdAO3WwXdTBXw",
+				 "SSOKey":"9ea62e19724deb5d2650317c113653f4",
+				 "Subdomain":"battleforthenorth"},
+	"AppTracker":{"AdvertiserId":"169076",
+				  "AppKey":"e2e8314735f84c870444240d30c53dfd",
+				  "SiteId":"119447",
+                  "SiteId_Android":"120285"},
+	"ChartBoost":{"AppSignature":"0632f216767e23beef54ebd9253030765bae1aff",
+				  "AppId":"56b0cb1e8838097a4ced6fe5",
+                  "AppSignature_Android":"2f693adc94d515c61ffc7a1756e86a90ac922493",
+                  "AppId_Android":"56b0cb760d6025741707a0b6"},
+	"TapjoyBoost":{"AppID":"ad0f4cf4-1875-4ebe-b211-258ddef08e9a",
+				  "SecretKey":"LPtaQDK2DgxtgofBnVHo"},
+	"NanigansBoost":{"AppID":"439399836087541"},
+	"NewRelic":{"ID":"AA311994f9f1747360df65e55703b24ebdc9d9a767"},
+	"ADX" : { "ClientId" : "k@bam032114rm" }
+},
+
+"lan":[
+	{
+		"fileName":"en",
+		"langKey":"English",
+		"disable":0,
+		"strKey":"English",
+		"comment":"must at fist as it's default; disable:0 default is 0; strKey:key of arstring,default as langkey while no defined;"
+	},
+	{
+		"fileName":"fr",
+		"disable":0,
+		"langKey":"French"
+	},
+	{
+		"fileName":"de",
+		"disable":0,
+		"langKey":"German"
+	},
+	{
+		"fileName":"it",
+		"disable":0,
+		"langKey":"Italian"
+	},
+	{
+		"fileName":"es",
+		"disable":0,
+		"langKey":"Spanish"
+	},
+	{
+		"fileName":"tr",
+		"disable":0,
+		"langKey":"Turkish"
+	},
+	{
+		"fileName":"sv",
+		"disable":0,
+		"langKey":"Swedish"
+	},
+	{
+		"fileName":"nl",
+		"disable":0,
+		"langKey":"Dutch"
+	},
+	{
+		"fileName":"da",
+		"disable":0,
+		"langKey":"Danish"
+	},
+	{
+		"fileName":"ru",
+		"disable":0,
+		"langKey":"Russian"
+	},
+	{
+		"fileName":"pl",
+		"langKey":"Polish"
+	},
+	{
+		"fileName":"pt",
+		"langKey":"Portuguese",
+		"strKey":"Br_Portuguese"
+	},
+	{
+		"fileName":"ja",
+		"disable":0,
+		"langKey":"Japanese"
+	},
+	{
+		"fileName":"ko",
+		"disable":0,
+		"langKey":"Korean"
+	},
+	{
+		"fileName":"zs",
+		"disable":0,
+		"langKey":"zh-Hans",
+		"langId":100001
+	},
+	{
+		"fileName":"zt",
+		"disable":0,
+		"langKey":"zh-Hant",
+		"langId":100002
+	}
+]
+
+, "MobileAppTracker":
+{
+	"RemoteURL_Debug":"http://www.cmdev5.kabam.asia/ajax/trackingInstall.php",
+	"RemoteURL_Release":"http://www.kocbattle.com/ajax/trackingInstall.php",
+	"Mac0ParamName":"mac",
+	"IFAParamName":"deviceIFA",
+	"OpenUDIDParamName":"openUDID"
+}
+, "LoadBackground":
+{
+	"Background":"loading_Background",
+	"Background.bak":"loading_Background_2",
+	"ScrollHeader":"pumpkin_progressbar"
+}
+
+}

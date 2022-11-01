@@ -1,0 +1,1445 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400000}
+  - 114: {fileID: 11400000}
+  - 114: {fileID: 11451324}
+  m_Layer: 0
+  m_Name: CamPaignBoss_SC
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d546f34a90531a14eaba82a43b05b86b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 3
+  materialIdsValid: 1
+  needMaterialInstance: 0
+  spriteDefinitions:
+  - name: bossicon_Hueil mac Caw
+    boundsData:
+    - {x: 0, y: -.0149999857, z: 0}
+    - {x: 1.04000008, y: 1.35000002, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -.00499999523, z: 0}
+    - {x: 1.10000002, y: 1.40999997, z: 0}
+    texelSize: {x: .00999999978, y: .00999999978}
+    positions:
+    - {x: -.520000041, y: -.689999998, z: 0}
+    - {x: .520000041, y: -.689999998, z: 0}
+    - {x: -.520000041, y: .660000026, z: 0}
+    - {x: .520000041, y: .660000026, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .00195410149, y: .00195410149}
+    - {x: .103514649, y: .00195410149}
+    - {x: .00195410149, y: .133788079}
+    - {x: .103514649, y: .133788079}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ecb9649a84eb640f382d6b1d50f9e819, type: 2}
+    materialId: 0
+    sourceTextureGUID: 99ca17708bc8a49d69ac80192f2b364a
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: bossicon_King Maleagant
+    boundsData:
+    - {x: 0, y: -.0149999857, z: 0}
+    - {x: 1.04000008, y: 1.35000002, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -.00499999523, z: 0}
+    - {x: 1.10000002, y: 1.40999997, z: 0}
+    texelSize: {x: .00999999978, y: .00999999978}
+    positions:
+    - {x: -.520000041, y: -.689999998, z: 0}
+    - {x: .520000041, y: -.689999998, z: 0}
+    - {x: -.520000041, y: .660000026, z: 0}
+    - {x: .520000041, y: .660000026, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .00195410149, y: .137696296}
+    - {x: .103514649, y: .137696296}
+    - {x: .00195410149, y: .269530267}
+    - {x: .103514649, y: .269530267}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ecb9649a84eb640f382d6b1d50f9e819, type: 2}
+    materialId: 0
+    sourceTextureGUID: c7df0447d73994d4f8e87871cdda64e7
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: bossicon_Talorc the Druid
+    boundsData:
+    - {x: 0, y: -.0149999857, z: 0}
+    - {x: 1.04000008, y: 1.35000002, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -.00499999523, z: 0}
+    - {x: 1.10000002, y: 1.40999997, z: 0}
+    texelSize: {x: .00999999978, y: .00999999978}
+    positions:
+    - {x: -.520000041, y: -.689999998, z: 0}
+    - {x: .520000041, y: -.689999998, z: 0}
+    - {x: -.520000041, y: .660000026, z: 0}
+    - {x: .520000041, y: .660000026, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .00195410149, y: .273438483}
+    - {x: .103514649, y: .273438483}
+    - {x: .00195410149, y: .405272454}
+    - {x: .103514649, y: .405272454}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ecb9649a84eb640f382d6b1d50f9e819, type: 2}
+    materialId: 0
+    sourceTextureGUID: 997f3aba6b8534e2e8e4996014bc4d2d
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: bossicon_Rebel1
+    boundsData:
+    - {x: 0, y: -.0149999857, z: 0}
+    - {x: 1.04000008, y: 1.35000002, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -.00499999523, z: 0}
+    - {x: 1.10000002, y: 1.40999997, z: 0}
+    texelSize: {x: .00999999978, y: .00999999978}
+    positions:
+    - {x: -.520000041, y: -.689999998, z: 0}
+    - {x: .520000041, y: -.689999998, z: 0}
+    - {x: -.520000041, y: .660000026, z: 0}
+    - {x: .520000041, y: .660000026, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .00195410149, y: .409180671}
+    - {x: .103514649, y: .409180671}
+    - {x: .00195410149, y: .541014671}
+    - {x: .103514649, y: .541014671}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ecb9649a84eb640f382d6b1d50f9e819, type: 2}
+    materialId: 0
+    sourceTextureGUID: 35d24fc8d5e81495fa659ca4aafe5e90
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: bossicon_Rebel2
+    boundsData:
+    - {x: 0, y: -.0149999857, z: 0}
+    - {x: 1.04000008, y: 1.35000002, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -.00499999523, z: 0}
+    - {x: 1.10000002, y: 1.40999997, z: 0}
+    texelSize: {x: .00999999978, y: .00999999978}
+    positions:
+    - {x: -.520000041, y: -.689999998, z: 0}
+    - {x: .520000041, y: -.689999998, z: 0}
+    - {x: -.520000041, y: .660000026, z: 0}
+    - {x: .520000041, y: .660000026, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .00195410149, y: .544922829}
+    - {x: .103514649, y: .544922829}
+    - {x: .00195410149, y: .676756859}
+    - {x: .103514649, y: .676756859}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ecb9649a84eb640f382d6b1d50f9e819, type: 2}
+    materialId: 0
+    sourceTextureGUID: 413aa8cc8672c46df8383eb7f5f726ff
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: bossicon_Pict1
+    boundsData:
+    - {x: 0, y: -.0149999857, z: 0}
+    - {x: 1.04000008, y: 1.35000002, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -.00499999523, z: 0}
+    - {x: 1.10000002, y: 1.40999997, z: 0}
+    texelSize: {x: .00999999978, y: .00999999978}
+    positions:
+    - {x: -.520000041, y: -.689999998, z: 0}
+    - {x: .520000041, y: -.689999998, z: 0}
+    - {x: -.520000041, y: .660000026, z: 0}
+    - {x: .520000041, y: .660000026, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .00195410149, y: .680665016}
+    - {x: .103514649, y: .680665016}
+    - {x: .00195410149, y: .812499046}
+    - {x: .103514649, y: .812499046}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ecb9649a84eb640f382d6b1d50f9e819, type: 2}
+    materialId: 0
+    sourceTextureGUID: b727f7f6175d0462ab647ef07252b450
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: bossicon_Pict2
+    boundsData:
+    - {x: 0, y: -.0149999857, z: 0}
+    - {x: 1.04000008, y: 1.35000002, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -.00499999523, z: 0}
+    - {x: 1.10000002, y: 1.40999997, z: 0}
+    texelSize: {x: .00999999978, y: .00999999978}
+    positions:
+    - {x: -.520000041, y: -.689999998, z: 0}
+    - {x: .520000041, y: -.689999998, z: 0}
+    - {x: -.520000041, y: .660000026, z: 0}
+    - {x: .520000041, y: .660000026, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .00195410149, y: .816407204}
+    - {x: .103514649, y: .816407204}
+    - {x: .00195410149, y: .948241234}
+    - {x: .103514649, y: .948241234}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ecb9649a84eb640f382d6b1d50f9e819, type: 2}
+    materialId: 0
+    sourceTextureGUID: e93268e02df854ff6a87c0272b21b002
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: bossicon_Seven Evil Knghts
+    boundsData:
+    - {x: 0, y: -.0149999857, z: 0}
+    - {x: 1.04000008, y: 1.35000002, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -.00499999523, z: 0}
+    - {x: 1.10000002, y: 1.40999997, z: 0}
+    texelSize: {x: .00999999978, y: .00999999978}
+    positions:
+    - {x: -.520000041, y: -.689999998, z: 0}
+    - {x: .520000041, y: -.689999998, z: 0}
+    - {x: -.520000041, y: .660000026, z: 0}
+    - {x: .520000041, y: .660000026, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .107422851, y: .00195410149}
+    - {x: .107422851, y: .103514649}
+    - {x: .239256829, y: .00195410149}
+    - {x: .239256829, y: .103514649}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ecb9649a84eb640f382d6b1d50f9e819, type: 2}
+    materialId: 0
+    sourceTextureGUID: 01728e48224784ab6b1f86f7c13dc0f5
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: bossicon_Purple Knight
+    boundsData:
+    - {x: 0, y: -.0149999857, z: 0}
+    - {x: 1.04000008, y: 1.35000002, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -.00499999523, z: 0}
+    - {x: 1.10000002, y: 1.40999997, z: 0}
+    texelSize: {x: .00999999978, y: .00999999978}
+    positions:
+    - {x: -.520000041, y: -.689999998, z: 0}
+    - {x: .520000041, y: -.689999998, z: 0}
+    - {x: -.520000041, y: .660000026, z: 0}
+    - {x: .520000041, y: .660000026, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .243165046, y: .00195410149}
+    - {x: .243165046, y: .103514649}
+    - {x: .374999017, y: .00195410149}
+    - {x: .374999017, y: .103514649}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ecb9649a84eb640f382d6b1d50f9e819, type: 2}
+    materialId: 0
+    sourceTextureGUID: 08d3152ce84ec4928ae34cb894610319
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: bossicon_Morgana
+    boundsData:
+    - {x: 0, y: -.0149999857, z: 0}
+    - {x: 1.04000008, y: 1.35000002, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -.00499999523, z: 0}
+    - {x: 1.10000002, y: 1.40999997, z: 0}
+    texelSize: {x: .00999999978, y: .00999999978}
+    positions:
+    - {x: -.520000041, y: -.689999998, z: 0}
+    - {x: .520000041, y: -.689999998, z: 0}
+    - {x: -.520000041, y: .660000026, z: 0}
+    - {x: .520000041, y: .660000026, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .378907233, y: .00195410149}
+    - {x: .378907233, y: .103514649}
+    - {x: .510741234, y: .00195410149}
+    - {x: .510741234, y: .103514649}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ecb9649a84eb640f382d6b1d50f9e819, type: 2}
+    materialId: 0
+    sourceTextureGUID: 0e2b23a1f5d0b4658abbb07ab629ed9c
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: bossicon_Red Knight
+    boundsData:
+    - {x: 0, y: -.0149999857, z: 0}
+    - {x: 1.04000008, y: 1.35000002, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -.00499999523, z: 0}
+    - {x: 1.10000002, y: 1.40999997, z: 0}
+    texelSize: {x: .00999999978, y: .00999999978}
+    positions:
+    - {x: -.520000041, y: -.689999998, z: 0}
+    - {x: .520000041, y: -.689999998, z: 0}
+    - {x: -.520000041, y: .660000026, z: 0}
+    - {x: .520000041, y: .660000026, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .514649391, y: .00195410149}
+    - {x: .514649391, y: .103514649}
+    - {x: .646483421, y: .00195410149}
+    - {x: .646483421, y: .103514649}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ecb9649a84eb640f382d6b1d50f9e819, type: 2}
+    materialId: 0
+    sourceTextureGUID: 12eee9325689a4a7682bf35aed04573b
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: bossicon_Green Knight
+    boundsData:
+    - {x: 0, y: -.0149999857, z: 0}
+    - {x: 1.04000008, y: 1.35000002, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -.00499999523, z: 0}
+    - {x: 1.10000002, y: 1.40999997, z: 0}
+    texelSize: {x: .00999999978, y: .00999999978}
+    positions:
+    - {x: -.520000041, y: -.689999998, z: 0}
+    - {x: .520000041, y: -.689999998, z: 0}
+    - {x: -.520000041, y: .660000026, z: 0}
+    - {x: .520000041, y: .660000026, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .650391579, y: .00195410149}
+    - {x: .650391579, y: .103514649}
+    - {x: .782225609, y: .00195410149}
+    - {x: .782225609, y: .103514649}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ecb9649a84eb640f382d6b1d50f9e819, type: 2}
+    materialId: 0
+    sourceTextureGUID: 19083b32dfe4f401bbef18ef90580ce6
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: bossicon_Black Knight
+    boundsData:
+    - {x: 0, y: -.0149999857, z: 0}
+    - {x: 1.04000008, y: 1.35000002, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -.00499999523, z: 0}
+    - {x: 1.10000002, y: 1.40999997, z: 0}
+    texelSize: {x: .00999999978, y: .00999999978}
+    positions:
+    - {x: -.520000041, y: -.689999998, z: 0}
+    - {x: .520000041, y: -.689999998, z: 0}
+    - {x: -.520000041, y: .660000026, z: 0}
+    - {x: .520000041, y: .660000026, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .786133766, y: .00195410149}
+    - {x: .786133766, y: .103514649}
+    - {x: .917967796, y: .00195410149}
+    - {x: .917967796, y: .103514649}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ecb9649a84eb640f382d6b1d50f9e819, type: 2}
+    materialId: 0
+    sourceTextureGUID: 1b1fb464781d7484da66c6b8496cf43d
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: bossicon_Egreas
+    boundsData:
+    - {x: 0, y: -.0149999857, z: 0}
+    - {x: 1.04000008, y: 1.35000002, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -.00499999523, z: 0}
+    - {x: 1.10000002, y: 1.40999997, z: 0}
+    texelSize: {x: .00999999978, y: .00999999978}
+    positions:
+    - {x: -.520000041, y: -.689999998, z: 0}
+    - {x: .520000041, y: -.689999998, z: 0}
+    - {x: -.520000041, y: .660000026, z: 0}
+    - {x: .520000041, y: .660000026, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .107422851, y: .107422851}
+    - {x: .208983392, y: .107422851}
+    - {x: .107422851, y: .239256829}
+    - {x: .208983392, y: .239256829}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ecb9649a84eb640f382d6b1d50f9e819, type: 2}
+    materialId: 0
+    sourceTextureGUID: 25fbf51122616442ea25786f41499f50
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: bossicon_Dragon
+    boundsData:
+    - {x: 0, y: -.0149999857, z: 0}
+    - {x: 1.04000008, y: 1.35000002, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -.00499999523, z: 0}
+    - {x: 1.10000002, y: 1.40999997, z: 0}
+    texelSize: {x: .00999999978, y: .00999999978}
+    positions:
+    - {x: -.520000041, y: -.689999998, z: 0}
+    - {x: .520000041, y: -.689999998, z: 0}
+    - {x: -.520000041, y: .660000026, z: 0}
+    - {x: .520000041, y: .660000026, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .107422851, y: .243165046}
+    - {x: .208983392, y: .243165046}
+    - {x: .107422851, y: .374999017}
+    - {x: .208983392, y: .374999017}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ecb9649a84eb640f382d6b1d50f9e819, type: 2}
+    materialId: 0
+    sourceTextureGUID: 2d07513ab713445fb9b6d785b2bb1554
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: bossicon_Lots of Knights
+    boundsData:
+    - {x: 0, y: -.0149999857, z: 0}
+    - {x: 1.04000008, y: 1.35000002, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -.00499999523, z: 0}
+    - {x: 1.10000002, y: 1.40999997, z: 0}
+    texelSize: {x: .00999999978, y: .00999999978}
+    positions:
+    - {x: -.520000041, y: -.689999998, z: 0}
+    - {x: .520000041, y: -.689999998, z: 0}
+    - {x: -.520000041, y: .660000026, z: 0}
+    - {x: .520000041, y: .660000026, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .107422851, y: .378907233}
+    - {x: .208983392, y: .378907233}
+    - {x: .107422851, y: .510741234}
+    - {x: .208983392, y: .510741234}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ecb9649a84eb640f382d6b1d50f9e819, type: 2}
+    materialId: 0
+    sourceTextureGUID: 2e15c07ec9a43425c82393d02e04d0c5
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: bossicon_Ghost Army
+    boundsData:
+    - {x: 0, y: -.0149999857, z: 0}
+    - {x: 1.04000008, y: 1.35000002, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -.00499999523, z: 0}
+    - {x: 1.10000002, y: 1.40999997, z: 0}
+    texelSize: {x: .00999999978, y: .00999999978}
+    positions:
+    - {x: -.520000041, y: -.689999998, z: 0}
+    - {x: .520000041, y: -.689999998, z: 0}
+    - {x: -.520000041, y: .660000026, z: 0}
+    - {x: .520000041, y: .660000026, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .107422851, y: .514649391}
+    - {x: .208983392, y: .514649391}
+    - {x: .107422851, y: .646483421}
+    - {x: .208983392, y: .646483421}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ecb9649a84eb640f382d6b1d50f9e819, type: 2}
+    materialId: 0
+    sourceTextureGUID: 3e08140ef2bf94765b331d0d8f3ecd17
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: bossicon_Maloc
+    boundsData:
+    - {x: 0, y: -.0149999857, z: 0}
+    - {x: 1.04000008, y: 1.35000002, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -.00499999523, z: 0}
+    - {x: 1.10000002, y: 1.40999997, z: 0}
+    texelSize: {x: .00999999978, y: .00999999978}
+    positions:
+    - {x: -.520000041, y: -.689999998, z: 0}
+    - {x: .520000041, y: -.689999998, z: 0}
+    - {x: -.520000041, y: .660000026, z: 0}
+    - {x: .520000041, y: .660000026, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .107422851, y: .650391579}
+    - {x: .208983392, y: .650391579}
+    - {x: .107422851, y: .782225609}
+    - {x: .208983392, y: .782225609}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ecb9649a84eb640f382d6b1d50f9e819, type: 2}
+    materialId: 0
+    sourceTextureGUID: 4edb065acab1e4c9b969c5aadc5e9a01
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: bossicon_King Beneath the Hill
+    boundsData:
+    - {x: 0, y: -.0149999857, z: 0}
+    - {x: 1.04000008, y: 1.35000002, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -.00499999523, z: 0}
+    - {x: 1.10000002, y: 1.40999997, z: 0}
+    texelSize: {x: .00999999978, y: .00999999978}
+    positions:
+    - {x: -.520000041, y: -.689999998, z: 0}
+    - {x: .520000041, y: -.689999998, z: 0}
+    - {x: -.520000041, y: .660000026, z: 0}
+    - {x: .520000041, y: .660000026, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .107422851, y: .786133766}
+    - {x: .208983392, y: .786133766}
+    - {x: .107422851, y: .917967796}
+    - {x: .208983392, y: .917967796}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ecb9649a84eb640f382d6b1d50f9e819, type: 2}
+    materialId: 0
+    sourceTextureGUID: 48555bc92f3904db18291f0461ec800c
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: bossicon_Blue Knight
+    boundsData:
+    - {x: 0, y: -.0149999857, z: 0}
+    - {x: 1.04000008, y: 1.35000002, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -.00499999523, z: 0}
+    - {x: 1.10000002, y: 1.40999997, z: 0}
+    texelSize: {x: .00999999978, y: .00999999978}
+    positions:
+    - {x: -.520000041, y: -.689999998, z: 0}
+    - {x: .520000041, y: -.689999998, z: 0}
+    - {x: -.520000041, y: .660000026, z: 0}
+    - {x: .520000041, y: .660000026, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .212891608, y: .107422851}
+    - {x: .212891608, y: .208983392}
+    - {x: .344725579, y: .107422851}
+    - {x: .344725579, y: .208983392}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ecb9649a84eb640f382d6b1d50f9e819, type: 2}
+    materialId: 0
+    sourceTextureGUID: 54e8d15a63e094a5d9d077125469b6f8
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: bossicon_Alec
+    boundsData:
+    - {x: 0, y: -.0149999857, z: 0}
+    - {x: 1.04000008, y: 1.35000002, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -.00499999523, z: 0}
+    - {x: 1.10000002, y: 1.40999997, z: 0}
+    texelSize: {x: .00999999978, y: .00999999978}
+    positions:
+    - {x: -.520000041, y: -.689999998, z: 0}
+    - {x: .520000041, y: -.689999998, z: 0}
+    - {x: -.520000041, y: .660000026, z: 0}
+    - {x: .520000041, y: .660000026, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .348633796, y: .107422851}
+    - {x: .348633796, y: .208983392}
+    - {x: .480467767, y: .107422851}
+    - {x: .480467767, y: .208983392}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ecb9649a84eb640f382d6b1d50f9e819, type: 2}
+    materialId: 0
+    sourceTextureGUID: 5539da2858c3a4daa80b3c03a79f3179
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: bossicon_Lake Serpent
+    boundsData:
+    - {x: 0, y: -.0149999857, z: 0}
+    - {x: 1.04000008, y: 1.35000002, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -.00499999523, z: 0}
+    - {x: 1.10000002, y: 1.40999997, z: 0}
+    texelSize: {x: .00999999978, y: .00999999978}
+    positions:
+    - {x: -.520000041, y: -.689999998, z: 0}
+    - {x: .520000041, y: -.689999998, z: 0}
+    - {x: -.520000041, y: .660000026, z: 0}
+    - {x: .520000041, y: .660000026, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .484375983, y: .107422851}
+    - {x: .484375983, y: .208983392}
+    - {x: .616209984, y: .107422851}
+    - {x: .616209984, y: .208983392}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ecb9649a84eb640f382d6b1d50f9e819, type: 2}
+    materialId: 0
+    sourceTextureGUID: 84175e956ae5b46318f10be7bc11f8bf
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: bossicon_Fey Knight
+    boundsData:
+    - {x: 0, y: -.0149999857, z: 0}
+    - {x: 1.04000008, y: 1.35000002, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -.00499999523, z: 0}
+    - {x: 1.10000002, y: 1.40999997, z: 0}
+    texelSize: {x: .00999999978, y: .00999999978}
+    positions:
+    - {x: -.520000041, y: -.689999998, z: 0}
+    - {x: .520000041, y: -.689999998, z: 0}
+    - {x: -.520000041, y: .660000026, z: 0}
+    - {x: .520000041, y: .660000026, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .620118141, y: .107422851}
+    - {x: .620118141, y: .208983392}
+    - {x: .751952171, y: .107422851}
+    - {x: .751952171, y: .208983392}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ecb9649a84eb640f382d6b1d50f9e819, type: 2}
+    materialId: 0
+    sourceTextureGUID: 8bdd0bf5d72dc45cfb96bcb914f51fda
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: bossicon_Drust mac Erp
+    boundsData:
+    - {x: 0, y: -.0149999857, z: 0}
+    - {x: 1.04000008, y: 1.35000002, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -.00499999523, z: 0}
+    - {x: 1.10000002, y: 1.40999997, z: 0}
+    texelSize: {x: .00999999978, y: .00999999978}
+    positions:
+    - {x: -.520000041, y: -.689999998, z: 0}
+    - {x: .520000041, y: -.689999998, z: 0}
+    - {x: -.520000041, y: .660000026, z: 0}
+    - {x: .520000041, y: .660000026, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .755860329, y: .107422851}
+    - {x: .755860329, y: .208983392}
+    - {x: .887694359, y: .107422851}
+    - {x: .887694359, y: .208983392}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ecb9649a84eb640f382d6b1d50f9e819, type: 2}
+    materialId: 0
+    sourceTextureGUID: 9092de69f5bba463ca3ef0749679930f
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: bossicon_Questing Beast
+    boundsData:
+    - {x: 0, y: -.0149999857, z: 0}
+    - {x: 1.04000008, y: 1.35000002, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -.00499999523, z: 0}
+    - {x: 1.10000002, y: 1.40999997, z: 0}
+    texelSize: {x: .00999999978, y: .00999999978}
+    positions:
+    - {x: -.520000041, y: -.689999998, z: 0}
+    - {x: .520000041, y: -.689999998, z: 0}
+    - {x: -.520000041, y: .660000026, z: 0}
+    - {x: .520000041, y: .660000026, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .891602516, y: .107422851}
+    - {x: .993163109, y: .107422851}
+    - {x: .891602516, y: .239256829}
+    - {x: .993163109, y: .239256829}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ecb9649a84eb640f382d6b1d50f9e819, type: 2}
+    materialId: 0
+    sourceTextureGUID: a5a68aa37f2c5414abdfb30e749d437e
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: bossicon_King Mark of Cornwall
+    boundsData:
+    - {x: 0, y: -.0149999857, z: 0}
+    - {x: 1.04000008, y: 1.35000002, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -.00499999523, z: 0}
+    - {x: 1.10000002, y: 1.40999997, z: 0}
+    texelSize: {x: .00999999978, y: .00999999978}
+    positions:
+    - {x: -.520000041, y: -.689999998, z: 0}
+    - {x: .520000041, y: -.689999998, z: 0}
+    - {x: -.520000041, y: .660000026, z: 0}
+    - {x: .520000041, y: .660000026, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .212891608, y: .212891608}
+    - {x: .212891608, y: .314452142}
+    - {x: .344725579, y: .212891608}
+    - {x: .344725579, y: .314452142}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ecb9649a84eb640f382d6b1d50f9e819, type: 2}
+    materialId: 0
+    sourceTextureGUID: b9fa17eac4ff74febb495820e5ccb1c8
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: bossicon_NoPic
+    boundsData:
+    - {x: 0, y: -.0149999857, z: 0}
+    - {x: 1.04000008, y: 1.35000002, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -.00499999523, z: 0}
+    - {x: 1.10000002, y: 1.40999997, z: 0}
+    texelSize: {x: .00999999978, y: .00999999978}
+    positions:
+    - {x: -.520000041, y: -.689999998, z: 0}
+    - {x: .520000041, y: -.689999998, z: 0}
+    - {x: -.520000041, y: .660000026, z: 0}
+    - {x: .520000041, y: .660000026, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .348633796, y: .212891608}
+    - {x: .348633796, y: .314452142}
+    - {x: .480467767, y: .212891608}
+    - {x: .480467767, y: .314452142}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ecb9649a84eb640f382d6b1d50f9e819, type: 2}
+    materialId: 0
+    sourceTextureGUID: ceab2ee78742b4033b4b3a58eb741e70
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: bossicon_Mordred
+    boundsData:
+    - {x: 0, y: -.0149999857, z: 0}
+    - {x: 1.04000008, y: 1.35000002, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -.00499999523, z: 0}
+    - {x: 1.10000002, y: 1.40999997, z: 0}
+    texelSize: {x: .00999999978, y: .00999999978}
+    positions:
+    - {x: -.520000041, y: -.689999998, z: 0}
+    - {x: .520000041, y: -.689999998, z: 0}
+    - {x: -.520000041, y: .660000026, z: 0}
+    - {x: .520000041, y: .660000026, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .484375983, y: .212891608}
+    - {x: .484375983, y: .314452142}
+    - {x: .616209984, y: .212891608}
+    - {x: .616209984, y: .314452142}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ecb9649a84eb640f382d6b1d50f9e819, type: 2}
+    materialId: 0
+    sourceTextureGUID: fbfb80809b7cf484ebe96cb987b29eb2
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: bossicon_The Green Hag
+    boundsData:
+    - {x: 0, y: -.0149999857, z: 0}
+    - {x: 1.04000008, y: 1.35000002, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -.00499999523, z: 0}
+    - {x: 1.10000002, y: 1.40999997, z: 0}
+    texelSize: {x: .00999999978, y: .00999999978}
+    positions:
+    - {x: -.520000041, y: -.689999998, z: 0}
+    - {x: .520000041, y: -.689999998, z: 0}
+    - {x: -.520000041, y: .660000026, z: 0}
+    - {x: .520000041, y: .660000026, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .620118141, y: .212891608}
+    - {x: .620118141, y: .314452142}
+    - {x: .751952171, y: .212891608}
+    - {x: .751952171, y: .314452142}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ecb9649a84eb640f382d6b1d50f9e819, type: 2}
+    materialId: 0
+    sourceTextureGUID: cbac23ae144ca4f4bac3072865c1b038
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: bossicon_Winter Boss
+    boundsData:
+    - {x: -.0100000203, y: -.00499996543, z: 0}
+    - {x: 1.01999998, y: 1.32999992, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -.00499999523, z: 0}
+    - {x: 1.10000002, y: 1.40999997, z: 0}
+    texelSize: {x: .00999999978, y: .00999999978}
+    positions:
+    - {x: -.520000041, y: -.669999957, z: 0}
+    - {x: .5, y: -.669999957, z: 0}
+    - {x: -.520000041, y: .660000026, z: 0}
+    - {x: .5, y: .660000026, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .348633796, y: .318360358}
+    - {x: .348633796, y: .417967767}
+    - {x: .478514642, y: .318360358}
+    - {x: .478514642, y: .417967767}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ecb9649a84eb640f382d6b1d50f9e819, type: 2}
+    materialId: 0
+    sourceTextureGUID: 78d3e617efd0747ca8a5a70a88618a62
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: bossicon_The wolfman
+    boundsData:
+    - {x: 0, y: -.0149999857, z: 0}
+    - {x: 1.04000008, y: 1.35000002, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -.00499999523, z: 0}
+    - {x: 1.10000002, y: 1.40999997, z: 0}
+    texelSize: {x: .00999999978, y: .00999999978}
+    positions:
+    - {x: -.520000041, y: -.689999998, z: 0}
+    - {x: .520000041, y: -.689999998, z: 0}
+    - {x: -.520000041, y: .660000026, z: 0}
+    - {x: .520000041, y: .660000026, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .755860329, y: .212891608}
+    - {x: .755860329, y: .314452142}
+    - {x: .887694359, y: .212891608}
+    - {x: .887694359, y: .314452142}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ecb9649a84eb640f382d6b1d50f9e819, type: 2}
+    materialId: 0
+    sourceTextureGUID: 294349f44a4c24c4083b8be68fa5fede
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: bossicon_zombie
+    boundsData:
+    - {x: 0, y: -.0149999857, z: 0}
+    - {x: 1.04000008, y: 1.35000002, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -.00499999523, z: 0}
+    - {x: 1.10000002, y: 1.40999997, z: 0}
+    texelSize: {x: .00999999978, y: .00999999978}
+    positions:
+    - {x: -.520000041, y: -.689999998, z: 0}
+    - {x: .520000041, y: -.689999998, z: 0}
+    - {x: -.520000041, y: .660000026, z: 0}
+    - {x: .520000041, y: .660000026, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .891602516, y: .243165046}
+    - {x: .993163109, y: .243165046}
+    - {x: .891602516, y: .374999017}
+    - {x: .993163109, y: .374999017}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ecb9649a84eb640f382d6b1d50f9e819, type: 2}
+    materialId: 0
+    sourceTextureGUID: f8da7d2779c304bc6a1e0dc58ca625d1
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: collection_Grim_Escort
+    boundsData:
+    - {x: 0, y: -.0149999857, z: 0}
+    - {x: 1.04000008, y: 1.35000002, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -.00499999523, z: 0}
+    - {x: 1.10000002, y: 1.40999997, z: 0}
+    texelSize: {x: .00999999978, y: .00999999978}
+    positions:
+    - {x: -.520000041, y: -.689999998, z: 0}
+    - {x: .520000041, y: -.689999998, z: 0}
+    - {x: -.520000041, y: .660000026, z: 0}
+    - {x: .520000041, y: .660000026, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .212891608, y: .318360358}
+    - {x: .212891608, y: .419920892}
+    - {x: .344725579, y: .318360358}
+    - {x: .344725579, y: .419920892}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ecb9649a84eb640f382d6b1d50f9e819, type: 2}
+    materialId: 0
+    sourceTextureGUID: 76c9164083d184960be1d3da143fc54e
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  premultipliedAlpha: 0
+  material: {fileID: 0}
+  materials:
+  - {fileID: 2100000, guid: ecb9649a84eb640f382d6b1d50f9e819, type: 2}
+  textures:
+  - {fileID: 2800000, guid: ac0c44cf587c2467eae74580cdc355a4, type: 3}
+  pngTextures: []
+  materialPngTextureId: 00000000
+  textureFilterMode: 1
+  textureMipMaps: 0
+  allowMultipleAtlases: 0
+  spriteCollectionGUID: 9383adc5749714cd1a3f8b4acc059219
+  spriteCollectionName: CamPaignBoss_SC
+  assetName: 
+  loadable: 0
+  invOrthoSize: 2
+  halfTargetHeight: 50
+  buildKey: 1708112344
+  dataGuid: de09837ad740943c48c9b0a699775d98
+  managedSpriteCollection: 0
+  hasPlatformData: 0
+  spriteCollectionPlatforms: []
+  spriteCollectionPlatformGUIDs: []
+--- !u!114 &11451324
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71888f163658d48818ab540bb3fb74c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1
+  m_IsExploded: 1

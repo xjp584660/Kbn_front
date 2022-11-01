@@ -1,0 +1,366 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400000}
+  - 114: {fileID: 11400000}
+  m_Layer: 0
+  m_Name: UnlockChapter SP
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d546f34a90531a14eaba82a43b05b86b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 3
+  materialIdsValid: 1
+  needMaterialInstance: 0
+  spriteDefinitions:
+  - name: suolianbaopo_0002
+    boundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 2.55999994, y: 2.55999994, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 2.55999994, y: 2.55999994, z: 0}
+    texelSize: {x: .00999999978, y: .00999999978}
+    positions:
+    - {x: -1.27999997, y: -1.27999997, z: 0}
+    - {x: 1.27999997, y: -1.27999997, z: 0}
+    - {x: -1.27999997, y: 1.27999997, z: 0}
+    - {x: 1.27999997, y: 1.27999997, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .00390820298, y: .00195410149}
+    - {x: .503904283, y: .00195410149}
+    - {x: .00390820298, y: .251952142}
+    - {x: .503904283, y: .251952142}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 3d1c7081b4c89c74fb21b8a49005eb81, type: 2}
+    materialId: 0
+    sourceTextureGUID: c012a620d8a2b4a49acebba7e7fb1b9e
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: suolianbaopo_0005
+    boundsData:
+    - {x: -.0200000107, y: -.339999974, z: 0}
+    - {x: 1.61999989, y: 1.43999994, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 2.55999994, y: 2.55999994, z: 0}
+    texelSize: {x: .00999999978, y: .00999999978}
+    positions:
+    - {x: -.829999983, y: -1.05999994, z: 0}
+    - {x: .789999962, y: -1.05999994, z: 0}
+    - {x: -.829999983, y: .379999995, z: 0}
+    - {x: .789999962, y: .379999995, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .00390820298, y: .509766579}
+    - {x: .320310533, y: .509766579}
+    - {x: .00390820298, y: .650389671}
+    - {x: .320310533, y: .650389671}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 3d1c7081b4c89c74fb21b8a49005eb81, type: 2}
+    materialId: 0
+    sourceTextureGUID: 6eba47d202794a84db3ec6beddf54119
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: suolianbaopo_0004
+    boundsData:
+    - {x: -.13499999, y: -.099999994, z: 0}
+    - {x: 1.63, y: 1.44000006, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 2.55999994, y: 2.55999994, z: 0}
+    texelSize: {x: .00999999978, y: .00999999978}
+    positions:
+    - {x: -.949999988, y: -.819999993, z: 0}
+    - {x: .680000007, y: -.819999993, z: 0}
+    - {x: -.949999988, y: .620000005, z: 0}
+    - {x: .680000007, y: .620000005, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .511720717, y: .387696296}
+    - {x: .830076158, y: .387696296}
+    - {x: .511720717, y: .528319359}
+    - {x: .830076158, y: .528319359}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 3d1c7081b4c89c74fb21b8a49005eb81, type: 2}
+    materialId: 0
+    sourceTextureGUID: 259a61b6002f2e94eb1610611bfa0834
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: suolianbaopo_0006
+    boundsData:
+    - {x: -.140000015, y: -.399999976, z: 0}
+    - {x: 1.5999999, y: 1.53999996, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 2.55999994, y: 2.55999994, z: 0}
+    texelSize: {x: .00999999978, y: .00999999978}
+    positions:
+    - {x: -.939999998, y: -1.16999996, z: 0}
+    - {x: .659999967, y: -1.16999996, z: 0}
+    - {x: -.939999998, y: .370000005, z: 0}
+    - {x: .659999967, y: .370000005, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .511720717, y: .233399421}
+    - {x: .824216783, y: .233399421}
+    - {x: .511720717, y: .383788079}
+    - {x: .824216783, y: .383788079}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 3d1c7081b4c89c74fb21b8a49005eb81, type: 2}
+    materialId: 0
+    sourceTextureGUID: cd2a82870d52109419bb85892234d36f
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: suolianbaopo_0001
+    boundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 2.55999994, y: 2.55999994, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 2.55999994, y: 2.55999994, z: 0}
+    texelSize: {x: .00999999978, y: .00999999978}
+    positions:
+    - {x: -1.27999997, y: -1.27999997, z: 0}
+    - {x: 1.27999997, y: -1.27999997, z: 0}
+    - {x: -1.27999997, y: 1.27999997, z: 0}
+    - {x: 1.27999997, y: 1.27999997, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .00390820298, y: .255860358}
+    - {x: .503904283, y: .255860358}
+    - {x: .00390820298, y: .505858421}
+    - {x: .503904283, y: .505858421}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 3d1c7081b4c89c74fb21b8a49005eb81, type: 2}
+    materialId: 0
+    sourceTextureGUID: 28d9267952d301842bf6f3f8e4e4fda3
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: suolianbaopo_0000
+    boundsData:
+    - {x: .0249999762, y: -.0199999809, z: 0}
+    - {x: 2.32999992, y: 2.33999991, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 2.55999994, y: 2.55999994, z: 0}
+    texelSize: {x: .00999999978, y: .00999999978}
+    positions:
+    - {x: -1.13999999, y: -1.18999994, z: 0}
+    - {x: 1.18999994, y: -1.18999994, z: 0}
+    - {x: -1.13999999, y: 1.14999998, z: 0}
+    - {x: 1.18999994, y: 1.14999998, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .511720717, y: .00195410149}
+    - {x: .511720717, y: .229491204}
+    - {x: .968748033, y: .00195410149}
+    - {x: .968748033, y: .229491204}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 3d1c7081b4c89c74fb21b8a49005eb81, type: 2}
+    materialId: 0
+    sourceTextureGUID: 412c854d217be1a4dbc353d60b8a3151
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: suolianbaopo_0003
+    boundsData:
+    - {x: -.125, y: -.0300000012, z: 0}
+    - {x: 1.37, y: 1.20000005, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 2.55999994, y: 2.55999994, z: 0}
+    texelSize: {x: .00999999978, y: .00999999978}
+    positions:
+    - {x: -.810000002, y: -.629999995, z: 0}
+    - {x: .560000002, y: -.629999995, z: 0}
+    - {x: -.810000002, y: .569999993, z: 0}
+    - {x: .560000002, y: .569999993, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .328126967, y: .532227516}
+    - {x: .595701158, y: .532227516}
+    - {x: .328126967, y: .649413109}
+    - {x: .595701158, y: .649413109}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 3d1c7081b4c89c74fb21b8a49005eb81, type: 2}
+    materialId: 0
+    sourceTextureGUID: 7127ae7fe27d5a949bb27b9154cb61dd
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  premultipliedAlpha: 0
+  material: {fileID: 0}
+  materials:
+  - {fileID: 2100000, guid: 3d1c7081b4c89c74fb21b8a49005eb81, type: 2}
+  textures:
+  - {fileID: 2800000, guid: 868dd334621b2ee44869ff175c20fa6b, type: 3}
+  pngTextures: []
+  materialPngTextureId: 00000000
+  textureFilterMode: 1
+  textureMipMaps: 0
+  allowMultipleAtlases: 0
+  spriteCollectionGUID: 8a64c28c44e0eec48aaa6e12d6d3fdc2
+  spriteCollectionName: UnlockChapter SP
+  assetName: 
+  loadable: 0
+  invOrthoSize: 2
+  halfTargetHeight: 50
+  buildKey: 479339713
+  dataGuid: a139d3c993231e84588eb35ba7d3c811
+  managedSpriteCollection: 0
+  hasPlatformData: 0
+  spriteCollectionPlatforms: []
+  spriteCollectionPlatformGUIDs: []
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1
+  m_IsExploded: 1

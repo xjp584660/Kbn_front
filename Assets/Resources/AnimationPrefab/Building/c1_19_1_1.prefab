@@ -1,0 +1,1268 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &102826
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 402826}
+  - 23: {fileID: 2302826}
+  - 33: {fileID: 3302826}
+  - 114: {fileID: 11402826}
+  m_Layer: 0
+  m_Name: wall
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &102828
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 402828}
+  m_Layer: 0
+  m_Name: c1_19_1_1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &402826
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 102826}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .99999994, y: 0, z: .299999952}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 402828}
+  m_RootOrder: 0
+--- !u!4 &402828
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 102828}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 402826}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!23 &2302826
+Renderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 102826}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: 3e72fdf5adfd0481b95201e06712fe82, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!33 &3302826
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 102826}
+  m_Mesh: {fileID: 0}
+--- !u!114 &11402826
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 102826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d4775e89280fa044835889590a966f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 3
+  batchedSprites:
+  - type: 1
+    name: lv1_4
+    parentId: -1
+    spriteId: 11
+    xRefId: -1
+    spriteCollection: {fileID: 11400000, guid: c94072a8876ed4d5b82b194581b881f0, type: 2}
+    rotation: {x: .707106829, y: 0, z: 0, w: .707106709}
+    position: {x: 10.9700003, y: 0, z: 10.96}
+    localScale: {x: 1, y: 1, z: 1}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    baseScale: {x: 1, y: 1, z: 1}
+    renderLayer: 0
+    internalData0: {x: 0, y: 0}
+    internalData1: {x: 0, y: 0}
+    internalData2: {x: 0, y: 0}
+    colliderData: {x: 0, y: 1}
+    formattedText: 
+    flags: 0
+    anchor: 0
+    relativeMatrix:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 10.9700003
+      e10: 0
+      e11: -1.1920929e-07
+      e12: -.99999994
+      e13: 0
+      e20: 0
+      e21: .99999994
+      e22: -1.1920929e-07
+      e23: 10.96
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+  - type: 1
+    name: lv1_7
+    parentId: -1
+    spriteId: 22
+    xRefId: -1
+    spriteCollection: {fileID: 11400000, guid: c94072a8876ed4d5b82b194581b881f0, type: 2}
+    rotation: {x: .707106829, y: 0, z: 0, w: .707106709}
+    position: {x: 12.9899998, y: 0, z: 9.47999954}
+    localScale: {x: 1, y: 1, z: 1}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    baseScale: {x: 1, y: 1, z: 1}
+    renderLayer: 0
+    internalData0: {x: 0, y: 0}
+    internalData1: {x: 0, y: 0}
+    internalData2: {x: 0, y: 0}
+    colliderData: {x: 0, y: 1}
+    formattedText: 
+    flags: 0
+    anchor: 0
+    relativeMatrix:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 12.9899998
+      e10: 0
+      e11: -1.1920929e-07
+      e12: -.99999994
+      e13: 0
+      e20: 0
+      e21: .99999994
+      e22: -1.1920929e-07
+      e23: 9.47999954
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+  - type: 1
+    name: lv1_4
+    parentId: -1
+    spriteId: 11
+    xRefId: -1
+    spriteCollection: {fileID: 11400000, guid: c94072a8876ed4d5b82b194581b881f0, type: 2}
+    rotation: {x: .707106829, y: 0, z: 0, w: .707106709}
+    position: {x: 15.0500002, y: 0, z: 8.92000008}
+    localScale: {x: 1, y: 1, z: 1}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    baseScale: {x: 1, y: 1, z: 1}
+    renderLayer: 0
+    internalData0: {x: 0, y: 0}
+    internalData1: {x: 0, y: 0}
+    internalData2: {x: 0, y: 0}
+    colliderData: {x: 0, y: 1}
+    formattedText: 
+    flags: 0
+    anchor: 0
+    relativeMatrix:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 15.0499992
+      e10: 0
+      e11: -1.1920929e-07
+      e12: -.99999994
+      e13: 0
+      e20: 0
+      e21: .99999994
+      e22: -1.1920929e-07
+      e23: 8.92000008
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+  - type: 1
+    name: lv1_7
+    parentId: -1
+    spriteId: 22
+    xRefId: -1
+    spriteCollection: {fileID: 11400000, guid: c94072a8876ed4d5b82b194581b881f0, type: 2}
+    rotation: {x: .707106829, y: 0, z: 0, w: .707106709}
+    position: {x: 16.9799995, y: 0, z: 7.5}
+    localScale: {x: 1, y: 1, z: 1}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    baseScale: {x: 1, y: 1, z: 1}
+    renderLayer: 0
+    internalData0: {x: 0, y: 0}
+    internalData1: {x: 0, y: 0}
+    internalData2: {x: 0, y: 0}
+    colliderData: {x: 0, y: 1}
+    formattedText: 
+    flags: 0
+    anchor: 0
+    relativeMatrix:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 16.9799995
+      e10: 0
+      e11: -1.1920929e-07
+      e12: -.99999994
+      e13: 0
+      e20: 0
+      e21: .99999994
+      e22: -1.1920929e-07
+      e23: 7.5
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+  - type: 1
+    name: lv1_4
+    parentId: -1
+    spriteId: 11
+    xRefId: -1
+    spriteCollection: {fileID: 11400000, guid: c94072a8876ed4d5b82b194581b881f0, type: 2}
+    rotation: {x: .707106829, y: 0, z: 0, w: .707106829}
+    position: {x: 19.0300007, y: 1.20000005, z: 6.82999992}
+    localScale: {x: 1, y: 1, z: 1}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    baseScale: {x: 1, y: 1, z: 1}
+    renderLayer: 0
+    internalData0: {x: 0, y: 0}
+    internalData1: {x: 0, y: 0}
+    internalData2: {x: 0, y: 0}
+    colliderData: {x: 0, y: 1}
+    formattedText: 
+    flags: 0
+    anchor: 0
+    relativeMatrix:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 19.0300007
+      e10: 0
+      e11: -1.1920929e-07
+      e12: -1.00000012
+      e13: 1.20000005
+      e20: 0
+      e21: 1.00000012
+      e22: -1.1920929e-07
+      e23: 6.82999992
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+  - type: 1
+    name: lv1_7
+    parentId: -1
+    spriteId: 22
+    xRefId: -1
+    spriteCollection: {fileID: 11400000, guid: c94072a8876ed4d5b82b194581b881f0, type: 2}
+    rotation: {x: .707106829, y: 0, z: 0, w: .707106829}
+    position: {x: 20.9599991, y: 1.29999995, z: 5.40999985}
+    localScale: {x: 1, y: 1, z: 1}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    baseScale: {x: 1, y: 1, z: 1}
+    renderLayer: 0
+    internalData0: {x: 0, y: 0}
+    internalData1: {x: 0, y: 0}
+    internalData2: {x: 0, y: 0}
+    colliderData: {x: 0, y: 1}
+    formattedText: 
+    flags: 0
+    anchor: 0
+    relativeMatrix:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 20.9599991
+      e10: 0
+      e11: -1.1920929e-07
+      e12: -1.00000012
+      e13: 1.29999995
+      e20: 0
+      e21: 1.00000012
+      e22: -1.1920929e-07
+      e23: 5.40999985
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+  - type: 1
+    name: lv1_6
+    parentId: -1
+    spriteId: 29
+    xRefId: -1
+    spriteCollection: {fileID: 11400000, guid: c94072a8876ed4d5b82b194581b881f0, type: 2}
+    rotation: {x: .707106829, y: 0, z: 0, w: .707106829}
+    position: {x: 21.4799995, y: .0700000003, z: -1.44000006}
+    localScale: {x: 1, y: 1, z: 1}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    baseScale: {x: 1, y: 1, z: 1}
+    renderLayer: 0
+    internalData0: {x: 0, y: 0}
+    internalData1: {x: 0, y: 0}
+    internalData2: {x: 0, y: 0}
+    colliderData: {x: 0, y: 1}
+    formattedText: 
+    flags: 0
+    anchor: 0
+    relativeMatrix:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 21.4799995
+      e10: 0
+      e11: -1.1920929e-07
+      e12: -1.00000012
+      e13: .0700000003
+      e20: 0
+      e21: 1.00000012
+      e22: -1.1920929e-07
+      e23: -1.44000006
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+  - type: 1
+    name: lv1_4
+    parentId: -1
+    spriteId: 11
+    xRefId: -1
+    spriteCollection: {fileID: 11400000, guid: c94072a8876ed4d5b82b194581b881f0, type: 2}
+    rotation: {x: .707106829, y: 0, z: 0, w: .707106829}
+    position: {x: -17.3600006, y: 0, z: -2.28999996}
+    localScale: {x: 1, y: 1, z: 1}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    baseScale: {x: 1, y: 1, z: 1}
+    renderLayer: 0
+    internalData0: {x: 0, y: 0}
+    internalData1: {x: 0, y: 0}
+    internalData2: {x: 0, y: 0}
+    colliderData: {x: 0, y: 1}
+    formattedText: 
+    flags: 0
+    anchor: 0
+    relativeMatrix:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: -17.3600006
+      e10: 0
+      e11: -1.1920929e-07
+      e12: -1.00000012
+      e13: 0
+      e20: 0
+      e21: 1.00000012
+      e22: -1.1920929e-07
+      e23: -2.28999996
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+  - type: 1
+    name: lv1_3
+    parentId: -1
+    spriteId: 9
+    xRefId: -1
+    spriteCollection: {fileID: 11400000, guid: c94072a8876ed4d5b82b194581b881f0, type: 2}
+    rotation: {x: .707106829, y: 0, z: 0, w: .707106829}
+    position: {x: 20.5300007, y: .0799999982, z: -2.38000011}
+    localScale: {x: 1, y: 1, z: 1}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    baseScale: {x: 1, y: 1, z: 1}
+    renderLayer: 0
+    internalData0: {x: 0, y: 0}
+    internalData1: {x: 0, y: 0}
+    internalData2: {x: 0, y: 0}
+    colliderData: {x: 0, y: 1}
+    formattedText: 
+    flags: 0
+    anchor: 0
+    relativeMatrix:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 20.5300007
+      e10: 0
+      e11: -1.1920929e-07
+      e12: -1.00000012
+      e13: .0799999982
+      e20: 0
+      e21: 1.00000012
+      e22: -1.1920929e-07
+      e23: -2.38000011
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+  - type: 1
+    name: lv1_3
+    parentId: -1
+    spriteId: 9
+    xRefId: -1
+    spriteCollection: {fileID: 11400000, guid: c94072a8876ed4d5b82b194581b881f0, type: 2}
+    rotation: {x: .707106829, y: 0, z: 0, w: .707106829}
+    position: {x: 19.2600002, y: .0900000036, z: -2.98000002}
+    localScale: {x: 1, y: 1, z: 1}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    baseScale: {x: 1, y: 1, z: 1}
+    renderLayer: 0
+    internalData0: {x: 0, y: 0}
+    internalData1: {x: 0, y: 0}
+    internalData2: {x: 0, y: 0}
+    colliderData: {x: 0, y: 1}
+    formattedText: 
+    flags: 0
+    anchor: 0
+    relativeMatrix:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 19.2600002
+      e10: 0
+      e11: -1.1920929e-07
+      e12: -1.00000012
+      e13: .0900000036
+      e20: 0
+      e21: 1.00000012
+      e22: -1.1920929e-07
+      e23: -2.98000002
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+  - type: 1
+    name: lv1_6
+    parentId: -1
+    spriteId: 29
+    xRefId: -1
+    spriteCollection: {fileID: 11400000, guid: c94072a8876ed4d5b82b194581b881f0, type: 2}
+    rotation: {x: .707106829, y: 0, z: 0, w: .707106829}
+    position: {x: 17.8500004, y: .0700000003, z: -3.16000009}
+    localScale: {x: 1, y: 1, z: 1}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    baseScale: {x: 1, y: 1, z: 1}
+    renderLayer: 0
+    internalData0: {x: 0, y: 0}
+    internalData1: {x: 0, y: 0}
+    internalData2: {x: 0, y: 0}
+    colliderData: {x: 0, y: 1}
+    formattedText: 
+    flags: 0
+    anchor: 0
+    relativeMatrix:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 17.8500004
+      e10: 0
+      e11: -1.1920929e-07
+      e12: -1.00000012
+      e13: .0700000003
+      e20: 0
+      e21: 1.00000012
+      e22: -1.1920929e-07
+      e23: -3.16000009
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+  - type: 1
+    name: lv1_7
+    parentId: -1
+    spriteId: 22
+    xRefId: -1
+    spriteCollection: {fileID: 11400000, guid: c94072a8876ed4d5b82b194581b881f0, type: 2}
+    rotation: {x: .707106829, y: 0, z: 0, w: .707106829}
+    position: {x: -15.4099998, y: 0, z: -3.72000003}
+    localScale: {x: 1, y: 1, z: 1}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    baseScale: {x: 1, y: 1, z: 1}
+    renderLayer: 0
+    internalData0: {x: 0, y: 0}
+    internalData1: {x: 0, y: 0}
+    internalData2: {x: 0, y: 0}
+    colliderData: {x: 0, y: 1}
+    formattedText: 
+    flags: 0
+    anchor: 0
+    relativeMatrix:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: -15.4099998
+      e10: 0
+      e11: -1.1920929e-07
+      e12: -1.00000012
+      e13: 0
+      e20: 0
+      e21: 1.00000012
+      e22: -1.1920929e-07
+      e23: -3.72000003
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+  - type: 1
+    name: lv1_3
+    parentId: -1
+    spriteId: 9
+    xRefId: -1
+    spriteCollection: {fileID: 11400000, guid: c94072a8876ed4d5b82b194581b881f0, type: 2}
+    rotation: {x: .707106829, y: 0, z: 0, w: .707106829}
+    position: {x: 16.8999996, y: .0799999982, z: -4.0999999}
+    localScale: {x: 1, y: 1, z: 1}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    baseScale: {x: 1, y: 1, z: 1}
+    renderLayer: 0
+    internalData0: {x: 0, y: 0}
+    internalData1: {x: 0, y: 0}
+    internalData2: {x: 0, y: 0}
+    colliderData: {x: 0, y: 1}
+    formattedText: 
+    flags: 0
+    anchor: 0
+    relativeMatrix:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 16.8999996
+      e10: 0
+      e11: -1.1920929e-07
+      e12: -1.00000012
+      e13: .0799999982
+      e20: 0
+      e21: 1.00000012
+      e22: -1.1920929e-07
+      e23: -4.0999999
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+  - type: 1
+    name: lv1_4
+    parentId: -1
+    spriteId: 11
+    xRefId: -1
+    spriteCollection: {fileID: 11400000, guid: c94072a8876ed4d5b82b194581b881f0, type: 2}
+    rotation: {x: .707106829, y: 0, z: 0, w: .707106709}
+    position: {x: -13.6779785, y: .00399780273, z: -4.08233643}
+    localScale: {x: 1, y: 1, z: 1}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    baseScale: {x: 1, y: 1, z: 1}
+    renderLayer: 0
+    internalData0: {x: 0, y: 0}
+    internalData1: {x: 0, y: 0}
+    internalData2: {x: 0, y: 0}
+    colliderData: {x: 0, y: 1}
+    formattedText: 
+    flags: 0
+    anchor: 0
+    relativeMatrix:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: -13.6779785
+      e10: 0
+      e11: -1.1920929e-07
+      e12: -.99999994
+      e13: .00399780273
+      e20: 0
+      e21: .99999994
+      e22: -1.1920929e-07
+      e23: -4.08233643
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+  - type: 1
+    name: lv1_3
+    parentId: -1
+    spriteId: 9
+    xRefId: -1
+    spriteCollection: {fileID: 11400000, guid: c94072a8876ed4d5b82b194581b881f0, type: 2}
+    rotation: {x: .707106829, y: 0, z: 0, w: .707106709}
+    position: {x: 15.6254864, y: .0900000036, z: -4.69671631}
+    localScale: {x: 1, y: 1, z: 1}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    baseScale: {x: 1, y: 1, z: 1}
+    renderLayer: 0
+    internalData0: {x: 0, y: 0}
+    internalData1: {x: 0, y: 0}
+    internalData2: {x: 0, y: 0}
+    colliderData: {x: 0, y: 1}
+    formattedText: 
+    flags: 0
+    anchor: 0
+    relativeMatrix:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 15.6254864
+      e10: 0
+      e11: -1.1920929e-07
+      e12: -.99999994
+      e13: .0900000036
+      e20: 0
+      e21: .99999994
+      e22: -1.1920929e-07
+      e23: -4.69671631
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+  - type: 1
+    name: lv1_7
+    parentId: -1
+    spriteId: 22
+    xRefId: -1
+    spriteCollection: {fileID: 11400000, guid: c94072a8876ed4d5b82b194581b881f0, type: 2}
+    rotation: {x: .707106829, y: 0, z: 0, w: .707106709}
+    position: {x: -11.7268057, y: .00300598145, z: -5.51287746}
+    localScale: {x: 1, y: 1, z: 1}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    baseScale: {x: 1, y: 1, z: 1}
+    renderLayer: 0
+    internalData0: {x: 0, y: 0}
+    internalData1: {x: 0, y: 0}
+    internalData2: {x: 0, y: 0}
+    colliderData: {x: 0, y: 1}
+    formattedText: 
+    flags: 0
+    anchor: 0
+    relativeMatrix:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: -11.7268057
+      e10: 0
+      e11: -1.1920929e-07
+      e12: -.99999994
+      e13: .00300598145
+      e20: 0
+      e21: .99999994
+      e22: -1.1920929e-07
+      e23: -5.51287746
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+  - type: 1
+    name: lv1_1
+    parentId: -1
+    spriteId: 6
+    xRefId: -1
+    spriteCollection: {fileID: 11400000, guid: c94072a8876ed4d5b82b194581b881f0, type: 2}
+    rotation: {x: .707106829, y: 0, z: 0, w: .707106709}
+    position: {x: 12.3529053, y: .100000024, z: -5.88317871}
+    localScale: {x: 1, y: 1, z: 1}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    baseScale: {x: 1, y: 1, z: 1}
+    renderLayer: 0
+    internalData0: {x: 0, y: 0}
+    internalData1: {x: 0, y: 0}
+    internalData2: {x: 0, y: 0}
+    colliderData: {x: 0, y: 1}
+    formattedText: 
+    flags: 0
+    anchor: 0
+    relativeMatrix:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 12.3529053
+      e10: 0
+      e11: -1.1920929e-07
+      e12: -.99999994
+      e13: .100000024
+      e20: 0
+      e21: .99999994
+      e22: -1.1920929e-07
+      e23: -5.88317871
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+  - type: 1
+    name: lv1_7
+    parentId: -1
+    spriteId: 22
+    xRefId: -1
+    spriteCollection: {fileID: 11400000, guid: c94072a8876ed4d5b82b194581b881f0, type: 2}
+    rotation: {x: .707106829, y: 0, z: 0, w: .707106709}
+    position: {x: -10.286377, y: .00199890137, z: -6.23022461}
+    localScale: {x: 1, y: 1, z: 1}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    baseScale: {x: 1, y: 1, z: 1}
+    renderLayer: 0
+    internalData0: {x: 0, y: 0}
+    internalData1: {x: 0, y: 0}
+    internalData2: {x: 0, y: 0}
+    colliderData: {x: 0, y: 1}
+    formattedText: 
+    flags: 0
+    anchor: 0
+    relativeMatrix:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: -10.286377
+      e10: 0
+      e11: -1.1920929e-07
+      e12: -.99999994
+      e13: .00199890137
+      e20: 0
+      e21: .99999994
+      e22: -1.1920929e-07
+      e23: -6.23022461
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+  - type: 1
+    name: lv1_4
+    parentId: -1
+    spriteId: 11
+    xRefId: -1
+    spriteCollection: {fileID: 11400000, guid: c94072a8876ed4d5b82b194581b881f0, type: 2}
+    rotation: {x: .707106829, y: 0, z: 0, w: .707106709}
+    position: {x: -8.79199219, y: .00399780273, z: -6.53771973}
+    localScale: {x: 1, y: 1, z: 1}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    baseScale: {x: 1, y: 1, z: 1}
+    renderLayer: 0
+    internalData0: {x: 0, y: 0}
+    internalData1: {x: 0, y: 0}
+    internalData2: {x: 0, y: 0}
+    colliderData: {x: 0, y: 1}
+    formattedText: 
+    flags: 0
+    anchor: 0
+    relativeMatrix:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: -8.79199219
+      e10: 0
+      e11: -1.1920929e-07
+      e12: -.99999994
+      e13: .00399780273
+      e20: 0
+      e21: .99999994
+      e22: -1.1920929e-07
+      e23: -6.53771973
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+  - type: 1
+    name: lv1_3
+    parentId: -1
+    spriteId: 9
+    xRefId: -1
+    spriteCollection: {fileID: 11400000, guid: c94072a8876ed4d5b82b194581b881f0, type: 2}
+    rotation: {x: .707106829, y: 0, z: 0, w: .707106709}
+    position: {x: 9.81768131, y: .0599999428, z: -7.5999999}
+    localScale: {x: 1, y: 1, z: 1}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    baseScale: {x: 1, y: 1, z: 1}
+    renderLayer: 0
+    internalData0: {x: 0, y: 0}
+    internalData1: {x: 0, y: 0}
+    internalData2: {x: 0, y: 0}
+    colliderData: {x: 0, y: 1}
+    formattedText: 
+    flags: 0
+    anchor: 0
+    relativeMatrix:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 9.81768131
+      e10: 0
+      e11: -1.1920929e-07
+      e12: -.99999994
+      e13: .0599999428
+      e20: 0
+      e21: .99999994
+      e22: -1.1920929e-07
+      e23: -7.60000038
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+  - type: 1
+    name: lv1_6
+    parentId: -1
+    spriteId: 29
+    xRefId: -1
+    spriteCollection: {fileID: 11400000, guid: c94072a8876ed4d5b82b194581b881f0, type: 2}
+    rotation: {x: .707106829, y: 0, z: 0, w: .707106709}
+    position: {x: 8.40730476, y: 0, z: -7.74298096}
+    localScale: {x: 1, y: 1, z: 1}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    baseScale: {x: 1, y: 1, z: 1}
+    renderLayer: 0
+    internalData0: {x: 0, y: 0}
+    internalData1: {x: 0, y: 0}
+    internalData2: {x: 0, y: 0}
+    colliderData: {x: 0, y: 1}
+    formattedText: 
+    flags: 0
+    anchor: 0
+    relativeMatrix:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 8.40730476
+      e10: 0
+      e11: -1.1920929e-07
+      e12: -.99999994
+      e13: 0
+      e20: 0
+      e21: .99999994
+      e22: -1.1920929e-07
+      e23: -7.74298096
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+  - type: 1
+    name: lv1_7
+    parentId: -1
+    spriteId: 22
+    xRefId: -1
+    spriteCollection: {fileID: 11400000, guid: c94072a8876ed4d5b82b194581b881f0, type: 2}
+    rotation: {x: .707106829, y: 0, z: 0, w: .707106709}
+    position: {x: -7.04797363, y: .00100708008, z: -7.84442139}
+    localScale: {x: 1, y: 1, z: 1}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    baseScale: {x: 1, y: 1, z: 1}
+    renderLayer: 0
+    internalData0: {x: 0, y: 0}
+    internalData1: {x: 0, y: 0}
+    internalData2: {x: 0, y: 0}
+    colliderData: {x: 0, y: 1}
+    formattedText: 
+    flags: 0
+    anchor: 0
+    relativeMatrix:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: -7.04797363
+      e10: 0
+      e11: -1.1920929e-07
+      e12: -.99999994
+      e13: .00100708008
+      e20: 0
+      e21: .99999994
+      e22: -1.1920929e-07
+      e23: -7.84442139
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+  - type: 1
+    name: lv1_7
+    parentId: -1
+    spriteId: 22
+    xRefId: -1
+    spriteCollection: {fileID: 11400000, guid: c94072a8876ed4d5b82b194581b881f0, type: 2}
+    rotation: {x: .707106829, y: 0, z: 0, w: .707106709}
+    position: {x: -5.62695312, y: 0, z: -8.5536499}
+    localScale: {x: 1, y: 1, z: 1}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    baseScale: {x: 1, y: 1, z: 1}
+    renderLayer: 0
+    internalData0: {x: 0, y: 0}
+    internalData1: {x: 0, y: 0}
+    internalData2: {x: 0, y: 0}
+    colliderData: {x: 0, y: 1}
+    formattedText: 
+    flags: 0
+    anchor: 0
+    relativeMatrix:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: -5.62695312
+      e10: 0
+      e11: -1.1920929e-07
+      e12: -.99999994
+      e13: 0
+      e20: 0
+      e21: .99999994
+      e22: -1.1920929e-07
+      e23: -8.5536499
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+  - type: 1
+    name: lv1_3
+    parentId: -1
+    spriteId: 9
+    xRefId: -1
+    spriteCollection: {fileID: 11400000, guid: c94072a8876ed4d5b82b194581b881f0, type: 2}
+    rotation: {x: .707106829, y: 0, z: 0, w: .707106709}
+    position: {x: 7.55900717, y: .0399999991, z: -8.77563477}
+    localScale: {x: 1, y: 1, z: 1}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    baseScale: {x: 1, y: 1, z: 1}
+    renderLayer: 0
+    internalData0: {x: 0, y: 0}
+    internalData1: {x: 0, y: 0}
+    internalData2: {x: 0, y: 0}
+    colliderData: {x: 0, y: 1}
+    formattedText: 
+    flags: 0
+    anchor: 0
+    relativeMatrix:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 7.55900669
+      e10: 0
+      e11: -1.1920929e-07
+      e12: -.99999994
+      e13: .0399999991
+      e20: 0
+      e21: .99999994
+      e22: -1.1920929e-07
+      e23: -8.77563477
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+  - type: 1
+    name: lv1_4
+    parentId: -1
+    spriteId: 11
+    xRefId: -1
+    spriteCollection: {fileID: 11400000, guid: c94072a8876ed4d5b82b194581b881f0, type: 2}
+    rotation: {x: .707106829, y: 0, z: 0, w: .707106709}
+    position: {x: -3.51525879, y: .00500488281, z: -9.1484375}
+    localScale: {x: 1, y: 1, z: 1}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    baseScale: {x: 1, y: 1, z: 1}
+    renderLayer: 0
+    internalData0: {x: 0, y: 0}
+    internalData1: {x: 0, y: 0}
+    internalData2: {x: 0, y: 0}
+    colliderData: {x: 0, y: 1}
+    formattedText: 
+    flags: 0
+    anchor: 0
+    relativeMatrix:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: -3.51525879
+      e10: 0
+      e11: -1.1920929e-07
+      e12: -.99999994
+      e13: .00500488281
+      e20: 0
+      e21: .99999994
+      e22: -1.1920929e-07
+      e23: -9.1484375
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+  - type: 1
+    name: lv1_3
+    parentId: -1
+    spriteId: 9
+    xRefId: -1
+    spriteCollection: {fileID: 11400000, guid: c94072a8876ed4d5b82b194581b881f0, type: 2}
+    rotation: {x: .707106829, y: 0, z: 0, w: .707106709}
+    position: {x: 6.23086596, y: .00399780273, z: -9.44732666}
+    localScale: {x: 1, y: 1, z: 1}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    baseScale: {x: 1, y: 1, z: 1}
+    renderLayer: 0
+    internalData0: {x: 0, y: 0}
+    internalData1: {x: 0, y: 0}
+    internalData2: {x: 0, y: 0}
+    colliderData: {x: 0, y: 1}
+    formattedText: 
+    flags: 0
+    anchor: 0
+    relativeMatrix:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 6.23086596
+      e10: 0
+      e11: -1.1920929e-07
+      e12: -.99999994
+      e13: .00399780273
+      e20: 0
+      e21: .99999994
+      e22: -1.1920929e-07
+      e23: -9.44732666
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+  - type: 1
+    name: lv1_6
+    parentId: -1
+    spriteId: 29
+    xRefId: -1
+    spriteCollection: {fileID: 11400000, guid: c94072a8876ed4d5b82b194581b881f0, type: 2}
+    rotation: {x: .707106829, y: 0, z: 0, w: .707106709}
+    position: {x: 4.76928711, y: .00500488281, z: -9.54516602}
+    localScale: {x: 1, y: 1, z: 1}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    baseScale: {x: 1, y: 1, z: 1}
+    renderLayer: 0
+    internalData0: {x: 0, y: 0}
+    internalData1: {x: 0, y: 0}
+    internalData2: {x: 0, y: 0}
+    colliderData: {x: 0, y: 1}
+    formattedText: 
+    flags: 0
+    anchor: 0
+    relativeMatrix:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 4.76928711
+      e10: 0
+      e11: -1.1920929e-07
+      e12: -.99999994
+      e13: .00500488281
+      e20: 0
+      e21: .99999994
+      e22: -1.1920929e-07
+      e23: -9.54516602
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+  - type: 1
+    name: lv1_3
+    parentId: -1
+    spriteId: 9
+    xRefId: -1
+    spriteCollection: {fileID: 11400000, guid: c94072a8876ed4d5b82b194581b881f0, type: 2}
+    rotation: {x: .707106829, y: 0, z: 0, w: .707106709}
+    position: {x: 3.96020508, y: .0549926758, z: -10.5003052}
+    localScale: {x: 1, y: 1, z: 1}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    baseScale: {x: 1, y: 1, z: 1}
+    renderLayer: 0
+    internalData0: {x: 0, y: 0}
+    internalData1: {x: 0, y: 0}
+    internalData2: {x: 0, y: 0}
+    colliderData: {x: 0, y: 1}
+    formattedText: 
+    flags: 0
+    anchor: 0
+    relativeMatrix:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 3.96020508
+      e10: 0
+      e11: -1.1920929e-07
+      e12: -.99999994
+      e13: .0549926758
+      e20: 0
+      e21: .99999994
+      e22: -1.1920929e-07
+      e23: -10.5003052
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+  - type: 1
+    name: lv1_7
+    parentId: -1
+    spriteId: 22
+    xRefId: -1
+    spriteCollection: {fileID: 11400000, guid: c94072a8876ed4d5b82b194581b881f0, type: 2}
+    rotation: {x: .707106829, y: 0, z: 0, w: .707106709}
+    position: {x: -1.4987793, y: .00300598145, z: -10.6010132}
+    localScale: {x: 1, y: 1, z: 1}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    baseScale: {x: 1, y: 1, z: 1}
+    renderLayer: 0
+    internalData0: {x: 0, y: 0}
+    internalData1: {x: 0, y: 0}
+    internalData2: {x: 0, y: 0}
+    colliderData: {x: 0, y: 1}
+    formattedText: 
+    flags: 0
+    anchor: 0
+    relativeMatrix:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: -1.4987793
+      e10: 0
+      e11: -1.1920929e-07
+      e12: -.99999994
+      e13: .00300598145
+      e20: 0
+      e21: .99999994
+      e22: -1.1920929e-07
+      e23: -10.6010132
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+  - type: 1
+    name: lv1_3
+    parentId: -1
+    spriteId: 9
+    xRefId: -1
+    spriteCollection: {fileID: 11400000, guid: c94072a8876ed4d5b82b194581b881f0, type: 2}
+    rotation: {x: .707106829, y: 0, z: 0, w: .707106709}
+    position: {x: 2.62414551, y: 0, z: -11.1758423}
+    localScale: {x: 1, y: 1, z: 1}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    baseScale: {x: 1, y: 1, z: 1}
+    renderLayer: 0
+    internalData0: {x: 0, y: 0}
+    internalData1: {x: 0, y: 0}
+    internalData2: {x: 0, y: 0}
+    colliderData: {x: 0, y: 1}
+    formattedText: 
+    flags: 0
+    anchor: 0
+    relativeMatrix:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 2.62414551
+      e10: 0
+      e11: -1.1920929e-07
+      e12: -.99999994
+      e13: 0
+      e20: 0
+      e21: .99999994
+      e22: -1.1920929e-07
+      e23: -11.1758423
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+  - type: 1
+    name: lv1_6
+    parentId: -1
+    spriteId: 29
+    xRefId: -1
+    spriteCollection: {fileID: 11400000, guid: c94072a8876ed4d5b82b194581b881f0, type: 2}
+    rotation: {x: .707106829, y: 0, z: 0, w: .707106709}
+    position: {x: 1.24255371, y: .0059967041, z: -11.2807007}
+    localScale: {x: 1, y: 1, z: 1}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    baseScale: {x: 1, y: 1, z: 1}
+    renderLayer: 0
+    internalData0: {x: 0, y: 0}
+    internalData1: {x: 0, y: 0}
+    internalData2: {x: 0, y: 0}
+    colliderData: {x: 0, y: 1}
+    formattedText: 
+    flags: 0
+    anchor: 0
+    relativeMatrix:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 1.24255371
+      e10: 0
+      e11: -1.1920929e-07
+      e12: -.99999994
+      e13: .0059967041
+      e20: 0
+      e21: .99999994
+      e22: -1.1920929e-07
+      e23: -11.2807007
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+  - type: 1
+    name: lv1_7
+    parentId: -1
+    spriteId: 22
+    xRefId: -1
+    spriteCollection: {fileID: 11400000, guid: c94072a8876ed4d5b82b194581b881f0, type: 2}
+    rotation: {x: .707106829, y: 0, z: 0, w: .707106709}
+    position: {x: -.0238037109, y: 0, z: -11.3635864}
+    localScale: {x: 1, y: 1, z: 1}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    baseScale: {x: 1, y: 1, z: 1}
+    renderLayer: 0
+    internalData0: {x: 0, y: 0}
+    internalData1: {x: 0, y: 0}
+    internalData2: {x: 0, y: 0}
+    colliderData: {x: 0, y: 1}
+    formattedText: 
+    flags: 0
+    anchor: 0
+    relativeMatrix:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: -.0238037109
+      e10: 0
+      e11: -1.1920929e-07
+      e12: -.99999994
+      e13: 0
+      e20: 0
+      e21: .99999994
+      e22: -1.1920929e-07
+      e23: -11.3635864
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+  allTextMeshData: []
+  spriteCollection: {fileID: 11400000, guid: c94072a8876ed4d5b82b194581b881f0, type: 2}
+  flags: 1
+  _scale: {x: 1, y: 1, z: 1}
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 102828}
+  m_IsPrefabParent: 1
+  m_IsExploded: 1

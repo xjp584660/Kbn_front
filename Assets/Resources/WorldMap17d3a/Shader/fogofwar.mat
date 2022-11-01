@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: fogofwar
+  m_Shader: {fileID: 4800000, guid: b38523ad18a254b00b4d37dd5e150a66, type: 3}
+  m_ShaderKeywords: []
+  m_CustomRenderQueue: -1
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 2800000, guid: 7bb39e075f99244d8a67a93d8e338064, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _MaskLayer
+        second:
+          m_Texture: {fileID: 2800000, guid: 5333301d1974444e7bb0eeff6ab30503, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: .0733333305, y: .0766666681}
+      data:
+        first:
+          name: _Mask0
+        second:
+          m_Texture: {fileID: 2800000, guid: 5333301d1974444e7bb0eeff6ab30503, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: -.0533333346, y: .100000001}
+      data:
+        first:
+          name: _Mask1
+        second:
+          m_Texture: {fileID: 2800000, guid: 5fba3707f95854beeb93e6c69938043e, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _Cutoff
+        second: .232142851
+      data:
+        first:
+          name: _Radius
+        second: .00749999983
+      data:
+        first:
+          name: _Threshold
+        second: .242142856
+    m_Colors:
+      data:
+        first:
+          name: _Color
+        second: {r: 1, g: 1, b: 0, a: 1}
+      data:
+        first:
+          name: _BorderColor
+        second: {r: .100000001, g: .100000001, b: .100000001, a: 1}

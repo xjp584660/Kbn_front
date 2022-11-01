@@ -1,0 +1,32 @@
+<Atlas>
+	<GConfig>
+		<dstPath>Resources/Textures/UI/Atlas/</dstPath>
+		<rootPath>Textures/UI/Atlas/</rootPath>
+		<dstName>Gears.bytes</dstName>
+		<boundSize>2</boundSize>
+		<clampBoundSize>0</clampBoundSize>
+		<clearBound>true</clearBound>
+	</GConfig>
+	<Images>
+		<Image name="Gears_0">
+			<src path="OriginTexture/gear" />
+		</Image>
+		<Image name="Gears_1">
+			<src path="OriginTexture/gear1" />
+		</Image>
+	</Images>
+	<Distribution>
+		<Release>
+			<meta ref="Gears_0"/>
+		</Release>
+		<Release>
+			<meta ref="Gears_1"/>
+		</Release>
+<!--		<Release>
+			<dstPath>Resources/low/Textures/UI/Atlas/</dstPath>
+			<meta ref="Gears_0">
+				<scaleSize>2</scaleSize>
+			</meta>
+		</Release>-->
+	</Distribution>
+</Atlas>

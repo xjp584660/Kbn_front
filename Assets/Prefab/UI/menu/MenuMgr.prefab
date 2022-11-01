@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400000}
+  - 114: {fileID: 11400000}
+  m_Layer: 0
+  m_Name: MenuMgr
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1002 &100001
+EditorExtensionImpl:
+  serializedVersion: 6
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!1002 &400001
+EditorExtensionImpl:
+  serializedVersion: 6
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 967d842d99de09548aed609d2c357991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  confirmDialog: {fileID: 11400000, guid: ea1d3d11be9594f0ab2fb73a82d680f4, type: 2}
+  MainChrom: {fileID: 11400000, guid: 03203dce3f5a3854d90c1a88181b3647, type: 2}
+  popMenuComp: {fileID: 11400000, guid: c72e09dafc6344aa8b9601f967936747, type: 2}
+  Chat: {fileID: 11400000, guid: 6b6009fb0e86d4273aad051dc4bb23ea, type: 2}
+  AvaChat: {fileID: 11400000, guid: 23109ec8c7bcb47d7943f398a31b955a, type: 2}
+  netConnectMenu: {fileID: 11400000, guid: 2ded719b7057448e7879fd9aaa7b489d, type: 2}
+  shareMenu: {fileID: 11400000, guid: 993a30d0807e84374a29154652769a67, type: 2}
+  EventDonePopup: {fileID: 11400000, guid: fd8e2b993cffb4ec0b574891ba4c6419, type: 2}
+  mySkin: {fileID: 11400000, guid: 48c6b7a78cac76049a702a8bba015d72, type: 2}
+  floatMessage: {fileID: 11400000, guid: 40b3e8bfca07b49efb5cc71a2fe4b4c2, type: 2}
+  scenceMessage: {fileID: 0}
+  commonTips: {fileID: 11490340, guid: cadaa5bb402c24b5aacaaf17a90dd11b, type: 2}
+  messageTime: 0
+  mask: {fileID: 0}
+  backTime: .20000000298023224
+--- !u!1002 &11400001
+EditorExtensionImpl:
+  serializedVersion: 6
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1
+  m_IsExploded: 1
+--- !u!1002 &100100001
+EditorExtensionImpl:
+  serializedVersion: 6

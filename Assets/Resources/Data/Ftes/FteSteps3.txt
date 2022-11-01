@@ -1,0 +1,158 @@
+{
+    "Datas": [
+        {
+            "Id": 1,
+            "Name": "InitGearUpgradeData",
+            "GuideAction": "GearEnhanceInit",
+            ".Init": {
+                "Datas": {
+                    "InList": {
+                        "GearId": 1001001,
+                        "GearCount": 1,
+                        "GearStarLevel": 1,
+                        "GearSkillLevel": 1,
+                        "GearPlayerId": -1000,
+                        "GearSkill": [
+                            20120001,
+                            20120001,
+                            20000000,
+                            20000000
+                        ]
+                    },
+                    "InScroll": {
+                        "0": {
+                            "ItemId": 42000,
+                            "ItemCount": 3
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "Id": 2,
+            "Name": "xxx1111",
+            "IsCanSkip": false,
+            "IsNotifyServer": true,
+            "SkipPhpNames": ["knightGearMount.php"],
+            "FakeDatas": null,
+            "CompleteConditions": null,
+            "Rewards": null,
+            "GuideAction": "ShowDialog",
+            "HasDialog": true,
+            "DialogAvatar": "xxxxAvatar",
+            "DialogContent": "Gear.EnchaseGearFTE1",
+            "DialogLayout": "Center",
+            "HasGuideArrow": false,
+            "GuideArrowLayout": "Rightwards",
+            "HasHighlightBorder": false,
+            "HighlightLayout": "Wrap",
+            "TraceUIObject": null,
+            "TraceDragDroppedTargetObj": null
+        },
+        {
+            "Id": 3,
+            "Name": "xxx33333",
+            "IsCanSkip": false,
+            "IsNotifyServer": true,
+            "SkipPhpNames": ["knightGearMount.php"],
+            "FakeDatas": null,
+            "CompleteConditions": null,
+            "Rewards": null,
+            "GuideAction": "GuideDragDrop",
+            "HasDialog": false,
+            "DialogAvatar": "xxxxAvatar",
+            "DialogContent": "",
+            "DialogLayout": "Top",
+            "HasGuideArrow": false,
+            "GuideArrowLayout": "Downwards",
+            "HasHighlightBorder": true,
+            "HighlightLayout": "Wrap",
+            "TraceUIObject": "ArmMenu.tabControl.Items.arrayItem2.stonesView.arrayItem0",
+            "HasDragIndicator": true,
+            "IndicatorText": "Gear.FTEDragTips",
+            "TraceDragDroppedTargetObj": "ArmMenu.tabControl.Items.arrayItem2.panels.arrayItem0.skillButton",
+            "TraceSourceType": "Scroll",
+            "TraceTargetType": "Mount"
+        },
+        {
+            "Id": 4,
+            "Name": "xxx3333",
+            "IsCanSkip": true,
+            "IsNotifyServer": true,
+            "SkipPhpNames": ["knightGearMount.php"],
+            "FakeDatas": null,
+            "CompleteConditions": null,
+            "Rewards": null,
+            "GuideAction": "GuideDragDrop",
+            "HasDialog": false,
+            "DialogAvatar": "xxxxAvatar",
+            "DialogContent": "",
+            "DialogLayout": null,
+            "HasGuideArrow": false,
+            "GuideArrowLayout": "Upwards",
+            "HasHighlightBorder": true,
+            "HighlightLayout": "Wrap",
+            "TraceUIObject": "ArmMenu.tabControl.Items.arrayItem2.panels.arrayItem0.skillButton",
+            "HasDragIndicator": true,
+            "IndicatorText": "Gear.FTEDragTips",
+            "TraceDragDroppedTargetObj": "ArmMenu.tabControl.Items.arrayItem2.stonesView",
+            "TraceSourceType": "Mount",
+            "TraceTargetType": "Scroll"
+        },
+	{
+            "Id": 5,
+            "Name": "wait time",
+            "SkipPhpNames": ["knightGearMount.php"],
+            "GuideAction": "WaitTime",
+            "WaitTime": 0.6
+        },
+        {
+            "Id": 6,
+            "Name": "xxx33333",
+            "IsCanSkip": false,
+            "IsNotifyServer": true,
+            "SkipPhpNames": ["knightGearMount.php"],
+            "FakeDatas": null,
+            "CompleteConditions": null,
+            "Rewards": null,
+            "GuideAction": "ShowDialog",
+            "HasDialog": true,
+            "DialogAvatar": "xxxxAvatar",
+            "DialogContent": "Gear.EnchaseGearFTE2",
+            "DialogLayout": "Center",
+            "HasGuideArrow": false,
+            "GuideArrowLayout": "Upwards",
+            "HasHighlightBorder": false,
+            "HighlightLayout": "Wrap",
+            "TraceUIObject": null,
+            "TraceDragDroppedTargetObj": null
+        },
+        {
+            "Id": 7,
+            "Name": "ClearAllItemInWeaponContain",
+            "SkipPhpNames": ["knightGearMount.php"],
+            "GuideAction": "ClearFakeDatas"
+        },
+        {
+            "Id": 8,
+            "Name": "xxx33333",
+            "IsCanSkip": false,
+            "IsNotifyServer": true,
+            "SkipPhpNames": ["knightGearMount.php"],
+            "FakeDatas": null,
+            "CompleteConditions": null,
+            "Rewards": null,
+            "GuideAction": "GuideButton",
+            "HasDialog": false,
+            "DialogAvatar": "xxxxAvatar",
+            "DialogContent": "Gear.ChangeGearFTE2",
+            "DialogLayout": "Center",
+            "HasGuideArrow": true,
+            "GuideArrowLayout": "Upwards",
+            "HasHighlightBorder": false,
+            "HighlightLayout": "Wrap",
+            "TraceUIObject": "ArmMenu.mMenuHead.btn_left",
+            "TraceDragDroppedTargetObj": null
+        }
+    ]
+}

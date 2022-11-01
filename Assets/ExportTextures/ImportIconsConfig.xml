@@ -1,0 +1,164 @@
+<Atlas>
+    <GConfig>
+        <dstPath>Resources/Textures/UI/Atlas/</dstPath>
+        <dstName>Icons.bytes</dstName>
+        <boundSize>2</boundSize>
+        <clampBoundSize>0</clampBoundSize>
+        <clearBound>true</clearBound>
+    </GConfig>
+    <Images>
+        <Image name="Icon_default">
+            <!-- icon_else must stay the first icons -->
+            <src path="ExportTextures/icon_else" />
+            <src path="ExportTextures/icon_chat" />
+            <src path="ExportTextures/icon_eventcenter" />
+            <src path="ExportTextures/icon_dailyQuests" />
+        </Image>
+        <Image name="Icon_items2">
+            <src path="ExportTextures/icon_item2" />
+        </Image>
+        <Image name="Icon_chests">
+            <src path="ExportTextures/icon_chest" />
+        </Image>
+        <Image name="Icon_backgrounds">
+            <src path="OriginTexture/background" />
+            <src path="ExportTextures/icon_itemGear" />
+            <src path="ExportTextures/icon_research" />
+            <Config>
+                <boundSize>6</boundSize>
+                <clampBoundSize>0</clampBoundSize>
+            </Config>
+        </Image>
+        <Image name="Icon_noCompress">
+            <src path="ExportTextures/icon_noCompress" />
+            <Config>
+                <boundSize>2</boundSize>
+            </Config>
+        </Image>
+        <Image name="Icon_ava_skill">
+            <src path="ExportTextures/icon_ava_skill" />
+        </Image>
+    </Images>
+    <Distribution>
+        <Release>
+            <!--dstPath>Resources/Textures/UI/Atlas/</dstPath-->
+            <meta ref="Icon_default" />
+            <meta ref="Icon_items2" />
+            <meta ref="Icon_chests" />
+            <meta ref="Icon_backgrounds" />
+            <meta ref="Icon_noCompress">
+                <textureFormat>AutomaticTruecolor</textureFormat>
+            </meta>
+            <meta ref="Icon_ava_skill" />
+        </Release>
+    </Distribution>
+    <Tiles>
+        <Tile>
+            <name>Login_bubble</name>
+            <bounder>
+                <left>18</left>
+                <right>18</right>
+                <top>18</top>
+                <bottom>18</bottom>
+            </bounder>
+        </Tile>
+        <Tile>
+            <name>popup1_transparent</name>
+            <bounder>
+                <left>54</left>
+                <right>54</right>
+                <top>54</top>
+                <bottom>54</bottom>
+            </bounder>
+        </Tile>
+        <Tile>
+            <name>event_BackgroundBanner</name>
+            <bounder>
+                <left>27</left>
+                <right>28</right>
+            </bounder>
+        </Tile>
+        <Tile>
+            <name>event_Background</name>
+            <bounder>
+                <left>8</left>
+                <right>13</right>
+                <top>8</top>
+                <bottom>21</bottom>
+            </bounder>
+        </Tile>
+        <!-- ============================================= -->
+        <!-- =============Start Resource Icon============= -->
+        <!-- ============================================= -->
+        <Tile>
+            <name>icon_num1000</name>
+            <alias hide="true">ICON_NUM_ALIAS1</alias>
+        </Tile>
+        <Tile>
+            <name>icon_num5000</name>
+            <alias hide="true">ICON_NUM_ALIAS2</alias>
+        </Tile>
+        <Tile>
+            <name>icon_num10000</name>
+            <alias hide="true">ICON_NUM_ALIAS3</alias>
+        </Tile>
+        <Tile>
+            <name>icon_num20000</name>
+            <alias hide="true">ICON_NUM_ALIAS4</alias>
+        </Tile>
+        <Tile>
+            <name>icon_num40000</name>
+            <alias hide="true">ICON_NUM_ALIAS5</alias>
+        </Tile>
+        <Tile>
+            <name>icon_num250000</name>
+            <alias hide="true">ICON_NUM_ALIAS6</alias>
+        </Tile>
+        <Tile>
+            <name>icon_num500000</name>
+            <alias hide="true">ICON_NUM_ALIAS7</alias>
+        </Tile>
+        <TileIntRange>
+            <range>
+                <start>1001</start>
+                <end>1048</end>
+            </range>
+            <p>
+                <p0>{0}/10%100</p0>
+                <p1>{0}%10</p1>
+                <p2>{0}</p2>
+            </p>
+            <Tile>
+                <name>i{p2}</name>
+                <TileNode>
+                    <ref>icon_rec{p0}</ref>
+                    <deep>0</deep>
+                </TileNode>
+                <TileNode>
+                    <ref>ICON_NUM_ALIAS{p1}</ref>
+                    <deep>1</deep>
+                </TileNode>
+            </Tile>
+        </TileIntRange>
+        <!-- ============================================= -->
+        <!-- ========Start SpecialNameStone Icon========== -->
+        <!-- ============================================= -->
+        <TileIntRange>
+            <range>
+                <start>42000</start>
+                <end>42400</end>
+            </range>
+            <p>
+                <p0>{0}</p0>
+                <p1>{0}-({0}%100)</p1>
+            </p>
+            <Tile>
+                <name>i{p0}</name>
+                <TileNode>
+                    <ref>g{p1}</ref>
+                    <deep>0</deep>
+                </TileNode>
+            </Tile>
+        </TileIntRange>
+    </Tiles>
+</Atlas>

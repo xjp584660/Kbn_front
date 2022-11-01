@@ -1,0 +1,121 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &108154
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 408154}
+  - 114: {fileID: 11408154}
+  m_Layer: 0
+  m_Name: monster_shimen_halloweenSC
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &408154
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 108154}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11408154
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 108154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d546f34a90531a14eaba82a43b05b86b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 3
+  materialIdsValid: 1
+  needMaterialInstance: 0
+  spriteDefinitions:
+  - name: monster_shimen_halloween
+    boundsData:
+    - {x: .0899999738, y: -.025000006, z: 0}
+    - {x: 2.38000011, y: 1.23000002, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 2.55999994, y: 1.27999997, z: 0}
+    texelSize: {x: .00999999978, y: .00999999978}
+    positions:
+    - {x: -1.10000002, y: -.639999986, z: 0}
+    - {x: 1.27999997, y: -.639999986, z: 0}
+    - {x: -1.10000002, y: .589999974, z: 0}
+    - {x: 1.27999997, y: .589999974, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .0156328119, y: .00781640597}
+    - {x: .0156328119, y: .937496066}
+    - {x: .976554692, y: .00781640597}
+    - {x: .976554692, y: .937496066}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: dcbeb9f315b4f473d93c95c3123baf58, type: 2}
+    materialId: 0
+    sourceTextureGUID: 474818e78427142b496320107ed50a2b
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  premultipliedAlpha: 0
+  material: {fileID: 0}
+  materials:
+  - {fileID: 2100000, guid: dcbeb9f315b4f473d93c95c3123baf58, type: 2}
+  textures:
+  - {fileID: 2800000, guid: 8841c8889fd6e4e7fb93e1e0f7bb9774, type: 3}
+  pngTextures: []
+  materialPngTextureId: 00000000
+  textureFilterMode: 1
+  textureMipMaps: 0
+  allowMultipleAtlases: 0
+  spriteCollectionGUID: 323e5cb05891842458cdfa82dbdc6ae4
+  spriteCollectionName: monster_shimen_halloweenSC
+  assetName: 
+  loadable: 0
+  invOrthoSize: 2
+  halfTargetHeight: 50
+  buildKey: 514701609
+  dataGuid: e402cc7c86e8e4899b1766046bc2fc09
+  managedSpriteCollection: 0
+  hasPlatformData: 0
+  spriteCollectionPlatforms: []
+  spriteCollectionPlatformGUIDs: []
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 108154}
+  m_IsPrefabParent: 1
+  m_IsExploded: 1
