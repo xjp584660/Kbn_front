@@ -46,6 +46,9 @@ public class MarchResourceItem2 extends ListItem
 	@SerializeField
 	private var flag : Label;
 
+
+	@SerializeField private var isShowDetailInof: boolean;
+
 	protected var ITEM_ACTION : String = "";
 	protected var data : Object = null;
 	protected var tname : String = "";
@@ -171,7 +174,12 @@ public class MarchResourceItem2 extends ListItem
 			type = MarchResourceItemType.ResourceOrTroop;
 			l_img.useTile = true;
 			l_img.tile = TextureMgr.instance().UnitSpt().GetTile(troopInfo.troopTexturePath);
-			tname = troopInfo.troopName;
+			var nameVal = troopInfo.troopName;
+	#if UNITY_EDITOR
+			if (isShowDetailInof)
+				nameVal = nameVal + " > id:"+ troopInfo.typeId + " type:" + troopInfo.actType + " tier:" + troopInfo.level;
+	#endif
+			tname = nameVal;
 			updateName(troopInfo.selectNum);
 			l_max.txt = marchDataIns.MAXSIZE >= troopInfo.owned ? (_Global.NumSimlify(troopInfo.owned)) : (_Global.NumSimlify(marchDataIns.MAXSIZE) + "/" + _Global.NumSimlify(troopInfo.owned));
 				

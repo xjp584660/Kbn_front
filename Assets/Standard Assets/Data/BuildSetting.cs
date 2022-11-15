@@ -57,17 +57,21 @@ public class BuildSetting {
         }
 
         foreach (var item in dataDic) {
+
+            //剔除 前后的无效空白符
+            var value = item.Value.Trim();
+
             if (item.Key.Contains("INTERNAL_VERSION")) {
-                int.TryParse(item.Value, out internalVersion);
+                int.TryParse(value, out internalVersion);
 
             } else if (item.Key.Contains("DEBUG_MODE")) {
-                int.TryParse(item.Value, out debugMode);
+                int.TryParse(value, out debugMode);
 
             } else if (item.Key.Contains("CLIENT_VERSION")) {
-                clientVersion = item.Value;
+                clientVersion = value;
 
             } else if (item.Key.Contains("ANDROID_COMPRESSION")) {
-                androidCompression = item.Value;
+                androidCompression = value;
 
             }
         }

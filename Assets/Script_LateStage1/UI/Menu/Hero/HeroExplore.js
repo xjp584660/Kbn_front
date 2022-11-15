@@ -10,7 +10,6 @@
 	@SerializeField private var exploreAnimation: HeroExploreAnimation[];
 
 	@SerializeField private var ballButton: Button;
-	@SerializeField private var closeButton: Button;
 
 
 
@@ -70,8 +69,6 @@
 		control.autoHelpButton.OnClick = OnAutoHelpClick;
 
 		ballButton.OnClick = OnBallClick;
-
-		closeButton.OnClick = close;
 
 		
 		var index : int = 0;
@@ -145,9 +142,7 @@
 	public function DrawItem() : void
 	{
 		currentStatus.Draw();
-	#if UNITY_EDITOR
-		closeButton.Draw();
-	#endif
+
 	}
 	
 	public function OnPush(param : Object) : void

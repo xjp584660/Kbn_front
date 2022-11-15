@@ -59,6 +59,8 @@ public class ThinkingAnalyticsManager : MonoBehaviour {
 
     [Space(10)]
     [Header("---Project token---")]
+    [Space(5)]
+    [Header("-- 是否启用测试id,需要 useTestAppID 以及 BuildSetting.DebugMode 均满足时才会启用---")]
     [SerializeField] private bool useTestAppID = true; 
     [SerializeField] private string testAppID = "b303a5b6cb12495caa02c71c286109bf";   //ta test: eff28a4bd7ec423fa5294b4a2c1eff28
     [SerializeField] private string appID = "6cce9e73e6954d07a31d605093add75c";   //ta  test: eff28a4bd7ec423fa5294b4a2c1eff28
@@ -141,9 +143,20 @@ public class ThinkingAnalyticsManager : MonoBehaviour {
     /// 初始化 ta
     /// </summary>
     private void StartThinkingAnalytics() {
-        var id = appID;
-        if (useTestAppID)
-            id = testAppID;
+        var isUseTestID = useTestAppID && BuildSetting.DebugMode == 1;
+
+        var id = isUseTestID ? testAppID : appID;
+      
+#if UNITY_EDITOR
+            if(isUseTestID)
+                Debug.LogWarning("<color=#5474F1FF>[ThinkingSDK]---------- use <color=#ff0000ff>TEST</color> id:" + id + "  ----------</color>");
+            else
+                Debug.LogWarning("<color=#5474F1FF>[ThinkingSDK]---------- use id:" + id + "  ----------</color>");
+#endif
+
+
+
+
 
         var token = new ThinkingAnalyticsAPI.Token
         {

@@ -59,6 +59,39 @@ namespace KBN {
 					return -1;
 				return 0;
 			}
+
+			/// <summary>
+			/// 采集部队排在前列
+			/// </summary>
+			/// <param name="l"></param>
+			/// <param name="r"></param>
+			/// <returns></returns>
+			public static int CompareBySupplyType(TroopInfo l, TroopInfo r) {
+				//type > 1：补给兵种，采集用
+
+				if (l.actType != 1 && r.actType != 1) {
+					return 0;
+				} else if (l.actType == 1 && r.actType == 1) {
+
+					//level/tier：部队品质，数字越大品质越好
+					if (l.level < r.level)
+						return 1;
+					if (l.level > r.level)
+						return -1;
+					else
+						return 0;
+
+				} else {
+
+					if (l.actType == 1) {
+						return -1;
+					} else {
+						return 1;
+					}
+				}
+
+			}
+
 		}
 
 		public static BarracksBase baseSingleton { get; protected set; }

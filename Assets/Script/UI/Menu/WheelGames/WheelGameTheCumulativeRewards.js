@@ -44,7 +44,11 @@ public class WheelGameTheCumulativeRewards extends UIObject {
     @SerializeField private var rewardTip: Label;/* 奖励介绍 */
     @SerializeField private var wheelRewardItem: WheelGameTheCumulativeRewardItem;/* 奖励 Item */   
     @SerializeField private var scrollView: ScrollView;
+    @SerializeField private var m_count: float;
+    @SerializeField private var m_Progress: float;
 
+
+    @SerializeField private var percentBar: Rect;
     private var timerLabelPreStr = "";
     private var endTime: long = 0;
     public var eventId: String;
@@ -124,9 +128,9 @@ public class WheelGameTheCumulativeRewards extends UIObject {
         UnityNet.SpendNGetDetailInfo(webData.ToArray(), resultFunc, null);
     }
 
-    @SerializeField private var percentBar: Rect;
     public function ViewEventDetail(data: HashObject): void {
         var MaxGemsCount: int = 0;
+        var MinGemsCount: float;
         var gemsSpent: int = 0;
         var progress: int = 0;
         var IsRepeatable: boolean;
@@ -147,23 +151,32 @@ public class WheelGameTheCumulativeRewards extends UIObject {
             endTime = _Global.INT64(data["event"]["rewardEndTime"]);
 
             var isEquivalence: boolean = spendNGetGraduations.Count == graduationArray.length;
+
             for (var i = 0; i < graduationArray.length; i++) {
 
                 var result: HashObject = data["event"]["spendAndGet"]["milestones"][_Global.ap + i];
                 var rewards: HashObject = result["rewards"];
-                var gemsCount: int = _Global.INT32(result["gemsCount"]);
+                var gemsCountMin: int = _Global.INT32(result["gemsCount"]);
                 var id: int = _Global.INT32(rewards["a0"]["rewardItemId"]);
                 var claimableNum: int = _Global.INT32(rewards["a0"]["claimableItemNum"]);
 
                 var reward: GameEventDetailInfoSpendNGet.Reward = new GameEventDetailInfoSpendNGet.Reward(id, claimableNum);
                 var rewardList: List.<GameEventDetailInfoSpendNGet.Reward> = new List.<GameEventDetailInfoSpendNGet.Reward>();
                 rewardList.Add(reward);
-                var spednNGet: GameEventDetailInfoSpendNGet.Milestone = new GameEventDetailInfoSpendNGet.Milestone(id, gemsCount, rewardList);
+                var spednNGet: GameEventDetailInfoSpendNGet.Milestone = new GameEventDetailInfoSpendNGet.Milestone(id, gemsCountMin, rewardList);
 
-                if (MaxGemsCount == 0) {
-                    result = data["event"]["spendAndGet"]["milestones"][_Global.ap + maxCont];
-                    MaxGemsCount = _Global.INT32(result["gemsCount"]);
+
+                if ((i + 1) <= maxCont) {
+                    result = data["event"]["spendAndGet"]["milestones"][_Global.ap + (i + 1)];
+                    var gemsCountMax = _Global.INT32(result["gemsCount"]);
+
+                    if (gemsSpent >= gemsCountMin && gemsSpent <= gemsCountMax) {
+                        MinGemsCount = (i + m_count);
+                    }
                 }
+
+
+               
 
                 dataIdList.Add(id);
                 milestonesList.Add(spednNGet);
@@ -175,12 +188,14 @@ public class WheelGameTheCumulativeRewards extends UIObject {
                     graduation = Instantiate(spendNGetGraduation) as SpendNGetGraduation;
                 }
               
-                var percentage: float = (gemsCount + 0.0f) / MaxGemsCount;
+                var percentage: float = (i + m_count) / graduationArray.length;
                 graduation.rect.x = percentBar.x + percentage * percentBar.width - graduation.Offset.x;
                 graduation.rect.y = percentBar.y - graduation.Offset.y - 0.5f * (graduation.graduationHeight - percentBar.height);
                 graduation.Init();
-                graduation.SetData(i, gemsCount);
-
+                graduation.SetData(i, gemsCountMin);
+                if (i == maxCont) {
+                    graduation.getGraduation().SetVisible(false);
+                }
                 if (isEquivalence) {
                     spendNGetGraduations[i] = graduation;
                 } else {
@@ -189,21 +204,13 @@ public class WheelGameTheCumulativeRewards extends UIObject {
 
             }
 
-            if (IsRepeatable) {
-                progress = gemsSpent / MaxGemsCount;
-                if (gemsSpent >= MaxGemsCount && progress == 0) // Has completed the progress at least once
-                {
-                    progress = MaxGemsCount;
-                }
-            } else {
-                progress = Mathf.Min(gemsSpent, MaxGemsCount);
+            if (MinGemsCount == 0 && gemsSpent != 0) {
+                MinGemsCount = (graduationArray.length + 0.0f);
             }
-            
+            var scale: float = (MinGemsCount) / graduationArray.length;
+            var length: float = percentBar.x + scale * percentBar.width - m_Progress;
+      
 
-
-            var length: float = spendNGetPercentBar.rect.width - 35;
-            var scale: float = Mathf.Max(Mathf.Min(1.0f, 1.0f * progress / MaxGemsCount), 0.0f);
-            length *= scale;
             
             spendNGetProgressBar.rect = new Rect(spendNGetProgressBar.rect.x, spendNGetProgressBar.rect.y,
             length, spendNGetProgressBar.rect.height);

@@ -375,7 +375,7 @@ public class Button : SimpleUIObj, ITouchable
 		
 		if(Event.current.type != EventType.Repaint)
 		{
-			if(!KBN.GameMain.singleton.ForceTouchForbidden && !m_bClicked && GUI.Button ( tempRect, prot_getGUIContent(txt,image)))
+			if(GUI.Button(tempRect, prot_getGUIContent(txt, image)) && !KBN.GameMain.singleton.ForceTouchForbidden && !m_bClicked)
 			{
 				if(isPlay)
 				{		

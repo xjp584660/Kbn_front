@@ -38,6 +38,8 @@ public class WheelGameLeaderboard extends UIObject {
     @SerializeField private var scroll: ScrollList;
     @SerializeField private var wheelGameLeaderboardItem: ListItem;
 
+    /* 个人排名信息 */
+    @SerializeField private var selfItem: WheelGameLeaderboardBoardSelfItem;
 
     public function Init() {
         super.Init();
@@ -50,7 +52,7 @@ public class WheelGameLeaderboard extends UIObject {
         timerLabel.txt = "1000000";
 
         rewardsBtn.OnClick = function () {
-            Debug.Log("<color=#FB00FFFF> 执行排行榜奖励 </color>");
+            MenuMgr.getInstance().PushMenu("WheelGameLeaderboardRewardsPerview", null,"trans_up");
         };
         infoBtn.OnClick = function () {
             Debug.Log("<color=#FB00FFFF> 执行排行榜详细介绍 </color>");
@@ -58,6 +60,7 @@ public class WheelGameLeaderboard extends UIObject {
 
         wheelGameLeaderboardItem.Init();
         scroll.Init(wheelGameLeaderboardItem);
+        selfItem.Init();
 
     }
 
@@ -83,8 +86,11 @@ public class WheelGameLeaderboard extends UIObject {
 
         lblCutLine1.Draw();
         lblCutLine2.Draw();
-        inputPager.Draw();
         scroll.Draw();
+
+        selfItem.Draw();
+        inputPager.Draw();
+
 
     }
 
@@ -99,7 +105,50 @@ public class WheelGameLeaderboard extends UIObject {
 
         Debug.Log("<color=#FB00FFFF> 执行 WheelGameLeaderboard OnPush </color>");
 
+
+        SeasonLeagueMgr.instance().CurSeasonNo = 2;
+        RequestAVALeaderboard(SeasonLeagueMgr.instance().CurSeasonNo, 1, 0);
+
     }
+
+    private function RequestAVALeaderboard(act: int, page: int, league: int) {
+        //act == 1 : curseason, act == 2 lastseason, act == 3 individualRank
+        var request: PBMsgReqAVALeagueLeaderboard.PBMsgReqAVALeagueLeaderboard = new PBMsgReqAVALeagueLeaderboard.PBMsgReqAVALeagueLeaderboard();
+        request.act = act;
+        request.pageNo = page;
+        request.leagueNo = league;
+        KBN.UnityNet.RequestForGPB("leagueSeason.php", request, OnGetAVALeaderBoardOK, null, false);
+    }
+
+    private function OnGetAVALeaderBoardOK(data: byte[]) {
+        if (data == null) {
+            return;
+        }
+
+        var response: PBMsgAVALeagueLeaderboard.PBMsgAVALeagueLeaderboard =
+            _Global.DeserializePBMsgFromBytes.<PBMsgAVALeagueLeaderboard.PBMsgAVALeagueLeaderboard>(data);
+
+        SeasonLeagueMgr.instance().Respose = response;
+        SeasonLeagueMgr.instance().CurShowLeague = response.curLeagueNo;
+        //btnSwitchRankList.txt = Datas.getArString("LeagueName.League_" + SeasonLeagueMgr.instance().CurShowLeague);
+        //lblSeasonName.txt = response.season.seasonName;
+        //m_endTime = response.season.endTime;
+        //RefreshCurLeagueStatus(response);
+        if (response.leagueList.Count > 0) {
+            //lbl_noresult.SetVisible(false);
+        }
+        else {
+            //lbl_noresult.SetVisible(true);
+        }
+        //page_navigator.setPages(response.curPage, response.totalPage);
+        scroll.SetData(response.leagueList);
+        selfItem.SetItemUIData(response.userLeagueInfo);
+        //m_hasUserRank = (response.userLeagueInfo != null && response.userLeagueInfo.leagueRankSpecified && response.userLeagueInfo.leagueRank > 0); 
+    }
+
+
+
+
 
 
     public function Update() {

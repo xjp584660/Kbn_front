@@ -17,7 +17,14 @@ public class SpendNGetGraduation extends UIObject
     private var offset : Vector2;
     @SerializeField
     private var rewardTipKey : String = "Reward {0}";
-    
+
+    @SerializeField private var folatY: float;
+
+
+    public function getGraduation(): SimpleLabel {
+        return graduation;
+    }
+
     public function get Offset() : Vector2
     {
         return offset;
@@ -53,9 +60,15 @@ public class SpendNGetGraduation extends UIObject
         
         graduation.rect.x = offset.x - .5f * graduation.rect.width;
         graduation.rect.y = offset.y;
-        
+
+        if (index % 2 == 0) {
+            numberLabel.rect.y = offset.y + graduation.rect.height;
+        }
+        else
+        {
+            numberLabel.rect.y = offset.y + graduation.rect.height - folatY;
+        }
         numberLabel.rect.x = offset.x - .5f * numberLabel.rect.width;
-        numberLabel.rect.y = offset.y + graduation.rect.height;
         numberLabel.txt = number.ToString();
     }
     

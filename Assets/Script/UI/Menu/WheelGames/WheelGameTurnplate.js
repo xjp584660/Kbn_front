@@ -90,7 +90,8 @@ class WheelGameTurnplate   extends KBNMenu
 	public var m_keyArea : Label;
 
 	public var m_spinTxt : Label;
-	public var m_costTxt : Label;
+	public var m_costTxt: Label;
+	@SerializeField private var girl: Label;
 
 	public var m_wheelPanel : WindmillAnim;
 	//private var m_wheelLight : WindmillAnim;
@@ -134,6 +135,13 @@ class WheelGameTurnplate   extends KBNMenu
 
 	@Space(30) @Header("=============")
 	@SerializeField private var infoBtn: Button;
+	@SerializeField private var toggleButton: Button;
+	@SerializeField private var toggleLabel: Label;
+	@SerializeField private var girlY: float;
+	@SerializeField private var isBoolean: boolean[];
+	@SerializeField private var toogleKey: String = "Skip";
+	@SerializeField private static var  isInActive: boolean;
+	@SerializeField private var IsForce: boolean;
 
 	public var testYPos:int=960;
 	public function Init()
@@ -189,6 +197,15 @@ class WheelGameTurnplate   extends KBNMenu
 		rightLionEyes.useTile = true;
 		rightLionEyes.rect.height = rightLionEyes.tile.rect.height;
 		rightLionEyes.rect.width = rightLionEyes.tile.rect.width;
+
+		girl.useTile = true;
+		girl.tile = m_wheelSprit.GetTile("Wheelgame_girl1");
+		toggleLabel.txt = toogleKey;
+		if (isInActive) {
+			toggleButton.mystyle.normal.background = TextureMgr.instance().LoadTexture("check_box_1", TextureType.DECORATION);
+		} else {
+			toggleButton.mystyle.normal.background = TextureMgr.instance().LoadTexture("check_box_2", TextureType.DECORATION);
+		}
 	}
 
 	public function OnPush(param:Object):void
@@ -248,6 +265,15 @@ class WheelGameTurnplate   extends KBNMenu
 
 		infoBtn.OnClick = function () {
 			MenuMgr.getInstance().PushMenu("WheelGameMenu", null);
+		};
+
+		toggleButton.OnClick = function () {
+			isInActive = !isInActive;
+			if (isInActive) {
+				toggleButton.mystyle.normal.background = TextureMgr.instance().LoadTexture("check_box_1", TextureType.DECORATION);
+			} else {
+				toggleButton.mystyle.normal.background = TextureMgr.instance().LoadTexture("check_box_2", TextureType.DECORATION);
+			}
 		};
 
 	}
@@ -385,6 +411,7 @@ class WheelGameTurnplate   extends KBNMenu
 
 	public function Draw()
 	{
+		if (!visible) return;
 		var oldMatrix : Matrix4x4 = GUI.matrix;
 
 		var logicSize : Vector2 = priv_LogicScreenSize;
@@ -404,15 +431,16 @@ class WheelGameTurnplate   extends KBNMenu
 
 		if ( IsPaint() )
 		{
-			var vsMatrix : Matrix4x4 = UnityEngine.Matrix4x4.TRS(new Vector3(0.0f, this.rect.y, 0.0f), UnityEngine.Quaternion.identity, UnityEngine.Vector3.one);
+			var vsMatrix: Matrix4x4 = UnityEngine.Matrix4x4.TRS(new Vector3(0.0f, this.rect.y, 0.0f), UnityEngine.Quaternion.identity, UnityEngine.Vector3.one);
 			m_backGroundDraw.Cache.VSMatrix = vsMatrix;
 			m_backGroundDraw.Cache.OrtMatrix = GUI.matrix;
 			m_backGroundDraw.Cache.Draw();
-			
+			girl.Draw();
+
 			m_backLightDraw.Cache.VSMatrix = vsMatrix;
 			m_backLightDraw.Cache.OrtMatrix = GUI.matrix;
 			m_backLightDraw.Cache.Draw();
-			
+		
 			priv_updateWheelRect();
 			m_wheelPanel.VSMatrix = vsMatrix;
 			m_wheelPanel.OrtMatrix = GUI.matrix;
@@ -420,7 +448,6 @@ class WheelGameTurnplate   extends KBNMenu
 			//m_wheelLight.VSMatrix = vsMatrix;
 			//m_wheelLight.OrtMatrix = GUI.matrix;
 			//m_wheelLight.Draw();
-
 			GUI.BeginGroup(this.rect);
 			frameTop.Draw();
 			//btnGemsSpin.Draw();
@@ -438,14 +465,16 @@ class WheelGameTurnplate   extends KBNMenu
 			m_spinTxt.Draw();
 			m_costTxt.Draw();
 			topPointer.Draw();
-			if ( m_moveKey != null )
+			if (m_moveKey != null)
 				m_moveKey.Draw();
 			leftLionEyes.Draw();
 			rightLionEyes.Draw();
-			m_haveKeyCount.Draw();	
+			m_haveKeyCount.Draw();
 			m_buyOneCostGems.Draw();
 			m_buyNineCostGems.Draw();
 			infoBtn.Draw();
+			toggleButton.Draw();
+			toggleLabel.Draw();
 			GUI.EndGroup();
 		}
 		else if ( m_waitingLabel == null )
@@ -460,6 +489,7 @@ class WheelGameTurnplate   extends KBNMenu
 			m_buyOneCostGems.Draw();
 			m_buyNineCostGems.Draw();
 			infoBtn.Draw();
+			toggleButton.Draw();
 			GUI.EndGroup();
 		}
 		if(adapterIphoneX){
@@ -539,7 +569,7 @@ class WheelGameTurnplate   extends KBNMenu
 
 		//girl UI
 		var posY : int = ladyStartPos.y;
-		posY = priv_addBackground(ladyStartPos.x, posY, "Wheelgame_girl1", spt);
+		//posY = priv_addBackground(ladyStartPos.x, posY, "Wheelgame_girl1", spt); TODO注释
 		//posY = priv_addBackground(ladyStartPos.x, posY, "Wheelgame_girl2", spt);
 
 		//back lion UI
@@ -1557,6 +1587,12 @@ class WheelGameTurnplate   extends KBNMenu
 		UnityNet.WheelGameReward(m_wheelGameData.wheelGameId, wheelCount, function(rewardResult : HashObject)
 		{
 			rollType = _Global.INT32(rewardResult["type"]);
+			#if UNITY_EDITOR
+			if (!rewardResult.Contains("force")) {
+				rewardResult.Add("force","1");
+			}
+			#endif
+			IsForce = _Global.INT32(rewardResult["force"]) == 1;
 			if(rollType == WheelRollType.nineRollType)
 			{
 				m_wheelGameData.isCanStart = 0;
@@ -1746,7 +1782,20 @@ class WheelGameTurnplate   extends KBNMenu
 			//priv_oneByOneSetKeysData();	
 			priv_resetStage();
 		};
-		MenuMgr.getInstance().PushMenu("GambleChestPopMenu", param,"trans_immediate");
+		/* TODO修改 */
+		//MenuMgr.getInstance().PushMenu("GambleChestPopMenu", param, "trans_immediate");
+
+	
+		var data: HashObject = new HashObject({
+			"array": param.ids,
+			"callBack": param.callBack,
+			"type": "9"
+		});
+		/* TODO 转盘宝箱自动打开动画 */
+		MenuMgr.getInstance().PushMenu("WheelGameTurnplateRewardChest", data, "trans_immediate");
+
+
+
 	}
 	
 	private function priv_popOneRollMenu(startRect : Rect)
@@ -1778,6 +1827,12 @@ class WheelGameTurnplate   extends KBNMenu
 		}
 		SoundMgr.instance().PlayEffect("Kbn_wheel_win2", /*TextureType.AUDIO_WHEELGAME*/"Audio/WheelGame/");
 		menuMgr.PushMenu("WheelGameChestPopMenu", param, "trans_immediate");
+
+
+		
+
+
+
 	}
 	
 	private function priv_getCurWheelGamePrize() : WheelGamePrize
@@ -1895,8 +1950,42 @@ class WheelGameTurnplate   extends KBNMenu
 		param.tile = priv_getTileByItemId(param.id, -1).tile;
 
 		SoundMgr.instance().PlayEffect("Kbn_openTrunk_SuperGlow", /*TextureType.AUDIO_WHEELGAME*/"Audio/WheelGame/");
-		var menuMgr : MenuMgr = MenuMgr.getInstance();
-		menuMgr.PushMenu("WheelGameChestPopMenu", param, "trans_immediate");
+		var menuMgr: MenuMgr = MenuMgr.getInstance();
+		if (!IsForce) {
+			menuMgr.PushMenu("WheelGameChestPopMenu", param, "trans_immediate");
+		} else {
+			var chestId: int = _Global.INT32(m_wheelGamePrize.prize);
+			UnityNet.UseItemChest(chestId, function (result: HashObject) {
+
+				var items: HashObject = result["items"];
+				var dataArray: Array = _Global.GetObjectKeys(items);
+				var dataDict: Dictionary.<String, int> = new Dictionary.<String, int>();
+				for (var ii: int = 0; ii < dataArray.length; ii++) {
+
+					var chestItemId: String = (dataArray[ii] as String).Split('i'[0])[1];
+					var quant: int = _Global.INT32(items[dataArray[ii]]);
+					dataDict.Add(chestItemId, quant);
+
+				}
+				var data: HashObject = new HashObject({
+					"Dic": dataDict,
+					"callBack": function () {
+						m_pfnUpdate = priv_recvPrizeId;
+					},
+					"type": "0"
+				});
+				/* TODO 转盘宝箱自动打开动画 */
+				MenuMgr.getInstance().PushMenu("WheelGameTurnplateRewardChest", data, "trans_immediate");
+
+			}, function (error: HashObject) {
+			#if UNITY_EDITOR
+				Debug.Log("<color=#00FFC0FF> 宝箱开启失败 <.color>");
+			#endif
+			});
+		}
+		
+
+		
 		return;
 	}
 
@@ -2088,7 +2177,8 @@ class WheelGameTurnplate   extends KBNMenu
 	public var iphineXOffsetY : int = 115;
 	public var otherWheelPanelY : int = 0;
 	private function setUIRect(){
-		var logicSize : Vector2 = priv_LogicScreenSize;
+		var logicSize: Vector2 = priv_LogicScreenSize;
+		girl.rect.y = (logicSize.y / girlY);
 		if(adapterIphoneX){		
 			m_top.rect.height = IphoneXTopFrameHeight(logicSize.y);
 			m_bottom.rect.height = IphoneXBottomFrameHeight(logicSize.y);
@@ -2104,6 +2194,10 @@ class WheelGameTurnplate   extends KBNMenu
 			m_menuHead.rect.y=0+x_offsetY;
 			frameTop.rect.y = 75 + x_offsetY;
 			infoBtn.rect.y = frameTop.rect.y + 9;
+			toggleButton.rect.x = 170;
+			toggleButton.rect.y = infoBtn.rect.y + 100f;
+			toggleLabel.rect.y = toggleButton.rect.y + 5;
+			toggleLabel.rect.x = 105;
 			//UI
 			timeLeftToSpin.rect.y=95+x_offsetY;
 			youOwnTokens.rect.y=1362-x_offsetY;
@@ -2149,6 +2243,10 @@ class WheelGameTurnplate   extends KBNMenu
 				lightSize = 180;
 				leftLionEyes.rect.y = 530;
 				rightLionEyes.rect.y = 530;
+				toggleButton.rect.y = 180;
+				toggleButton.rect.x = 240;
+				toggleLabel.rect.x = 165;
+				toggleLabel.rect.y = 185;
 				
 				m_keyArea.rect.x = 320 + X_Offset;
 				lbLessKeys.rect.x = 254 + X_Offset;
@@ -2207,13 +2305,18 @@ class WheelGameTurnplate   extends KBNMenu
 				leftLionEyes.rect.x = 195;
 				rightLionEyes.rect.x = 610;
 				m_haveKeyCount.rect.x = 540;
+				
+				toggleButton.rect.x = 175f;
+				toggleButton.rect.y = infoBtn.rect.y + 100f;
+				toggleLabel.rect.x = 108f;
+				toggleLabel.rect.y = toggleButton.rect.y + 5;
 			}
 			bgStartPos.y=80;
 			ladyStartPos.y=190;		
 			m_menuHead.rect.y=0;
 			frameTop.rect.y = 80;
+			//UI   
 			infoBtn.rect.y = frameTop.rect.y + 9;
-			//UI
 				
 			startLightStartY = 180;
 		}

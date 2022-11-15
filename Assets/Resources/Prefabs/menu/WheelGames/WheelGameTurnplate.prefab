@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4779344939275928}
   - component: {fileID: 114550245236944398}
   m_Layer: 0
-  m_Name: InfoBtn
+  m_Name: ToggleButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -187,6 +187,38 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1526295190117158
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4795746842694896}
+  - component: {fileID: 114645038122645752}
+  m_Layer: 0
+  m_Name: InfoBtn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1538133939142756
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4529503755858714}
+  - component: {fileID: 114026263247616852}
+  m_Layer: 0
+  m_Name: Girl
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1538975668379160
 GameObject:
   m_ObjectHideFlags: 0
@@ -229,7 +261,7 @@ GameObject:
   - component: {fileID: 4975502087612312}
   - component: {fileID: 114896553252846680}
   m_Layer: 0
-  m_Name: costTxt
+  m_Name: ToggleLabel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -262,6 +294,22 @@ GameObject:
   - component: {fileID: 114747300212618958}
   m_Layer: 0
   m_Name: lbLessKeys
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1672017640702728
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4620917930370416}
+  - component: {fileID: 114147447597760174}
+  m_Layer: 0
+  m_Name: costTxt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -347,7 +395,8 @@ Transform:
   - {fileID: 4991935201602430}
   - {fileID: 4148823993628884}
   - {fileID: 4069784783105238}
-  - {fileID: 4975502087612312}
+  - {fileID: 4620917930370416}
+  - {fileID: 4529503755858714}
   - {fileID: 4656804920184108}
   - {fileID: 4500838639760782}
   - {fileID: 4185377808746388}
@@ -355,7 +404,9 @@ Transform:
   - {fileID: 4752678230590162}
   - {fileID: 4188469238739132}
   - {fileID: 4868975192991172}
+  - {fileID: 4795746842694896}
   - {fileID: 4779344939275928}
+  - {fileID: 4975502087612312}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -383,7 +434,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4115260216462514}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4188469238739132
 Transform:
@@ -396,7 +447,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4115260216462514}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4254693880678086
 Transform:
@@ -448,7 +499,20 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4115260216462514}
-  m_RootOrder: 11
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4529503755858714
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1538133939142756}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4115260216462514}
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4567894597059588
 Transform:
@@ -463,6 +527,19 @@ Transform:
   m_Father: {fileID: 4115260216462514}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4620917930370416
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1672017640702728}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4115260216462514}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4656804920184108
 Transform:
   m_ObjectHideFlags: 1
@@ -474,7 +551,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4115260216462514}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4701365557071332
 Transform:
@@ -500,7 +577,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4115260216462514}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4779344939275928
 Transform:
@@ -508,12 +585,25 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1018806405703316}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4115260216462514}
+  m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4795746842694896
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1526295190117158}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4115260216462514}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4803612065329618
 Transform:
@@ -526,7 +616,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4115260216462514}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4868975192991172
 Transform:
@@ -539,7 +629,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4115260216462514}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4975502087612312
 Transform:
@@ -547,12 +637,12 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1617165407379348}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4115260216462514}
-  m_RootOrder: 9
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4991935201602430
 Transform:
@@ -622,7 +712,7 @@ MonoBehaviour:
   mystyle:
     m_Name: 
     m_Normal:
-      m_Background: {fileID: 2800000, guid: c2fbdd8241bc34ef08ebbbebb665cb10, type: 3}
+      m_Background: {fileID: 2800000, guid: 356a79ea0f508441d9f45da6ee7b2173, type: 3}
       m_ScaledBackgrounds: []
       m_TextColor: {r: 0.8117647, g: 0.6627451, b: 0.44705883, a: 1}
     m_Hover:
@@ -700,6 +790,129 @@ MonoBehaviour:
   activeColor: {r: 1, g: 1, b: 1, a: 1}
   _enableSound: 1
   _clickSound: 
+--- !u!114 &114026263247616852
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1538133939142756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 650385310ff4fee42985e623ffb8bf47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rect:
+    serializedVersion: 2
+    x: -31.2
+    y: 346.45334
+    width: 298
+    height: 1137.2
+  rotateAngle: 0
+  flipX: 0
+  flipY: 0
+  scaleX: 1
+  scaleY: 1
+  inScreenAspect: 0
+  lockWidthInAspect: 0
+  lockHeightInAspect: 0
+  visible: 1
+  tips: 
+  background: {fileID: 0}
+  uiName: 
+  alpha: 1
+  alphaEnable: 0
+  grey: 0
+  m_rectOnScreen:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  font: 1
+  mystyle:
+    m_Name: 
+    m_Normal:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
+      m_TextColor: {r: 0.8117647, g: 0.6627451, b: 0.44705883, a: 1}
+    m_Hover:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Active:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Focused:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnNormal:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnHover:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnActive:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnFocused:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Border:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Margin:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Padding:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Overflow:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Font: {fileID: 12800000, guid: e5d32c66034a94daca986ea478345734, type: 3}
+    m_FontSize: 18
+    m_FontStyle: 0
+    m_Alignment: 0
+    m_WordWrap: 0
+    m_RichText: 1
+    m_TextClipping: 0
+    m_ImagePosition: 0
+    m_ContentOffset: {x: 0, y: 0}
+    m_FixedWidth: 0
+    m_FixedHeight: 0
+    m_StretchWidth: 1
+    m_StretchHeight: 0
+  category: 
+  content: 
+  txt: 
+  fontType: 0
+  normalTxtColor: 0
+  onNormalTxtColor: 0
+  image: {fileID: 0}
+  sourceRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  maxChar: 999
+  useTile: 1
+  drawTileByGraphics: 0
+  material: {fileID: 0}
 --- !u!114 &114026616623099612
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -988,7 +1201,7 @@ MonoBehaviour:
   mystyle:
     m_Name: 
     m_Normal:
-      m_Background: {fileID: 2800000, guid: 98c9836fa04697b4c8cd7b66a3ea6e91, type: 3}
+      m_Background: {fileID: 2800000, guid: 741e6ac4b8adbd74a9da79f418474480, type: 3}
       m_ScaledBackgrounds: []
       m_TextColor: {r: 1, g: 1, b: 1, a: 1}
     m_Hover:
@@ -996,7 +1209,7 @@ MonoBehaviour:
       m_ScaledBackgrounds: []
       m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Active:
-      m_Background: {fileID: 2800000, guid: a58f3792eaef28e41bf90bcd6936f860, type: 3}
+      m_Background: {fileID: 2800000, guid: 741e6ac4b8adbd74a9da79f418474480, type: 3}
       m_ScaledBackgrounds: []
       m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Focused:
@@ -1064,7 +1277,7 @@ MonoBehaviour:
   image: {fileID: 0}
   normalColor: {r: 1, g: 1, b: 1, a: 1}
   activeColor: {r: 1, g: 1, b: 1, a: 1}
-  _enableSound: 1
+  _enableSound: 0
   _clickSound: 
 --- !u!114 &114098812491096974
 MonoBehaviour:
@@ -1608,17 +1821,18 @@ MonoBehaviour:
     useTile: 1
   bottomLabel: {fileID: 114026616623099612}
   startItemBackgroundColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
-  m_itemBackgroundColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
+  m_itemBackgroundColor: {r: 0.2015802, g: 0.2015802, b: 0.2015802, a: 1}
   startItemColor: {r: 0.7058824, g: 0.7058824, b: 0.7058824, a: 1}
-  m_itemColor: {r: 0.7058824, g: 0.7058824, b: 0.7058824, a: 1}
+  m_itemColor: {r: 0.70646334, g: 0.70646334, b: 0.70646334, a: 1}
   bgStartPos: {x: 420, y: 156}
   ladyStartPos: {x: -50, y: 266}
   panelItemRadiuAndSize: {x: 155, y: 100}
-  m_bkColor: {r: 0.39215687, g: 0.50980395, b: 0.35686275, a: 1}
+  m_bkColor: {r: 0.6745098, g: 0.48235294, b: 0.32941177, a: 1}
   m_openKeyColor: {r: 0.30597013, g: 0.30597013, b: 0.30597013, a: 1}
   m_keyArea: {fileID: 114386667748240414}
   m_spinTxt: {fileID: 114369584929035012}
-  m_costTxt: {fileID: 114896553252846680}
+  m_costTxt: {fileID: 114147447597760174}
+  girl: {fileID: 114026263247616852}
   m_menuHead: {fileID: 0}
   m_wheelCount: 8
   m_lightCount: 32
@@ -1632,20 +1846,26 @@ MonoBehaviour:
   lightRadius: 135
   m_beginStartColorTurnTime: 0.3
   m_wheelGameData:
-    wheelGameId: 2411
+    wheelGameId: 17
     costGems: 15
     costToken: 3
-    prizeInboxId: 69808
+    prizeInboxId: 60326
     isCanStart: 0
-    itemsId: b60300000700000061090000be100000f4ee00001b0b010061090000111f0100
-    itemsType: 0000000000000000040000000000000000000000000000000400000000000000
-    keySlot: 0100000000000000000000000000000000000000
-  m_isCanStop: 1
+    itemsId: 1227000016a4000020a400002aa40000610900006109000060ea000004000000
+    itemsType: 0000000001000000020000000300000004000000040000000300000002000000
+    keySlot: 0100000001000000010000000000000000000000
+  m_isCanStop: 0
   m_hightLayer: 1
   m_haveKeyCount: {fileID: 114183704429399490}
   m_buyOneCostGems: {fileID: 114440044668866320}
   m_buyNineCostGems: {fileID: 114450917878566784}
-  infoBtn: {fileID: 114550245236944398}
+  infoBtn: {fileID: 114645038122645752}
+  toggleButton: {fileID: 114550245236944398}
+  toggleLabel: {fileID: 114896553252846680}
+  girlY: 4
+  isBoolean: 
+  toogleKey: Skip
+  IsForce: 1
   testYPos: 1132
   btnOffset: 50
   pedestalHeight: 80
@@ -1654,17 +1874,176 @@ MonoBehaviour:
   wheelPanelARound: 4
   delayTurnTime: 1
   isOneRoll: 0
-  rollType: 1
-  wheelGameNineDatas: []
+  rollType: 3
+  wheelGameNineDatas:
+  - prize: 0
+    keyslot: 
+    itemid: 42026
+    slot: 3
+  - prize: 0
+    keyslot: 
+    itemid: 42026
+    slot: 3
+  - prize: 0
+    keyslot: 
+    itemid: 60000
+    slot: 6
+  - prize: 0
+    keyslot: 
+    itemid: 42026
+    slot: 3
+  - prize: 0
+    keyslot: 0100000001000000010000000100000000000000
+    itemid: 2401
+    slot: 4
+  - prize: 0
+    keyslot: 
+    itemid: 42026
+    slot: 3
+  - prize: 60326
+    keyslot: 0100000001000000010000000100000001000000
+    itemid: 2401
+    slot: 4
+  - prize: 0
+    keyslot: 0100000000000000000000000000000000000000
+    itemid: 2401
+    slot: 4
+  - prize: 0
+    keyslot: 
+    itemid: 42016
+    slot: 2
   gm_stopTime: 1.5
   gm_minSpeed: 3.1415927
   gm_waitMinTime: 2
-  m_stopOnItemTime: 4.991319
+  m_stopOnItemTime: 4.326539
   gm_waitForReviewTime: 1
   wheelGameNineKeys: []
   iphoneXWheelPanelY: 60
   iphineXOffsetY: 115
   otherWheelPanelY: 0
+--- !u!114 &114147447597760174
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1672017640702728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 650385310ff4fee42985e623ffb8bf47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rect:
+    serializedVersion: 2
+    x: 377
+    y: 512
+    width: 78
+    height: 30
+  rotateAngle: 0
+  flipX: 0
+  flipY: 0
+  scaleX: 1
+  scaleY: 1
+  inScreenAspect: 0
+  lockWidthInAspect: 0
+  lockHeightInAspect: 0
+  visible: 1
+  tips: 
+  background: {fileID: 0}
+  uiName: 
+  alpha: 1
+  alphaEnable: 0
+  grey: 0
+  m_rectOnScreen:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  font: 2
+  mystyle:
+    m_Name: 
+    m_Normal:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
+      m_TextColor: {r: 1, g: 1, b: 1, a: 1}
+    m_Hover:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Active:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Focused:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnNormal:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnHover:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnActive:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnFocused:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Border:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Margin:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Padding:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Overflow:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Font: {fileID: 12800000, guid: e5d32c66034a94daca986ea478345734, type: 3}
+    m_FontSize: 20
+    m_FontStyle: 0
+    m_Alignment: 4
+    m_WordWrap: 0
+    m_RichText: 1
+    m_TextClipping: 0
+    m_ImagePosition: 0
+    m_ContentOffset: {x: 0, y: 0}
+    m_FixedWidth: 0
+    m_FixedHeight: 0
+    m_StretchWidth: 1
+    m_StretchHeight: 0
+  category: 
+  content: 
+  txt: 15
+  fontType: 0
+  normalTxtColor: 11
+  onNormalTxtColor: 0
+  image: {fileID: 2800000, guid: acd10b0951e0846559bb72aec35984a4, type: 3}
+  sourceRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  maxChar: 999
+  useTile: 0
+  drawTileByGraphics: 0
+  material: {fileID: 0}
 --- !u!114 &114183704429399490
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2016,7 +2395,7 @@ MonoBehaviour:
     m_StretchHeight: 0
   category: 
   content: 
-  txt: "\u8F49\u52D5"
+  txt: Spin
   fontType: 2
   normalTxtColor: 11
   onNormalTxtColor: 0
@@ -2413,10 +2792,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rect:
     serializedVersion: 2
-    x: 25
-    y: 160
-    width: 60
-    height: 70
+    x: 170
+    y: 260
+    width: 30
+    height: 43.1
   rotateAngle: 0
   flipX: 0
   flipY: 0
@@ -2442,7 +2821,127 @@ MonoBehaviour:
   mystyle:
     m_Name: 
     m_Normal:
-      m_Background: {fileID: 2800000, guid: f657c7f698e604a748ec2244d1638c7d, type: 3}
+      m_Background: {fileID: 2800000, guid: 02d070632d06240adae2139c739912d5, type: 3}
+      m_ScaledBackgrounds: []
+      m_TextColor: {r: 0.8117647, g: 0.6627451, b: 0.44705883, a: 1}
+    m_Hover:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Active:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Focused:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnNormal:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
+      m_TextColor: {r: 0.8117647, g: 0.6627451, b: 0.44705883, a: 1}
+    m_OnHover:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnActive:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnFocused:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Border:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Margin:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Padding:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Overflow:
+      m_Left: 0
+      m_Right: 6
+      m_Top: 0
+      m_Bottom: 0
+    m_Font: {fileID: 12800000, guid: e5d32c66034a94daca986ea478345734, type: 3}
+    m_FontSize: 18
+    m_FontStyle: 0
+    m_Alignment: 0
+    m_WordWrap: 0
+    m_RichText: 1
+    m_TextClipping: 0
+    m_ImagePosition: 0
+    m_ContentOffset: {x: 0, y: 0}
+    m_FixedWidth: 0
+    m_FixedHeight: 0
+    m_StretchWidth: 1
+    m_StretchHeight: 0
+  category: 
+  content: 
+  txt: 
+  fontType: 0
+  normalTxtColor: 0
+  onNormalTxtColor: 0
+  action: 
+  actionParam: 
+  transition: 
+  image: {fileID: 0}
+  normalColor: {r: 1, g: 1, b: 1, a: 1}
+  activeColor: {r: 1, g: 1, b: 1, a: 1}
+  _enableSound: 1
+  _clickSound: 
+--- !u!114 &114645038122645752
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1526295190117158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b185895c7870aa64f94b15042c0107a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rect:
+    serializedVersion: 2
+    x: 25
+    y: 160
+    width: 90
+    height: 95
+  rotateAngle: 0
+  flipX: 0
+  flipY: 0
+  scaleX: 1
+  scaleY: 1
+  inScreenAspect: 0
+  lockWidthInAspect: 0
+  lockHeightInAspect: 0
+  visible: 1
+  tips: 
+  background: {fileID: 0}
+  uiName: 
+  alpha: 1
+  alphaEnable: 0
+  grey: 0
+  m_rectOnScreen:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  font: 1
+  mystyle:
+    m_Name: 
+    m_Normal:
+      m_Background: {fileID: 2800000, guid: 03dbcd872010a489a97b1a87ffc3a8fa, type: 3}
       m_ScaledBackgrounds: []
       m_TextColor: {r: 0.8117647, g: 0.6627451, b: 0.44705883, a: 1}
     m_Hover:
@@ -2628,7 +3127,7 @@ MonoBehaviour:
     m_StretchHeight: 0
   category: 
   content: 
-  txt: "\u5269\u9918\u53EF\u8F49\u52D5\u7684\u6642\u9593: 2d23h39m"
+  txt: 'Time left to spin: 14d8h46m'
   fontType: 0
   normalTxtColor: 1
   onNormalTxtColor: 1
@@ -2874,8 +3373,8 @@ MonoBehaviour:
     m_StretchHeight: 0
   category: 
   content: 
-  txt: "<color=\"#CFA972\">\u8F49\u52D5\u8F49\u76E4\u53EF\u8D0F\u53D6\u734E\u54C1\u3002\u518D\u591A\u6536\u96C6
-    </color><color=\"white\">4</color><color=\"#CFA972\"> \u628A\u9470\u5319\u4EE5\u8D0F\u5F97\u982D\u734E\uFF01</color>"
+  txt: <color="#CFA972">Spin to win prizes. Collect </color><color="white">2</color><color="#CFA972">
+    more keys to win the jackpot!</color>
   fontType: 0
   normalTxtColor: 11
   onNormalTxtColor: 11
@@ -2932,7 +3431,7 @@ MonoBehaviour:
   mystyle:
     m_Name: 
     m_Normal:
-      m_Background: {fileID: 2800000, guid: 98c9836fa04697b4c8cd7b66a3ea6e91, type: 3}
+      m_Background: {fileID: 2800000, guid: 741e6ac4b8adbd74a9da79f418474480, type: 3}
       m_ScaledBackgrounds: []
       m_TextColor: {r: 1, g: 1, b: 1, a: 1}
     m_Hover:
@@ -2940,7 +3439,7 @@ MonoBehaviour:
       m_ScaledBackgrounds: []
       m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Active:
-      m_Background: {fileID: 2800000, guid: a58f3792eaef28e41bf90bcd6936f860, type: 3}
+      m_Background: {fileID: 2800000, guid: 741e6ac4b8adbd74a9da79f418474480, type: 3}
       m_ScaledBackgrounds: []
       m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Focused:
@@ -3008,7 +3507,7 @@ MonoBehaviour:
   image: {fileID: 0}
   normalColor: {r: 1, g: 1, b: 1, a: 1}
   activeColor: {r: 1, g: 1, b: 1, a: 1}
-  _enableSound: 1
+  _enableSound: 0
   _clickSound: 
 --- !u!114 &114776438752619980
 MonoBehaviour:
@@ -3146,8 +3645,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rect:
     serializedVersion: 2
-    x: 377
-    y: 512
+    x: 105
+    y: 265
     width: 78
     height: 30
   rotateAngle: 0
@@ -3171,7 +3670,7 @@ MonoBehaviour:
     y: 0
     width: 0
     height: 0
-  font: 2
+  font: 4
   mystyle:
     m_Name: 
     m_Normal:
@@ -3227,7 +3726,7 @@ MonoBehaviour:
       m_Top: 0
       m_Bottom: 0
     m_Font: {fileID: 12800000, guid: e5d32c66034a94daca986ea478345734, type: 3}
-    m_FontSize: 20
+    m_FontSize: 25
     m_FontStyle: 0
     m_Alignment: 4
     m_WordWrap: 0
@@ -3241,11 +3740,11 @@ MonoBehaviour:
     m_StretchHeight: 0
   category: 
   content: 
-  txt: 15
+  txt: Skip
   fontType: 0
   normalTxtColor: 11
   onNormalTxtColor: 0
-  image: {fileID: 2800000, guid: acd10b0951e0846559bb72aec35984a4, type: 3}
+  image: {fileID: 0}
   sourceRect:
     serializedVersion: 2
     x: 0
@@ -3285,8 +3784,8 @@ MonoBehaviour:
   tips: 
   background: {fileID: 0}
   uiName: 
-  alpha: 0
-  alphaEnable: 0
+  alpha: 1
+  alphaEnable: 1
   grey: 0
   m_rectOnScreen:
     serializedVersion: 2
@@ -3364,7 +3863,7 @@ MonoBehaviour:
     m_StretchHeight: 0
   category: 
   content: 
-  txt: "\u8F15\u89F8\u5BF6\u7BB1\uFF0C\u77A7\u77A7\u88E1\u982D\u6709\u4E9B\u4EC0\u9EBC\u3002"
+  txt: Swipe to spin the wheel
   fontType: 0
   normalTxtColor: 14
   onNormalTxtColor: 0

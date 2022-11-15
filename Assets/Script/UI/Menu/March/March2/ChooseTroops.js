@@ -45,8 +45,9 @@
 	private var isCity : boolean = false;
 
 
+
      public function Init()
-    {
+     {
 		super.Init();
         ins_TroopsItem.Init();
         scroll_troop.Init(ins_TroopsItem);
@@ -62,7 +63,8 @@
 		 extraMarchCount = 0;
 		 btnClose.OnClick = onCloseBtnAction;
 
-    }
+	 }
+
 	public function DrawBackground()
 	{
 		super.DrawBackground();
@@ -70,7 +72,7 @@
 	}
 
 	public function DrawItem()
-   {
+    {
         scroll_troop.Draw();
 		at_l_troop.Draw();
 		carmot_l_troop.Draw();
@@ -82,7 +84,7 @@
 		tp_l_resource.Draw();
 		blankTip.Draw();
 		btn_AddMarchSize.Draw();
-   }
+    }
 
     public function OnPush(param:Object)
     {
@@ -92,11 +94,13 @@
 			isCity = true;
 		}
         /* var data:Hashtable = param as Hashtable; */
+
 		setData();
+
 		at_l_troop.SetVisible(march_type != Constant.MarchType.TRANSPORT && march_type != Constant.MarchType.REASSIGN );
 		carmot_l_troop.SetVisible(march_type == Constant.MarchType.COLLECT || march_type == Constant.MarchType.COLLECT_RESOURCE);
-		if(march_type == Constant.MarchType.COLLECT || march_type == Constant.MarchType.COLLECT_RESOURCE){
 			
+		if(march_type == Constant.MarchType.COLLECT || march_type == Constant.MarchType.COLLECT_RESOURCE){
 			carmot_l_troop.mystyle.normal.background = CollectionResourcesMgr.instance().GetTilePopUpIcon(String.Format("{0}_{1}", tx, ty));
 			at_l_troop.rect.y = 770;
 			btn_AddMarchSize.rect.y = 770;
@@ -104,23 +108,24 @@
 			at_l_troop.rect.y = 787;
 			btn_AddMarchSize.rect.y = 787;
 		}
+
 		tp_l_troop0.SetVisible(march_type == Constant.MarchType.REASSIGN);
 		tp_l_troop.SetVisible(march_type == Constant.MarchType.TRANSPORT || march_type == Constant.MarchType.REASSIGN);
 		btn_AddMarchSize.SetVisible(march_type == Constant.MarchType.ATTACK || march_type == Constant.MarchType.COLLECT || march_type == Constant.MarchType.COLLECT_RESOURCE || march_type == Constant.MarchType.PVP || march_type == Constant.MarchType.REASSIGN);
-		if(march_type == Constant.MarchType.REASSIGN){
+
+		if (march_type == Constant.MarchType.REASSIGN) {
 			tp_l_troop.rect.x = 167;
 		}else 
 			tp_l_troop.rect.x = 26;
+
 		tp_l_resource.SetVisible(march_type == Constant.MarchType.TRANSPORT || march_type == Constant.MarchType.REASSIGN);
 	
-		if (march_type == Constant.MarchType.AVA_SENDTROOP)
-			{
-				btn_next.txt = Datas.getArString("Common.Deploy");
-			}
-			else
-			{
-				btn_next.txt = Datas.getArString("Common.Next_Button");		
-			}
+		if (march_type == Constant.MarchType.AVA_SENDTROOP) {
+			btn_next.txt = Datas.getArString("Common.Deploy");
+		} else {
+			btn_next.txt = Datas.getArString("Common.Next_Button");		
+		}
+
 		if(troopList.length  == 0)	{
 			blankTip.txt = Datas.getArString("March.NO_Troop");		
 			this.blankTip.SetVisible(true);
@@ -789,7 +794,12 @@
 			case Constant.MarchType.RALLY_ATTACK:
 					AddMarchSizeData.getInstance().ResetBuffListData();
 					AutoSelectCarmotTroop();
-					scroll_troop.SetColPerPage(heroList.Concat(troopList).length/2+1);
+					scroll_troop.SetColPerPage(heroList.Concat(troopList).length / 2 + 1);
+
+					/* 是采集的时候,需要将采集部队放到前列 */
+					if (march_type == Constant.MarchType.COLLECT_RESOURCE || march_type == Constant.MarchType.COLLECT) {
+						troopList.Sort(Barracks.TroopInfo.CompareBySupplyType);
+					}
 					scroll_troop.SetData(heroList.Concat(troopList));
 				break;
 			case Constant.MarchType.AVA_SENDTROOP:

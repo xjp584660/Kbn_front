@@ -14,7 +14,12 @@ public class HeroExploreController extends SlotBuildController
     private var speedScaleIOS : float = 1.0f;
     @SerializeField
     private var speedScaleAndroid : float = 1.0f;
-    
+
+	@SerializeField
+	private var moveEffectTrans: Transform;
+
+
+
     private var speedScale : float = 1.0f;
     private var currentStatus : int = 0;
     private var fireCondition : float[] = null;
@@ -95,7 +100,18 @@ public class HeroExploreController extends SlotBuildController
 
 	                lastPosition = currentPosition;
 	            }
-	        }
+			}
+
+			if (keyDown) {
+
+				if (!moveEffectTrans.gameObject.activeSelf)
+					moveEffectTrans.gameObject.SetActive(true);
+
+				var mousePosInWorld = curCamera.ScreenToWorldPoint(lastPosition);
+				mousePosInWorld.z = moveEffectTrans.position.z;
+				moveEffectTrans.position = mousePosInWorld;
+			}
+
             
             sumScreenWidth = sumDistance / Screen.width;
             UpdateFire();
@@ -134,8 +150,11 @@ public class HeroExploreController extends SlotBuildController
 		    component[1].SetActive(true);
 		    component[2].SetActive(false);
 		    component[3].SetActive(true);
-		    component[4].SetActive(false);
-		    for (var f : GameObject in fire)
+			component[4].SetActive(false);
+
+			moveEffectTrans.gameObject.SetActive(false);
+
+			for (var f: GameObject in fire)
 		    {
                 f.SetActive(false);
 		    }
@@ -164,7 +183,10 @@ public class HeroExploreController extends SlotBuildController
 		    component[1].SetActive(false);
 		    component[2].SetActive(true);
 		    component[3].SetActive(true);
-		    component[4].SetActive(true);
+			component[4].SetActive(true);
+
+			moveEffectTrans.gameObject.SetActive(false);
+
 		}
 		else if (index == 3)
 		{
@@ -173,7 +195,10 @@ public class HeroExploreController extends SlotBuildController
 		    component[1].SetActive(false);
 		    component[2].SetActive(false);
 		    component[3].SetActive(false);
-		    component[4].SetActive(false);
+			component[4].SetActive(false);
+
+			moveEffectTrans.gameObject.SetActive(false);
+
 		    for (var f : GameObject in fire)
         	{
             	f.SetActive(false);
