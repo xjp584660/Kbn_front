@@ -72,11 +72,11 @@ public class WheelGameChestPopMenu extends PopMenu
 		//chest.Update();
 	//	if(isTransition)
 	//	{
-			if(isFirst && timer >= 0.3f)
-			{
-				isFirst = false;
-				LineAnimate(from,to,chest,0.0f,1.0f,5.0f);
-			}
+			//if(isFirst && timer >= 0.3f)
+			//{
+			//	isFirst = false;
+			//	LineAnimate(from,to,chest,0.0f,1.0f,5.0f);
+			//}
 			UpdateLight();
 	//	}
 		backlight.Update();
@@ -136,10 +136,10 @@ public class WheelGameChestPopMenu extends PopMenu
 		
 //		chest.useTile = true;
 //		var texMgr : TextureMgr = TextureMgr.instance();
-//		chest.tile = paramDat.tile;//TextureMgr.instance().ItemSpt().GetTile(texMgr.LoadTileNameOfItem(id));
+//		chest.tile = paramDat.tile;//TextureMgr.instance().ItemSpt().GetTile(texMgr.LoadTileNameOfItem(id));  
 		chest.SetId(id);
 		
-		//var r:Rect = chest.tile.prop.LogicRect;
+		//var r:Rect = chest.tile.prop.LogicRect; 
 		var r:Rect = chest.rect;
 		to.width = r.width;
 		to.height = r.height;
@@ -154,7 +154,7 @@ public class WheelGameChestPopMenu extends PopMenu
 //			to.height = to.width * r.height / r.width;
 //		}
 //		to.width = to.width * 640.0f/Screen.width;
-//		to.height = to.height * 960.0f/Screen.height;
+//		to.height = to.height * 960.0f/Screen.height; 
 		var fromCenter : Vector2 = from.center;
 		from.width = to.width;
 		from.height = to.height;
@@ -165,7 +165,8 @@ public class WheelGameChestPopMenu extends PopMenu
 		var y11:float = description1.rect.y - y00;
 		to.y = y00 + y11 / 2.0f - to.height / 2.0f;
 		//chest.tile = TextureMgr.instance().ItemSpt().GetTile("i"+id.ToString());
-		chest.rect = from;
+		//chest.rect = from;TODO
+		chest.rect = to;
 		chestName.txt = Datas.getArString("itemName.i" + id);
 		description1.txt = Datas.getArString("itemDesc.i" + id);
 		if(paramDat.rewardType == 0)
@@ -186,7 +187,7 @@ public class WheelGameChestPopMenu extends PopMenu
 		UpdateLight();
 		backlight.SetVisible(true);
 		backlight.Begin();
-		confirm.SetVisible(false);
+		confirm.SetVisible(true);
 	}
 
 

@@ -69,8 +69,8 @@ public class WheelGameTurnplateRewardChestItem extends UIObject {
 		if (!visible)
 			return;
 		GUI.BeginGroup(rect);
-		bgImg.Draw();
 		picBox.Draw();
+		bgImg.Draw();
 		iconImg.Draw();
 		nameLabel.Draw();
 		countLabel.Draw();
